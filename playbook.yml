@@ -1,15 +1,15 @@
 ---
 - name: teste
   hosts: localhost
-    tasks:
-      - name: teste
-        vars:
-          hosts_var:
-            - name: bastion
-              ip:
-                - 172.25.250.254
-                - 172.25.252.1
-          hosts_json: '[{"name": "bastion", "ip": ["172.25.250.254", "172.25.252.1"]}]'
-        assert:
-          that:
-            - "'{{ hosts | to_json }}' is eq( hosts_json )"
+  tasks:
+    - name: teste
+      vars:
+        hosts_var:
+          - name: bastion
+            ip:
+              - 172.25.250.254
+              - 172.25.252.1
+        hosts_json: '[{"name": "bastion", "ip": ["172.25.250.254", "172.25.252.1"]}]'
+      assert:
+        that:
+          - "'{{ hosts | to_json }}' is eq( hosts_json )"
