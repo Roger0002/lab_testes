@@ -4,4 +4,4 @@
   tasks:
     - name: teste
       debug:
-        msg: "{{ var_inexistente | default("Roger") }}"
+        msg: "{{ var_inexistente | default("Roger", true) }}"
