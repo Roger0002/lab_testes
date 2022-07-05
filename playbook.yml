@@ -4,4 +4,4 @@
   tasks:
     - name: teste
       debug:
-        msg: "{{ var_inexistente | mandatory }}"
+        msg: "{{ 64 | root }}"
