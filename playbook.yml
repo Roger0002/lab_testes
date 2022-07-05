@@ -10,6 +10,5 @@
               - 172.25.250.254
               - 172.25.252.1
         hosts_json: '[{"name": "bastion", "ip": ["172.25.250.254", "172.25.252.1"]}]'
-      assert:
-        that:
-          - "'{{ hosts_var | to_json }}' is eq( hosts_json )"
+      debug:
+        msg: "Olha um JSON aí: {{ hosts_var | to_json }}"
