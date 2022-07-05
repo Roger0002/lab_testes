@@ -15,4 +15,4 @@
     
     - name: Outro teste
       debug:
-        msg: "{{ query('lines', 'ls /etc') }}"
+        msg: "{{ lookup('lines', 'ls /etc') }}"
