@@ -12,3 +12,7 @@
         hosts_json: '[{"name": "bastion", "ip": ["172.25.250.254", "172.25.252.1"]}]'
       debug:
         msg: "Olha um JSON aí: {{ hosts_var | to_json }}"
+    
+    - name: Outro teste
+      debug:
+        msg: "{{ query('lines', 'ls /etc') }}"
