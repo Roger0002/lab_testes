@@ -4,4 +4,4 @@
   tasks:
     - name: teste
       debug:
-        msg: "{{ 64 | root }}"
+        msg: "{{ 'âÉïôú' | b64encode }}"
