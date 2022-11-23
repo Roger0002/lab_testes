@@ -1,5 +1,6 @@
 ---
 - name: Playbook que habilita a aplicação web
+  hosts: clienterhel7.transp.com
   tasks:
     - name: Instala o apache
       ansible.builtin.yum:
