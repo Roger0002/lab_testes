@@ -16,3 +16,7 @@
     - name: Outro teste
       debug:
         msg: "{{ lookup('lines', 'ls /etc') }}"
+
+    - name: Task de teste
+      debug:
+        msg: "Teste"
