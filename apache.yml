@@ -8,7 +8,7 @@
         state: present
     
     - name: Habilita ele na inicialização
-      systemd:
+      ansible.builtin.systemd:
         name: httpd
         state: started
         enabled: True
@@ -21,3 +21,16 @@
         owner: root
         group: root
         mode: '0644'
+
+    - name: Libera a porta 80 no firewall
+      ansible.builtin.firewalld:
+        permanent: True
+        state: enabled
+        service: http
+        immediate: True
+
+    - name: Testa a conexão
+      ansible.builtin.uri:
+        url: http://clienterhel7.transp.com/index.html
+        method: GET
+        status_code: 200
