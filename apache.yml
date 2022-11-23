@@ -17,7 +17,7 @@
     - name: Copia o index.html para o servidor
       ansible.builtin.copy:
         content: '<html><body>Aplicação do Roger</body></html>'
-        dest: /var/www/html/index.htm
+        dest: /var/www/html/index.html
         owner: root
         group: root
         mode: '0644'
