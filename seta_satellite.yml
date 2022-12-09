@@ -1,0 +1,13 @@
+---
+- name: Playbook que seta o satellite do jeito que eu quero (via API)
+  hosts: localhost
+  tasks:
+    - name: Ativa os repositórios desejados
+
+    - name: sincronisa os repositórios recém ativados
+
+    - name: Cria a host collection
+
+    - name: Cria o ContentView
+
+    - name: Cria a activation-key

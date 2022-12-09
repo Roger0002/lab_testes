@@ -1,0 +1,4 @@
+---
+- name: Playbook que põe a máquina no domínio
+  hosts: clienterhel8.transp.com
+  tasks:
