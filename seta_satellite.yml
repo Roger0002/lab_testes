@@ -2,12 +2,24 @@
 - name: Playbook que seta o satellite do jeito que eu quero (via API)
   hosts: localhost
   tasks:
-    - name: Ativa os repositórios desejados
+    - name: Test
+      ansible.builtin.uri:
+        url: https://satellite.transp.com/katello/api/repository_sets
+        method: GET
+        user: admin
+        password: redhat
+        force_basic_auth: True
+        status_code: 200
+        return_content: True
+        
+        
+#    - name: Ativa os repositórios desejados
 
-    - name: sincronisa os repositórios recém ativados
 
-    - name: Cria a host collection
+ #   - name: sincronisa os repositórios recém ativados
 
-    - name: Cria o ContentView
+  #  - name: Cria a host collection
 
-    - name: Cria a activation-key
+   # - name: Cria o ContentView
+
+   # - name: Cria a activation-key
