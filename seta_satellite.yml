@@ -26,6 +26,9 @@
         status_code: 201
         body:
           name: "base7"
+          label: "base7"
+          composite: False
+          solve_dependencies: False
           organization_id: 1
 
 
