@@ -10,6 +10,7 @@
         user: "admin"
         password: "redhat"
         force_basic_auth: True
+        status_code: 201
         body:
           name: "redhat7"
           organization_id: 1
