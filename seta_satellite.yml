@@ -15,7 +15,18 @@
           name: "redhat7"
           organization_id: 1
 
+    - name: Cria o ContentView
+      ansible.builtin.uri:
+        url: /katello/api/organizations/1/content_views
+        method: POST
+        body_format: json
+        user: "admin"
+        password: "redhat"
+        force_basic_auth: True
+        status_code: 201
+        body:
+          name: "base7"
+          organization_id: 1
 
-#    - name: Cria o ContentView
 
 #    - name: Cria a activation-key
