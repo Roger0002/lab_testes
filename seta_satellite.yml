@@ -17,7 +17,7 @@
 
     - name: Cria o ContentView
       ansible.builtin.uri:
-        url: /katello/api/organizations/1/content_views
+        url: /katello/api/content_views
         method: POST
         body_format: json
         user: "admin"
