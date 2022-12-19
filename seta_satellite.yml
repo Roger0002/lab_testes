@@ -14,7 +14,8 @@
         body:
           name: "redhat7"
           organization_id: 1
-      when: True
+        return_content: True
+      
 
     - name: Cria o ContentView
       ansible.builtin.uri:
@@ -31,6 +32,7 @@
           composite: False
           solve_dependencies: False
           organization_id: 1
+        return_content: True
 
 
 #    - name: Cria a activation-key
