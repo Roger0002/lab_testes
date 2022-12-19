@@ -39,7 +39,7 @@
 
     - name: Exibe a variável \"vara\"
       debug:
-        msg: "{{ vara.content | to_nice_json }}"
+        msg: "{{ vara.content | from_json }}"
     
     - name: Exibe a variável \"varb\"
       debug:
