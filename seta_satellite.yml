@@ -35,13 +35,15 @@
           organization_id: 1
         return_content: True
       register: varb
+      when: False
 
     - name: Exibe a variável \"vara\"
       debug:
-        msg: "{{ vara.content }}"
+        msg: "{{ vara.content | to_nice_json }}"
     
     - name: Exibe a variável \"varb\"
       debug:
         msg: "{{ varb.content.id }}"
+      when: False
 
 #    - name: Cria a activation-key
