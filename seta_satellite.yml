@@ -14,7 +14,7 @@
         body:
           name: "redhat7"
           organization_id: 1
-      when: False
+      when: True
 
     - name: Cria o ContentView
       ansible.builtin.uri:
