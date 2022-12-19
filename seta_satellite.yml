@@ -38,7 +38,7 @@
 
     - name: Exibe a variável \"vara\"
       debug:
-        msg: "{{ vara[\"content\"] }}"
+        msg: "{{ vara[\"content\"][\\"id\\"] }}"
     
     - name: Exibe a variável \"varb\"
       debug:
