@@ -42,6 +42,6 @@
     
     - name: Exibe a variável \"varb\"
       debug:
-        var: varb.content["id"]
+        var: varb.content
 
 #    - name: Cria a activation-key
