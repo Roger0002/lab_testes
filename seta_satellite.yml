@@ -15,6 +15,7 @@
           name: "redhat7"
           organization_id: 1
         return_content: True
+      register: vara
       
 
     - name: Cria o ContentView
@@ -33,6 +34,14 @@
           solve_dependencies: False
           organization_id: 1
         return_content: True
+      register: varb
 
-
+    - name: Exibe a variável \"vara\"
+      debug:
+        var: vara
+    
+    - name: Exibe a variável \"varb\"
+      debug:
+        var: varb
+        
 #    - name: Cria a activation-key
