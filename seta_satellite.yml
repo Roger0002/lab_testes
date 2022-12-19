@@ -39,7 +39,7 @@
 
     - name: Exibe a variável \"vara\"
       debug:
-        msg: "{{ vara.content | from_json | community.general.json_query('id') }}"
+        msg: "{{ vara.content | community.general.json_query('id') }}"
     
     - name: Exibe a variável \"varb\"
       debug:
