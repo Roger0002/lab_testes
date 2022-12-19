@@ -38,10 +38,10 @@
 
     - name: Exibe a variável \"vara\"
       debug:
-        var: vara
+        var: vara.content
     
     - name: Exibe a variável \"varb\"
       debug:
-        var: varb
-        
+        var: varb.content
+
 #    - name: Cria a activation-key
