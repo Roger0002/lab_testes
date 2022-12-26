@@ -4,4 +4,4 @@
   tasks:
     - name: Tarefa que irá chamar o módulo de reboot
       win_reboot:
-        pre_reboot_delay: 10
+        pre_reboot_delay: 9
