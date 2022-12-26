@@ -1,0 +1,7 @@
+---
+- name: Playbook que irá reiniciar uma VM
+  hosts: clientewin2022.transp.com
+  tasks:
+    - name: Tarefa que irá chamar o módulo de reboot
+      win_reboot:
+        pre_reboot_delay: 10
