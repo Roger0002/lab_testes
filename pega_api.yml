@@ -4,5 +4,5 @@
   become: True
   tasks:
     - name: cat no arquivo
-      debug:
-        msg: "{{ lookup('file', 'saida_api.txt') }}"
+      ansible.builtin.debug:
+        msg: "{{ lookup('ansible.builtin.file', '/root/saida_api.txt') }}"
