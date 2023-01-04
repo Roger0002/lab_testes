@@ -8,5 +8,10 @@
     #    msg: "{{ lookup('ansible.builtin.file', '/root/saida_api.txt') }}"
     - name: Teste
       ansible.builtin.shell: uname -n; ls /root
+      register: aaaaa
+  
+    - name: Vejamos
+      debug:
+        var: aaaaa
         
       
