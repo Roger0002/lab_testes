@@ -1,6 +1,7 @@
 ---
 - name: Playbook que brinca com API de mentirinha
   hosts: clienterhel8.transp.com
+  become: True
   tasks:
     - name: cat no arquivo
       debug:
