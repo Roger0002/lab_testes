@@ -1,0 +1,7 @@
+---
+- name: Playbook que brinca com API de mentirinha
+  hosts: clienterhel8.transp.com
+  tasks:
+    - name: cat no arquivo
+      debug:
+        msg: "{{ lookup('file', '/root/saida_api.txt') }}"
