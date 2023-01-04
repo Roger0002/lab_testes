@@ -13,7 +13,7 @@
 
     - name: Exibe apenas uma parte
       debug:
-        msg: "{{ item }}"
+        msg: "{{ item | from_json }}"
       loop: "{{ (saida_api.stdout | from_json)['resources'] }}"
         
       
