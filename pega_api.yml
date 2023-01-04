@@ -11,7 +11,7 @@
       debug:
         msg: "{{ saida_api.stdout }}"
 
-    - name: Exibe apenas uma parte
+    - name: Exibe apenass uma parte
       debug:
         msg: "AAA {{ item | to_json }}"
       loop: "{{ (saida_api.stdout | from_json)['resources'] }}"
