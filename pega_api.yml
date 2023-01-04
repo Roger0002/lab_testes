@@ -9,10 +9,10 @@
 
     - name: Exibe saída
       debug:
-        msg: "{{ saida_api }}"
+        msg: "{{ saida_api.stdout }}"
 
     - name: Exibe apenas uma parte
       debug:
-        msg: "{{ (saida_api.stdout | from_json)['msg']['resources'] }}"
+        msg: "{{ (saida_api.stdout | from_json)['resources'] }}"
         
       
