@@ -13,6 +13,6 @@
 
     - name: Exibe apenas uma parte
       debug:
-        msg: "{{ saida_api.stdout | json_query('saida_api.stdout.resources.id') }}"
+        msg: "{{ saida_api.stdout | json_query('saida_api.stdout.msg.resources.id') }}"
         
       
