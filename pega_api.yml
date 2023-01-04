@@ -6,3 +6,7 @@
     - name: cat no arquivo
       ansible.builtin.debug:
         msg: "{{ lookup('ansible.builtin.file', '/root/saida_api.txt') }}"
+    - name: Teste
+      ansible.builtin.shell: uname -n; ls /root
+        
+      
