@@ -26,7 +26,7 @@
 
     - name: Estágio - tarefa que prapara os dados da tarefa anterior para serem manipulados corretamente pela próxima tarefa
       debug:
-        msg: "{{ (json_maqs_geral.results | json_query('[].stdout') | join(','))['msg'] | flatten | unique }}"
+        msg: "{{ json_maqs_geral.results | json_query('[].stdout') | join(',') | flatten | unique }}"
       register: json_aprov
 
     - name: Lista todas as máquinas afetadas por alguma vulnerabilidade, qualquer que seja ela
