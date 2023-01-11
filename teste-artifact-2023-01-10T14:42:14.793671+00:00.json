@@ -1,0 +1,1674 @@
+{
+    "plays": [
+        {
+            "__play_name": "JsonQuery Playbook",
+            "name": "JsonQuery Playbook",
+            "pattern": "localhost",
+            "play": "JsonQuery Playbook",
+            "play_pattern": "localhost",
+            "play_uuid": "a2a696d5-b83f-9404-07c0-000000000009",
+            "playbook": "/root/lab_testes/teste.yml",
+            "playbook_uuid": "6ecdd78a-4d3a-4d91-99bc-fcacbe45c89f",
+            "tasks": [
+                {
+                    "__changed": false,
+                    "__duration": "1s",
+                    "__host": "localhost",
+                    "__number": 0,
+                    "__result": "Ok",
+                    "__task": "Gathering Facts",
+                    "__task_action": "gather_facts",
+                    "duration": 0.705218,
+                    "end": "2023-01-10T14:42:12.304824",
+                    "event_loop": null,
+                    "host": "localhost",
+                    "play": "JsonQuery Playbook",
+                    "play_pattern": "localhost",
+                    "play_uuid": "a2a696d5-b83f-9404-07c0-000000000009",
+                    "playbook": "/root/lab_testes/teste.yml",
+                    "playbook_uuid": "6ecdd78a-4d3a-4d91-99bc-fcacbe45c89f",
+                    "remote_addr": "127.0.0.1",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "_ansible_verbose_override": true,
+                        "ansible_facts": {
+                            "ansible_apparmor": {
+                                "status": "disabled"
+                            },
+                            "ansible_architecture": "x86_64",
+                            "ansible_bios_date": "04/01/2014",
+                            "ansible_bios_vendor": "SeaBIOS",
+                            "ansible_bios_version": "1.15.0-2.module+el8.6.0+14757+c25ee005",
+                            "ansible_board_asset_tag": "NA",
+                            "ansible_board_name": "NA",
+                            "ansible_board_serial": "NA",
+                            "ansible_board_vendor": "NA",
+                            "ansible_board_version": "NA",
+                            "ansible_chassis_asset_tag": "NA",
+                            "ansible_chassis_serial": "NA",
+                            "ansible_chassis_vendor": "Red Hat",
+                            "ansible_chassis_version": "RHEL 7.6.0 PC (i440FX + PIIX, 1996)",
+                            "ansible_cmdline": {
+                                "BOOT_IMAGE": "(hd0,msdos1)/vmlinuz-4.18.0-372.32.1.el8_6.x86_64",
+                                "crashkernel": "auto",
+                                "nofb": true,
+                                "quiet": true,
+                                "rd.lvm.lv": "rhel_aap/swap",
+                                "resume": "/dev/mapper/rhel_aap-swap",
+                                "rhgb": true,
+                                "ro": true,
+                                "root": "/dev/mapper/rhel_aap-root",
+                                "splash": "quiet"
+                            },
+                            "ansible_date_time": {
+                                "date": "2023-01-10",
+                                "day": "10",
+                                "epoch": "1673361732",
+                                "epoch_int": "1673361732",
+                                "hour": "14",
+                                "iso8601": "2023-01-10T14:42:12Z",
+                                "iso8601_basic": "20230110T144212040244",
+                                "iso8601_basic_short": "20230110T144212",
+                                "iso8601_micro": "2023-01-10T14:42:12.040244Z",
+                                "minute": "42",
+                                "month": "01",
+                                "second": "12",
+                                "time": "14:42:12",
+                                "tz": "UTC",
+                                "tz_dst": "UTC",
+                                "tz_offset": "+0000",
+                                "weekday": "Tuesday",
+                                "weekday_number": "2",
+                                "weeknumber": "02",
+                                "year": "2023"
+                            },
+                            "ansible_device_links": {
+                                "ids": {},
+                                "labels": {},
+                                "masters": {
+                                    "vda2": [
+                                        "dm-0",
+                                        "dm-1",
+                                        "dm-2"
+                                    ]
+                                },
+                                "uuids": {}
+                            },
+                            "ansible_devices": {
+                                "dm-0": {
+                                    "holders": [],
+                                    "host": "",
+                                    "links": {
+                                        "ids": [],
+                                        "labels": [],
+                                        "masters": [],
+                                        "uuids": []
+                                    },
+                                    "model": null,
+                                    "partitions": {},
+                                    "removable": "0",
+                                    "rotational": "1",
+                                    "sas_address": null,
+                                    "sas_device_handle": null,
+                                    "scheduler_mode": "",
+                                    "sectors": "146800640",
+                                    "sectorsize": "512",
+                                    "size": "70.00 GB",
+                                    "support_discard": "0",
+                                    "vendor": null,
+                                    "virtual": 1
+                                },
+                                "dm-1": {
+                                    "holders": [],
+                                    "host": "",
+                                    "links": {
+                                        "ids": [],
+                                        "labels": [],
+                                        "masters": [],
+                                        "uuids": []
+                                    },
+                                    "model": null,
+                                    "partitions": {},
+                                    "removable": "0",
+                                    "rotational": "1",
+                                    "sas_address": null,
+                                    "sas_device_handle": null,
+                                    "scheduler_mode": "",
+                                    "sectors": "16539648",
+                                    "sectorsize": "512",
+                                    "size": "7.89 GB",
+                                    "support_discard": "0",
+                                    "vendor": null,
+                                    "virtual": 1
+                                },
+                                "dm-2": {
+                                    "holders": [],
+                                    "host": "",
+                                    "links": {
+                                        "ids": [],
+                                        "labels": [],
+                                        "masters": [],
+                                        "uuids": []
+                                    },
+                                    "model": null,
+                                    "partitions": {},
+                                    "removable": "0",
+                                    "rotational": "1",
+                                    "sas_address": null,
+                                    "sas_device_handle": null,
+                                    "scheduler_mode": "",
+                                    "sectors": "253984768",
+                                    "sectorsize": "512",
+                                    "size": "121.11 GB",
+                                    "support_discard": "0",
+                                    "vendor": null,
+                                    "virtual": 1
+                                },
+                                "vda": {
+                                    "holders": [],
+                                    "host": "",
+                                    "links": {
+                                        "ids": [],
+                                        "labels": [],
+                                        "masters": [],
+                                        "uuids": []
+                                    },
+                                    "model": null,
+                                    "partitions": {
+                                        "vda1": {
+                                            "holders": [],
+                                            "links": {
+                                                "ids": [],
+                                                "labels": [],
+                                                "masters": [],
+                                                "uuids": []
+                                            },
+                                            "sectors": "2097152",
+                                            "sectorsize": 512,
+                                            "size": "1.00 GB",
+                                            "start": "2048",
+                                            "uuid": null
+                                        },
+                                        "vda2": {
+                                            "holders": [
+                                                "rhel_aap-swap",
+                                                "rhel_aap-home",
+                                                "rhel_aap-root"
+                                            ],
+                                            "links": {
+                                                "ids": [],
+                                                "labels": [],
+                                                "masters": [
+                                                    "dm-0",
+                                                    "dm-1",
+                                                    "dm-2"
+                                                ],
+                                                "uuids": []
+                                            },
+                                            "sectors": "417331200",
+                                            "sectorsize": 512,
+                                            "size": "199.00 GB",
+                                            "start": "2099200",
+                                            "uuid": null
+                                        }
+                                    },
+                                    "removable": "0",
+                                    "rotational": "1",
+                                    "sas_address": null,
+                                    "sas_device_handle": null,
+                                    "scheduler_mode": "mq-deadline",
+                                    "sectors": "419430400",
+                                    "sectorsize": "512",
+                                    "size": "200.00 GB",
+                                    "support_discard": "0",
+                                    "vendor": "0x1af4",
+                                    "virtual": 1
+                                }
+                            },
+                            "ansible_distribution": "RedHat",
+                            "ansible_distribution_file_parsed": true,
+                            "ansible_distribution_file_path": "/etc/redhat-release",
+                            "ansible_distribution_file_search_string": "Red Hat",
+                            "ansible_distribution_file_variety": "RedHat",
+                            "ansible_distribution_major_version": "8",
+                            "ansible_distribution_release": "Ootpa",
+                            "ansible_distribution_version": "8.7",
+                            "ansible_dns": {
+                                "nameservers": [
+                                    "192.168.122.7"
+                                ],
+                                "search": [
+                                    "transp.com"
+                                ]
+                            },
+                            "ansible_domain": "",
+                            "ansible_effective_group_id": 0,
+                            "ansible_effective_user_id": 0,
+                            "ansible_fibre_channel_wwn": [],
+                            "ansible_fips": false,
+                            "ansible_form_factor": "Other",
+                            "ansible_fqdn": "27ff5afac789",
+                            "ansible_hostname": "27ff5afac789",
+                            "ansible_hostnqn": "",
+                            "ansible_is_chroot": false,
+                            "ansible_iscsi_iqn": "",
+                            "ansible_kernel": "4.18.0-372.32.1.el8_6.x86_64",
+                            "ansible_kernel_version": "#1 SMP Fri Oct 7 12:35:10 EDT 2022",
+                            "ansible_local": {},
+                            "ansible_lsb": {},
+                            "ansible_machine": "x86_64",
+                            "ansible_machine_id": "4c326c8c39cd40b8baf98224dcdd43cd",
+                            "ansible_memfree_mb": 13807,
+                            "ansible_memory_mb": {
+                                "nocache": {
+                                    "free": 14321,
+                                    "used": 1506
+                                },
+                                "real": {
+                                    "free": 13807,
+                                    "total": 15827,
+                                    "used": 2020
+                                },
+                                "swap": {
+                                    "cached": 0,
+                                    "free": 8075,
+                                    "total": 8075,
+                                    "used": 0
+                                }
+                            },
+                            "ansible_memtotal_mb": 15827,
+                            "ansible_mounts": [
+                                {
+                                    "block_available": 14299694,
+                                    "block_size": 4096,
+                                    "block_total": 18341120,
+                                    "block_used": 4041426,
+                                    "device": "/dev/mapper/rhel_aap-root",
+                                    "fstype": "xfs",
+                                    "inode_available": 36197588,
+                                    "inode_total": 36700160,
+                                    "inode_used": 502572,
+                                    "mount": "/runner",
+                                    "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota,bind",
+                                    "size_available": 58571546624,
+                                    "size_total": 75125227520,
+                                    "uuid": "N/A"
+                                },
+                                {
+                                    "block_available": 14299694,
+                                    "block_size": 4096,
+                                    "block_total": 18341120,
+                                    "block_used": 4041426,
+                                    "device": "/dev/mapper/rhel_aap-root",
+                                    "fstype": "xfs",
+                                    "inode_available": 36197588,
+                                    "inode_total": 36700160,
+                                    "inode_used": 502572,
+                                    "mount": "/root/lab_testes",
+                                    "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota,bind",
+                                    "size_available": 58571546624,
+                                    "size_total": 75125227520,
+                                    "uuid": "N/A"
+                                },
+                                {
+                                    "block_available": 14299694,
+                                    "block_size": 4096,
+                                    "block_total": 18341120,
+                                    "block_used": 4041426,
+                                    "device": "/dev/mapper/rhel_aap-root",
+                                    "fstype": "xfs",
+                                    "inode_available": 36197588,
+                                    "inode_total": 36700160,
+                                    "inode_used": 502572,
+                                    "mount": "/runner/artifacts",
+                                    "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota,bind",
+                                    "size_available": 58571546624,
+                                    "size_total": 75125227520,
+                                    "uuid": "N/A"
+                                },
+                                {
+                                    "block_available": 14299694,
+                                    "block_size": 4096,
+                                    "block_total": 18341120,
+                                    "block_used": 4041426,
+                                    "device": "/dev/mapper/rhel_aap-root",
+                                    "fstype": "xfs",
+                                    "inode_available": 36197588,
+                                    "inode_total": 36700160,
+                                    "inode_used": 502572,
+                                    "mount": "/root/.ssh",
+                                    "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota,bind",
+                                    "size_available": 58571546624,
+                                    "size_total": 75125227520,
+                                    "uuid": "N/A"
+                                },
+                                {
+                                    "block_available": 14299694,
+                                    "block_size": 4096,
+                                    "block_total": 18341120,
+                                    "block_used": 4041426,
+                                    "device": "/dev/mapper/rhel_aap-root",
+                                    "fstype": "xfs",
+                                    "inode_available": 36197588,
+                                    "inode_total": 36700160,
+                                    "inode_used": 502572,
+                                    "mount": "/home/runner/.ssh",
+                                    "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota,bind",
+                                    "size_available": 58571546624,
+                                    "size_total": 75125227520,
+                                    "uuid": "N/A"
+                                }
+                            ],
+                            "ansible_nodename": "27ff5afac789",
+                            "ansible_os_family": "RedHat",
+                            "ansible_pkg_mgr": "dnf",
+                            "ansible_proc_cmdline": {
+                                "BOOT_IMAGE": "(hd0,msdos1)/vmlinuz-4.18.0-372.32.1.el8_6.x86_64",
+                                "crashkernel": "auto",
+                                "nofb": true,
+                                "quiet": true,
+                                "rd.lvm.lv": [
+                                    "rhel_aap/root",
+                                    "rhel_aap/swap"
+                                ],
+                                "resume": "/dev/mapper/rhel_aap-swap",
+                                "rhgb": true,
+                                "ro": true,
+                                "root": "/dev/mapper/rhel_aap-root",
+                                "splash": "quiet"
+                            },
+                            "ansible_processor": [
+                                "0",
+                                "GenuineIntel",
+                                "QEMU Virtual CPU version 2.5+",
+                                "1",
+                                "GenuineIntel",
+                                "QEMU Virtual CPU version 2.5+",
+                                "2",
+                                "GenuineIntel",
+                                "QEMU Virtual CPU version 2.5+",
+                                "3",
+                                "GenuineIntel",
+                                "QEMU Virtual CPU version 2.5+"
+                            ],
+                            "ansible_processor_cores": 1,
+                            "ansible_processor_count": 4,
+                            "ansible_processor_nproc": 4,
+                            "ansible_processor_threads_per_core": 1,
+                            "ansible_processor_vcpus": 4,
+                            "ansible_product_name": "KVM",
+                            "ansible_product_serial": "NA",
+                            "ansible_product_uuid": "df34a86e-7cc8-47e8-9802-b6587390659b",
+                            "ansible_product_version": "RHEL 7.6.0 PC (i440FX + PIIX, 1996)",
+                            "ansible_python": {
+                                "executable": "/usr/bin/python3.9",
+                                "has_sslcontext": true,
+                                "type": "cpython",
+                                "version": {
+                                    "major": 3,
+                                    "micro": 13,
+                                    "minor": 9,
+                                    "releaselevel": "final",
+                                    "serial": 0
+                                },
+                                "version_info": [
+                                    3,
+                                    9,
+                                    13,
+                                    "final",
+                                    0
+                                ]
+                            },
+                            "ansible_python_version": "3.9.13",
+                            "ansible_real_group_id": 0,
+                            "ansible_real_user_id": 0,
+                            "ansible_selinux": {
+                                "status": "disabled"
+                            },
+                            "ansible_selinux_python_present": true,
+                            "ansible_service_mgr": "dumb-init",
+                            "ansible_swapfree_mb": 8075,
+                            "ansible_swaptotal_mb": 8075,
+                            "ansible_system": "Linux",
+                            "ansible_system_capabilities": [
+                                "ep"
+                            ],
+                            "ansible_system_capabilities_enforced": "True",
+                            "ansible_system_vendor": "Red Hat",
+                            "ansible_uptime_seconds": 2656,
+                            "ansible_user_dir": "/home/runner",
+                            "ansible_user_gecos": "root",
+                            "ansible_user_gid": 0,
+                            "ansible_user_id": "root",
+                            "ansible_user_shell": "/bin/bash",
+                            "ansible_user_uid": 0,
+                            "ansible_userspace_architecture": "x86_64",
+                            "ansible_userspace_bits": "64",
+                            "ansible_virtualization_role": "guest",
+                            "ansible_virtualization_tech_guest": [
+                                "kvm",
+                                "container"
+                            ],
+                            "ansible_virtualization_tech_host": [],
+                            "ansible_virtualization_type": "container",
+                            "gather_subset": [
+                                "all"
+                            ],
+                            "module_setup": true
+                        },
+                        "changed": false,
+                        "deprecations": [],
+                        "warnings": []
+                    },
+                    "resolved_action": "ansible.builtin.gather_facts",
+                    "start": "2023-01-10T14:42:11.599606",
+                    "task": "Gathering Facts",
+                    "task_action": "gather_facts",
+                    "task_args": "",
+                    "task_path": "/root/lab_testes/teste.yml:2",
+                    "task_uuid": "a2a696d5-b83f-9404-07c0-000000000012",
+                    "uuid": "643effa2-394d-4023-b6f1-c60be6fb798d"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "2s",
+                    "__host": "localhost",
+                    "__number": 1,
+                    "__result": "Ok",
+                    "__task": "Download JSON content play",
+                    "__task_action": "uri",
+                    "duration": 1.763529,
+                    "end": "2023-01-10T14:42:14.076274",
+                    "event_loop": null,
+                    "host": "localhost",
+                    "play": "JsonQuery Playbook",
+                    "play_pattern": "localhost",
+                    "play_uuid": "a2a696d5-b83f-9404-07c0-000000000009",
+                    "playbook": "/root/lab_testes/teste.yml",
+                    "playbook_uuid": "6ecdd78a-4d3a-4d91-99bc-fcacbe45c89f",
+                    "remote_addr": "127.0.0.1",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "access_control_allow_credentials": "true",
+                        "age": "16611",
+                        "alt_svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+                        "cache_control": "max-age=43200",
+                        "cf_cache_status": "HIT",
+                        "cf_ray": "78762d95ac7da78a-EZE",
+                        "changed": false,
+                        "connection": "close",
+                        "content": "[\n  {\n    \"id\": 1,\n    \"name\": \"Leanne Graham\",\n    \"username\": \"Bret\",\n    \"email\": \"Sincere@april.biz\",\n    \"address\": {\n      \"street\": \"Kulas Light\",\n      \"suite\": \"Apt. 556\",\n      \"city\": \"Gwenborough\",\n      \"zipcode\": \"92998-3874\",\n      \"geo\": {\n        \"lat\": \"-37.3159\",\n        \"lng\": \"81.1496\"\n      }\n    },\n    \"phone\": \"1-770-736-8031 x56442\",\n    \"website\": \"hildegard.org\",\n    \"company\": {\n      \"name\": \"Romaguera-Crona\",\n      \"catchPhrase\": \"Multi-layered client-server neural-net\",\n      \"bs\": \"harness real-time e-markets\"\n    }\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Ervin Howell\",\n    \"username\": \"Antonette\",\n    \"email\": \"Shanna@melissa.tv\",\n    \"address\": {\n      \"street\": \"Victor Plains\",\n      \"suite\": \"Suite 879\",\n      \"city\": \"Wisokyburgh\",\n      \"zipcode\": \"90566-7771\",\n      \"geo\": {\n        \"lat\": \"-43.9509\",\n        \"lng\": \"-34.4618\"\n      }\n    },\n    \"phone\": \"010-692-6593 x09125\",\n    \"website\": \"anastasia.net\",\n    \"company\": {\n      \"name\": \"Deckow-Crist\",\n      \"catchPhrase\": \"Proactive didactic contingency\",\n      \"bs\": \"synergize scalable supply-chains\"\n    }\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Clementine Bauch\",\n    \"username\": \"Samantha\",\n    \"email\": \"Nathan@yesenia.net\",\n    \"address\": {\n      \"street\": \"Douglas Extension\",\n      \"suite\": \"Suite 847\",\n      \"city\": \"McKenziehaven\",\n      \"zipcode\": \"59590-4157\",\n      \"geo\": {\n        \"lat\": \"-68.6102\",\n        \"lng\": \"-47.0653\"\n      }\n    },\n    \"phone\": \"1-463-123-4447\",\n    \"website\": \"ramiro.info\",\n    \"company\": {\n      \"name\": \"Romaguera-Jacobson\",\n      \"catchPhrase\": \"Face to face bifurcated interface\",\n      \"bs\": \"e-enable strategic applications\"\n    }\n  },\n  {\n    \"id\": 4,\n    \"name\": \"Patricia Lebsack\",\n    \"username\": \"Karianne\",\n    \"email\": \"Julianne.OConner@kory.org\",\n    \"address\": {\n      \"street\": \"Hoeger Mall\",\n      \"suite\": \"Apt. 692\",\n      \"city\": \"South Elvis\",\n      \"zipcode\": \"53919-4257\",\n      \"geo\": {\n        \"lat\": \"29.4572\",\n        \"lng\": \"-164.2990\"\n      }\n    },\n    \"phone\": \"493-170-9623 x156\",\n    \"website\": \"kale.biz\",\n    \"company\": {\n      \"name\": \"Robel-Corkery\",\n      \"catchPhrase\": \"Multi-tiered zero tolerance productivity\",\n      \"bs\": \"transition cutting-edge web services\"\n    }\n  },\n  {\n    \"id\": 5,\n    \"name\": \"Chelsey Dietrich\",\n    \"username\": \"Kamren\",\n    \"email\": \"Lucio_Hettinger@annie.ca\",\n    \"address\": {\n      \"street\": \"Skiles Walks\",\n      \"suite\": \"Suite 351\",\n      \"city\": \"Roscoeview\",\n      \"zipcode\": \"33263\",\n      \"geo\": {\n        \"lat\": \"-31.8129\",\n        \"lng\": \"62.5342\"\n      }\n    },\n    \"phone\": \"(254)954-1289\",\n    \"website\": \"demarco.info\",\n    \"company\": {\n      \"name\": \"Keebler LLC\",\n      \"catchPhrase\": \"User-centric fault-tolerant solution\",\n      \"bs\": \"revolutionize end-to-end systems\"\n    }\n  },\n  {\n    \"id\": 6,\n    \"name\": \"Mrs. Dennis Schulist\",\n    \"username\": \"Leopoldo_Corkery\",\n    \"email\": \"Karley_Dach@jasper.info\",\n    \"address\": {\n      \"street\": \"Norberto Crossing\",\n      \"suite\": \"Apt. 950\",\n      \"city\": \"South Christy\",\n      \"zipcode\": \"23505-1337\",\n      \"geo\": {\n        \"lat\": \"-71.4197\",\n        \"lng\": \"71.7478\"\n      }\n    },\n    \"phone\": \"1-477-935-8478 x6430\",\n    \"website\": \"ola.org\",\n    \"company\": {\n      \"name\": \"Considine-Lockman\",\n      \"catchPhrase\": \"Synchronised bottom-line interface\",\n      \"bs\": \"e-enable innovative applications\"\n    }\n  },\n  {\n    \"id\": 7,\n    \"name\": \"Kurtis Weissnat\",\n    \"username\": \"Elwyn.Skiles\",\n    \"email\": \"Telly.Hoeger@billy.biz\",\n    \"address\": {\n      \"street\": \"Rex Trail\",\n      \"suite\": \"Suite 280\",\n      \"city\": \"Howemouth\",\n      \"zipcode\": \"58804-1099\",\n      \"geo\": {\n        \"lat\": \"24.8918\",\n        \"lng\": \"21.8984\"\n      }\n    },\n    \"phone\": \"210.067.6132\",\n    \"website\": \"elvis.io\",\n    \"company\": {\n      \"name\": \"Johns Group\",\n      \"catchPhrase\": \"Configurable multimedia task-force\",\n      \"bs\": \"generate enterprise e-tailers\"\n    }\n  },\n  {\n    \"id\": 8,\n    \"name\": \"Nicholas Runolfsdottir V\",\n    \"username\": \"Maxime_Nienow\",\n    \"email\": \"Sherwood@rosamond.me\",\n    \"address\": {\n      \"street\": \"Ellsworth Summit\",\n      \"suite\": \"Suite 729\",\n      \"city\": \"Aliyaview\",\n      \"zipcode\": \"45169\",\n      \"geo\": {\n        \"lat\": \"-14.3990\",\n        \"lng\": \"-120.7677\"\n      }\n    },\n    \"phone\": \"586.493.6943 x140\",\n    \"website\": \"jacynthe.com\",\n    \"company\": {\n      \"name\": \"Abernathy Group\",\n      \"catchPhrase\": \"Implemented secondary concept\",\n      \"bs\": \"e-enable extensible e-tailers\"\n    }\n  },\n  {\n    \"id\": 9,\n    \"name\": \"Glenna Reichert\",\n    \"username\": \"Delphine\",\n    \"email\": \"Chaim_McDermott@dana.io\",\n    \"address\": {\n      \"street\": \"Dayna Park\",\n      \"suite\": \"Suite 449\",\n      \"city\": \"Bartholomebury\",\n      \"zipcode\": \"76495-3109\",\n      \"geo\": {\n        \"lat\": \"24.6463\",\n        \"lng\": \"-168.8889\"\n      }\n    },\n    \"phone\": \"(775)976-6794 x41206\",\n    \"website\": \"conrad.com\",\n    \"company\": {\n      \"name\": \"Yost and Sons\",\n      \"catchPhrase\": \"Switchable contextually-based project\",\n      \"bs\": \"aggregate real-time technologies\"\n    }\n  },\n  {\n    \"id\": 10,\n    \"name\": \"Clementina DuBuque\",\n    \"username\": \"Moriah.Stanton\",\n    \"email\": \"Rey.Padberg@karina.biz\",\n    \"address\": {\n      \"street\": \"Kattie Turnpike\",\n      \"suite\": \"Suite 198\",\n      \"city\": \"Lebsackbury\",\n      \"zipcode\": \"31428-2261\",\n      \"geo\": {\n        \"lat\": \"-38.2386\",\n        \"lng\": \"57.2232\"\n      }\n    },\n    \"phone\": \"024-648-3804\",\n    \"website\": \"ambrose.net\",\n    \"company\": {\n      \"name\": \"Hoeger LLC\",\n      \"catchPhrase\": \"Centralized empowering task-force\",\n      \"bs\": \"target end-to-end models\"\n    }\n  }\n]",
+                        "content_type": "application/json; charset=utf-8",
+                        "cookies": {},
+                        "cookies_string": "",
+                        "date": "Tue, 10 Jan 2023 14:42:14 GMT",
+                        "elapsed": 1,
+                        "etag": "W/\"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ\"",
+                        "expires": "-1",
+                        "invocation": {
+                            "module_args": {
+                                "attributes": null,
+                                "body": null,
+                                "body_format": "raw",
+                                "ca_path": null,
+                                "client_cert": null,
+                                "client_key": null,
+                                "creates": null,
+                                "dest": null,
+                                "follow_redirects": "safe",
+                                "force": false,
+                                "force_basic_auth": false,
+                                "group": null,
+                                "headers": {},
+                                "http_agent": "ansible-httpget",
+                                "method": "GET",
+                                "mode": null,
+                                "owner": null,
+                                "remote_src": false,
+                                "removes": null,
+                                "return_content": true,
+                                "selevel": null,
+                                "serole": null,
+                                "setype": null,
+                                "seuser": null,
+                                "src": null,
+                                "status_code": [
+                                    200
+                                ],
+                                "timeout": 30,
+                                "unix_socket": null,
+                                "unredirected_headers": [],
+                                "unsafe_writes": true,
+                                "url": "https://jsonplaceholder.typicode.com/users",
+                                "url_password": null,
+                                "url_username": null,
+                                "use_gssapi": false,
+                                "use_proxy": true,
+                                "validate_certs": true
+                            }
+                        },
+                        "json": [
+                            {
+                                "address": {
+                                    "city": "Gwenborough",
+                                    "geo": {
+                                        "lat": "-37.3159",
+                                        "lng": "81.1496"
+                                    },
+                                    "street": "Kulas Light",
+                                    "suite": "Apt. 556",
+                                    "zipcode": "92998-3874"
+                                },
+                                "company": {
+                                    "bs": "harness real-time e-markets",
+                                    "catchPhrase": "Multi-layered client-server neural-net",
+                                    "name": "Romaguera-Crona"
+                                },
+                                "email": "Sincere@april.biz",
+                                "id": 1,
+                                "name": "Leanne Graham",
+                                "phone": "1-770-736-8031 x56442",
+                                "username": "Bret",
+                                "website": "hildegard.org"
+                            },
+                            {
+                                "address": {
+                                    "city": "Wisokyburgh",
+                                    "geo": {
+                                        "lat": "-43.9509",
+                                        "lng": "-34.4618"
+                                    },
+                                    "street": "Victor Plains",
+                                    "suite": "Suite 879",
+                                    "zipcode": "90566-7771"
+                                },
+                                "company": {
+                                    "bs": "synergize scalable supply-chains",
+                                    "catchPhrase": "Proactive didactic contingency",
+                                    "name": "Deckow-Crist"
+                                },
+                                "email": "Shanna@melissa.tv",
+                                "id": 2,
+                                "name": "Ervin Howell",
+                                "phone": "010-692-6593 x09125",
+                                "username": "Antonette",
+                                "website": "anastasia.net"
+                            },
+                            {
+                                "address": {
+                                    "city": "McKenziehaven",
+                                    "geo": {
+                                        "lat": "-68.6102",
+                                        "lng": "-47.0653"
+                                    },
+                                    "street": "Douglas Extension",
+                                    "suite": "Suite 847",
+                                    "zipcode": "59590-4157"
+                                },
+                                "company": {
+                                    "bs": "e-enable strategic applications",
+                                    "catchPhrase": "Face to face bifurcated interface",
+                                    "name": "Romaguera-Jacobson"
+                                },
+                                "email": "Nathan@yesenia.net",
+                                "id": 3,
+                                "name": "Clementine Bauch",
+                                "phone": "1-463-123-4447",
+                                "username": "Samantha",
+                                "website": "ramiro.info"
+                            },
+                            {
+                                "address": {
+                                    "city": "South Elvis",
+                                    "geo": {
+                                        "lat": "29.4572",
+                                        "lng": "-164.2990"
+                                    },
+                                    "street": "Hoeger Mall",
+                                    "suite": "Apt. 692",
+                                    "zipcode": "53919-4257"
+                                },
+                                "company": {
+                                    "bs": "transition cutting-edge web services",
+                                    "catchPhrase": "Multi-tiered zero tolerance productivity",
+                                    "name": "Robel-Corkery"
+                                },
+                                "email": "Julianne.OConner@kory.org",
+                                "id": 4,
+                                "name": "Patricia Lebsack",
+                                "phone": "493-170-9623 x156",
+                                "username": "Karianne",
+                                "website": "kale.biz"
+                            },
+                            {
+                                "address": {
+                                    "city": "Roscoeview",
+                                    "geo": {
+                                        "lat": "-31.8129",
+                                        "lng": "62.5342"
+                                    },
+                                    "street": "Skiles Walks",
+                                    "suite": "Suite 351",
+                                    "zipcode": "33263"
+                                },
+                                "company": {
+                                    "bs": "revolutionize end-to-end systems",
+                                    "catchPhrase": "User-centric fault-tolerant solution",
+                                    "name": "Keebler LLC"
+                                },
+                                "email": "Lucio_Hettinger@annie.ca",
+                                "id": 5,
+                                "name": "Chelsey Dietrich",
+                                "phone": "(254)954-1289",
+                                "username": "Kamren",
+                                "website": "demarco.info"
+                            },
+                            {
+                                "address": {
+                                    "city": "South Christy",
+                                    "geo": {
+                                        "lat": "-71.4197",
+                                        "lng": "71.7478"
+                                    },
+                                    "street": "Norberto Crossing",
+                                    "suite": "Apt. 950",
+                                    "zipcode": "23505-1337"
+                                },
+                                "company": {
+                                    "bs": "e-enable innovative applications",
+                                    "catchPhrase": "Synchronised bottom-line interface",
+                                    "name": "Considine-Lockman"
+                                },
+                                "email": "Karley_Dach@jasper.info",
+                                "id": 6,
+                                "name": "Mrs. Dennis Schulist",
+                                "phone": "1-477-935-8478 x6430",
+                                "username": "Leopoldo_Corkery",
+                                "website": "ola.org"
+                            },
+                            {
+                                "address": {
+                                    "city": "Howemouth",
+                                    "geo": {
+                                        "lat": "24.8918",
+                                        "lng": "21.8984"
+                                    },
+                                    "street": "Rex Trail",
+                                    "suite": "Suite 280",
+                                    "zipcode": "58804-1099"
+                                },
+                                "company": {
+                                    "bs": "generate enterprise e-tailers",
+                                    "catchPhrase": "Configurable multimedia task-force",
+                                    "name": "Johns Group"
+                                },
+                                "email": "Telly.Hoeger@billy.biz",
+                                "id": 7,
+                                "name": "Kurtis Weissnat",
+                                "phone": "210.067.6132",
+                                "username": "Elwyn.Skiles",
+                                "website": "elvis.io"
+                            },
+                            {
+                                "address": {
+                                    "city": "Aliyaview",
+                                    "geo": {
+                                        "lat": "-14.3990",
+                                        "lng": "-120.7677"
+                                    },
+                                    "street": "Ellsworth Summit",
+                                    "suite": "Suite 729",
+                                    "zipcode": "45169"
+                                },
+                                "company": {
+                                    "bs": "e-enable extensible e-tailers",
+                                    "catchPhrase": "Implemented secondary concept",
+                                    "name": "Abernathy Group"
+                                },
+                                "email": "Sherwood@rosamond.me",
+                                "id": 8,
+                                "name": "Nicholas Runolfsdottir V",
+                                "phone": "586.493.6943 x140",
+                                "username": "Maxime_Nienow",
+                                "website": "jacynthe.com"
+                            },
+                            {
+                                "address": {
+                                    "city": "Bartholomebury",
+                                    "geo": {
+                                        "lat": "24.6463",
+                                        "lng": "-168.8889"
+                                    },
+                                    "street": "Dayna Park",
+                                    "suite": "Suite 449",
+                                    "zipcode": "76495-3109"
+                                },
+                                "company": {
+                                    "bs": "aggregate real-time technologies",
+                                    "catchPhrase": "Switchable contextually-based project",
+                                    "name": "Yost and Sons"
+                                },
+                                "email": "Chaim_McDermott@dana.io",
+                                "id": 9,
+                                "name": "Glenna Reichert",
+                                "phone": "(775)976-6794 x41206",
+                                "username": "Delphine",
+                                "website": "conrad.com"
+                            },
+                            {
+                                "address": {
+                                    "city": "Lebsackbury",
+                                    "geo": {
+                                        "lat": "-38.2386",
+                                        "lng": "57.2232"
+                                    },
+                                    "street": "Kattie Turnpike",
+                                    "suite": "Suite 198",
+                                    "zipcode": "31428-2261"
+                                },
+                                "company": {
+                                    "bs": "target end-to-end models",
+                                    "catchPhrase": "Centralized empowering task-force",
+                                    "name": "Hoeger LLC"
+                                },
+                                "email": "Rey.Padberg@karina.biz",
+                                "id": 10,
+                                "name": "Clementina DuBuque",
+                                "phone": "024-648-3804",
+                                "username": "Moriah.Stanton",
+                                "website": "ambrose.net"
+                            }
+                        ],
+                        "msg": "OK (unknown bytes)",
+                        "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+                        "pragma": "no-cache",
+                        "redirected": false,
+                        "report_to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=gjmXOxqlKeqdKGJewLYU9bdSokhVosoBz5GEaMqmkvcnSzpedo5Oq%2BKgqyNVsxl%2BnEYYK6nvjH%2BVusLBAyfmW6ARt%2Bx3RSAIh%2F08m8g%2F2jphd5G2qC%2Bfpjeaws5iollttUDO5AtfKYM2ftwit3s6\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+                        "server": "cloudflare",
+                        "server_timing": "cf-q-config;dur=7.0000000960135e-06",
+                        "status": 200,
+                        "transfer_encoding": "chunked",
+                        "url": "https://jsonplaceholder.typicode.com/users",
+                        "vary": "Origin, Accept-Encoding",
+                        "via": "1.1 vegur",
+                        "x_content_type_options": "nosniff",
+                        "x_powered_by": "Express",
+                        "x_ratelimit_limit": "1000",
+                        "x_ratelimit_remaining": "999",
+                        "x_ratelimit_reset": "1670837840"
+                    },
+                    "resolved_action": "ansible.builtin.uri",
+                    "start": "2023-01-10T14:42:12.312745",
+                    "task": "Download JSON content play",
+                    "task_action": "uri",
+                    "task_args": "",
+                    "task_path": "/root/lab_testes/teste.yml:5",
+                    "task_uuid": "a2a696d5-b83f-9404-07c0-00000000000b",
+                    "uuid": "6f16cac0-a647-4645-a6b8-f08c0096a138"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "localhost",
+                    "__number": 2,
+                    "__result": "Ok",
+                    "__task": "Collecting UserName and Mobile Number info",
+                    "__task_action": "set_fact",
+                    "duration": 0.108116,
+                    "end": "2023-01-10T14:42:14.199840",
+                    "event_loop": "items",
+                    "host": "localhost",
+                    "play": "JsonQuery Playbook",
+                    "play_pattern": "localhost",
+                    "play_uuid": "a2a696d5-b83f-9404-07c0-000000000009",
+                    "playbook": "/root/lab_testes/teste.yml",
+                    "playbook_uuid": "6ecdd78a-4d3a-4d91-99bc-fcacbe45c89f",
+                    "remote_addr": "127.0.0.1",
+                    "res": {
+                        "changed": false,
+                        "msg": "All items completed",
+                        "results": [
+                            {
+                                "_ansible_item_label": {
+                                    "address": {
+                                        "city": "Gwenborough",
+                                        "geo": {
+                                            "lat": "-37.3159",
+                                            "lng": "81.1496"
+                                        },
+                                        "street": "Kulas Light",
+                                        "suite": "Apt. 556",
+                                        "zipcode": "92998-3874"
+                                    },
+                                    "company": {
+                                        "bs": "harness real-time e-markets",
+                                        "catchPhrase": "Multi-layered client-server neural-net",
+                                        "name": "Romaguera-Crona"
+                                    },
+                                    "email": "Sincere@april.biz",
+                                    "id": 1,
+                                    "name": "Leanne Graham",
+                                    "phone": "1-770-736-8031 x56442",
+                                    "username": "Bret",
+                                    "website": "hildegard.org"
+                                },
+                                "_ansible_no_log": null,
+                                "ansible_facts": {
+                                    "phonebook": {
+                                        "Leanne Graham": "1-770-736-8031 x56442"
+                                    }
+                                },
+                                "ansible_loop_var": "item",
+                                "changed": false,
+                                "failed": false,
+                                "item": {
+                                    "address": {
+                                        "city": "Gwenborough",
+                                        "geo": {
+                                            "lat": "-37.3159",
+                                            "lng": "81.1496"
+                                        },
+                                        "street": "Kulas Light",
+                                        "suite": "Apt. 556",
+                                        "zipcode": "92998-3874"
+                                    },
+                                    "company": {
+                                        "bs": "harness real-time e-markets",
+                                        "catchPhrase": "Multi-layered client-server neural-net",
+                                        "name": "Romaguera-Crona"
+                                    },
+                                    "email": "Sincere@april.biz",
+                                    "id": 1,
+                                    "name": "Leanne Graham",
+                                    "phone": "1-770-736-8031 x56442",
+                                    "username": "Bret",
+                                    "website": "hildegard.org"
+                                }
+                            },
+                            {
+                                "_ansible_item_label": {
+                                    "address": {
+                                        "city": "Wisokyburgh",
+                                        "geo": {
+                                            "lat": "-43.9509",
+                                            "lng": "-34.4618"
+                                        },
+                                        "street": "Victor Plains",
+                                        "suite": "Suite 879",
+                                        "zipcode": "90566-7771"
+                                    },
+                                    "company": {
+                                        "bs": "synergize scalable supply-chains",
+                                        "catchPhrase": "Proactive didactic contingency",
+                                        "name": "Deckow-Crist"
+                                    },
+                                    "email": "Shanna@melissa.tv",
+                                    "id": 2,
+                                    "name": "Ervin Howell",
+                                    "phone": "010-692-6593 x09125",
+                                    "username": "Antonette",
+                                    "website": "anastasia.net"
+                                },
+                                "_ansible_no_log": null,
+                                "ansible_facts": {
+                                    "phonebook": {
+                                        "Ervin Howell": "010-692-6593 x09125",
+                                        "Leanne Graham": "1-770-736-8031 x56442"
+                                    }
+                                },
+                                "ansible_loop_var": "item",
+                                "changed": false,
+                                "failed": false,
+                                "item": {
+                                    "address": {
+                                        "city": "Wisokyburgh",
+                                        "geo": {
+                                            "lat": "-43.9509",
+                                            "lng": "-34.4618"
+                                        },
+                                        "street": "Victor Plains",
+                                        "suite": "Suite 879",
+                                        "zipcode": "90566-7771"
+                                    },
+                                    "company": {
+                                        "bs": "synergize scalable supply-chains",
+                                        "catchPhrase": "Proactive didactic contingency",
+                                        "name": "Deckow-Crist"
+                                    },
+                                    "email": "Shanna@melissa.tv",
+                                    "id": 2,
+                                    "name": "Ervin Howell",
+                                    "phone": "010-692-6593 x09125",
+                                    "username": "Antonette",
+                                    "website": "anastasia.net"
+                                }
+                            },
+                            {
+                                "_ansible_item_label": {
+                                    "address": {
+                                        "city": "McKenziehaven",
+                                        "geo": {
+                                            "lat": "-68.6102",
+                                            "lng": "-47.0653"
+                                        },
+                                        "street": "Douglas Extension",
+                                        "suite": "Suite 847",
+                                        "zipcode": "59590-4157"
+                                    },
+                                    "company": {
+                                        "bs": "e-enable strategic applications",
+                                        "catchPhrase": "Face to face bifurcated interface",
+                                        "name": "Romaguera-Jacobson"
+                                    },
+                                    "email": "Nathan@yesenia.net",
+                                    "id": 3,
+                                    "name": "Clementine Bauch",
+                                    "phone": "1-463-123-4447",
+                                    "username": "Samantha",
+                                    "website": "ramiro.info"
+                                },
+                                "_ansible_no_log": null,
+                                "ansible_facts": {
+                                    "phonebook": {
+                                        "Clementine Bauch": "1-463-123-4447",
+                                        "Ervin Howell": "010-692-6593 x09125",
+                                        "Leanne Graham": "1-770-736-8031 x56442"
+                                    }
+                                },
+                                "ansible_loop_var": "item",
+                                "changed": false,
+                                "failed": false,
+                                "item": {
+                                    "address": {
+                                        "city": "McKenziehaven",
+                                        "geo": {
+                                            "lat": "-68.6102",
+                                            "lng": "-47.0653"
+                                        },
+                                        "street": "Douglas Extension",
+                                        "suite": "Suite 847",
+                                        "zipcode": "59590-4157"
+                                    },
+                                    "company": {
+                                        "bs": "e-enable strategic applications",
+                                        "catchPhrase": "Face to face bifurcated interface",
+                                        "name": "Romaguera-Jacobson"
+                                    },
+                                    "email": "Nathan@yesenia.net",
+                                    "id": 3,
+                                    "name": "Clementine Bauch",
+                                    "phone": "1-463-123-4447",
+                                    "username": "Samantha",
+                                    "website": "ramiro.info"
+                                }
+                            },
+                            {
+                                "_ansible_item_label": {
+                                    "address": {
+                                        "city": "South Elvis",
+                                        "geo": {
+                                            "lat": "29.4572",
+                                            "lng": "-164.2990"
+                                        },
+                                        "street": "Hoeger Mall",
+                                        "suite": "Apt. 692",
+                                        "zipcode": "53919-4257"
+                                    },
+                                    "company": {
+                                        "bs": "transition cutting-edge web services",
+                                        "catchPhrase": "Multi-tiered zero tolerance productivity",
+                                        "name": "Robel-Corkery"
+                                    },
+                                    "email": "Julianne.OConner@kory.org",
+                                    "id": 4,
+                                    "name": "Patricia Lebsack",
+                                    "phone": "493-170-9623 x156",
+                                    "username": "Karianne",
+                                    "website": "kale.biz"
+                                },
+                                "_ansible_no_log": null,
+                                "ansible_facts": {
+                                    "phonebook": {
+                                        "Clementine Bauch": "1-463-123-4447",
+                                        "Ervin Howell": "010-692-6593 x09125",
+                                        "Leanne Graham": "1-770-736-8031 x56442",
+                                        "Patricia Lebsack": "493-170-9623 x156"
+                                    }
+                                },
+                                "ansible_loop_var": "item",
+                                "changed": false,
+                                "failed": false,
+                                "item": {
+                                    "address": {
+                                        "city": "South Elvis",
+                                        "geo": {
+                                            "lat": "29.4572",
+                                            "lng": "-164.2990"
+                                        },
+                                        "street": "Hoeger Mall",
+                                        "suite": "Apt. 692",
+                                        "zipcode": "53919-4257"
+                                    },
+                                    "company": {
+                                        "bs": "transition cutting-edge web services",
+                                        "catchPhrase": "Multi-tiered zero tolerance productivity",
+                                        "name": "Robel-Corkery"
+                                    },
+                                    "email": "Julianne.OConner@kory.org",
+                                    "id": 4,
+                                    "name": "Patricia Lebsack",
+                                    "phone": "493-170-9623 x156",
+                                    "username": "Karianne",
+                                    "website": "kale.biz"
+                                }
+                            },
+                            {
+                                "_ansible_item_label": {
+                                    "address": {
+                                        "city": "Roscoeview",
+                                        "geo": {
+                                            "lat": "-31.8129",
+                                            "lng": "62.5342"
+                                        },
+                                        "street": "Skiles Walks",
+                                        "suite": "Suite 351",
+                                        "zipcode": "33263"
+                                    },
+                                    "company": {
+                                        "bs": "revolutionize end-to-end systems",
+                                        "catchPhrase": "User-centric fault-tolerant solution",
+                                        "name": "Keebler LLC"
+                                    },
+                                    "email": "Lucio_Hettinger@annie.ca",
+                                    "id": 5,
+                                    "name": "Chelsey Dietrich",
+                                    "phone": "(254)954-1289",
+                                    "username": "Kamren",
+                                    "website": "demarco.info"
+                                },
+                                "_ansible_no_log": null,
+                                "ansible_facts": {
+                                    "phonebook": {
+                                        "Chelsey Dietrich": "(254)954-1289",
+                                        "Clementine Bauch": "1-463-123-4447",
+                                        "Ervin Howell": "010-692-6593 x09125",
+                                        "Leanne Graham": "1-770-736-8031 x56442",
+                                        "Patricia Lebsack": "493-170-9623 x156"
+                                    }
+                                },
+                                "ansible_loop_var": "item",
+                                "changed": false,
+                                "failed": false,
+                                "item": {
+                                    "address": {
+                                        "city": "Roscoeview",
+                                        "geo": {
+                                            "lat": "-31.8129",
+                                            "lng": "62.5342"
+                                        },
+                                        "street": "Skiles Walks",
+                                        "suite": "Suite 351",
+                                        "zipcode": "33263"
+                                    },
+                                    "company": {
+                                        "bs": "revolutionize end-to-end systems",
+                                        "catchPhrase": "User-centric fault-tolerant solution",
+                                        "name": "Keebler LLC"
+                                    },
+                                    "email": "Lucio_Hettinger@annie.ca",
+                                    "id": 5,
+                                    "name": "Chelsey Dietrich",
+                                    "phone": "(254)954-1289",
+                                    "username": "Kamren",
+                                    "website": "demarco.info"
+                                }
+                            },
+                            {
+                                "_ansible_item_label": {
+                                    "address": {
+                                        "city": "South Christy",
+                                        "geo": {
+                                            "lat": "-71.4197",
+                                            "lng": "71.7478"
+                                        },
+                                        "street": "Norberto Crossing",
+                                        "suite": "Apt. 950",
+                                        "zipcode": "23505-1337"
+                                    },
+                                    "company": {
+                                        "bs": "e-enable innovative applications",
+                                        "catchPhrase": "Synchronised bottom-line interface",
+                                        "name": "Considine-Lockman"
+                                    },
+                                    "email": "Karley_Dach@jasper.info",
+                                    "id": 6,
+                                    "name": "Mrs. Dennis Schulist",
+                                    "phone": "1-477-935-8478 x6430",
+                                    "username": "Leopoldo_Corkery",
+                                    "website": "ola.org"
+                                },
+                                "_ansible_no_log": null,
+                                "ansible_facts": {
+                                    "phonebook": {
+                                        "Chelsey Dietrich": "(254)954-1289",
+                                        "Clementine Bauch": "1-463-123-4447",
+                                        "Ervin Howell": "010-692-6593 x09125",
+                                        "Leanne Graham": "1-770-736-8031 x56442",
+                                        "Mrs. Dennis Schulist": "1-477-935-8478 x6430",
+                                        "Patricia Lebsack": "493-170-9623 x156"
+                                    }
+                                },
+                                "ansible_loop_var": "item",
+                                "changed": false,
+                                "failed": false,
+                                "item": {
+                                    "address": {
+                                        "city": "South Christy",
+                                        "geo": {
+                                            "lat": "-71.4197",
+                                            "lng": "71.7478"
+                                        },
+                                        "street": "Norberto Crossing",
+                                        "suite": "Apt. 950",
+                                        "zipcode": "23505-1337"
+                                    },
+                                    "company": {
+                                        "bs": "e-enable innovative applications",
+                                        "catchPhrase": "Synchronised bottom-line interface",
+                                        "name": "Considine-Lockman"
+                                    },
+                                    "email": "Karley_Dach@jasper.info",
+                                    "id": 6,
+                                    "name": "Mrs. Dennis Schulist",
+                                    "phone": "1-477-935-8478 x6430",
+                                    "username": "Leopoldo_Corkery",
+                                    "website": "ola.org"
+                                }
+                            },
+                            {
+                                "_ansible_item_label": {
+                                    "address": {
+                                        "city": "Howemouth",
+                                        "geo": {
+                                            "lat": "24.8918",
+                                            "lng": "21.8984"
+                                        },
+                                        "street": "Rex Trail",
+                                        "suite": "Suite 280",
+                                        "zipcode": "58804-1099"
+                                    },
+                                    "company": {
+                                        "bs": "generate enterprise e-tailers",
+                                        "catchPhrase": "Configurable multimedia task-force",
+                                        "name": "Johns Group"
+                                    },
+                                    "email": "Telly.Hoeger@billy.biz",
+                                    "id": 7,
+                                    "name": "Kurtis Weissnat",
+                                    "phone": "210.067.6132",
+                                    "username": "Elwyn.Skiles",
+                                    "website": "elvis.io"
+                                },
+                                "_ansible_no_log": null,
+                                "ansible_facts": {
+                                    "phonebook": {
+                                        "Chelsey Dietrich": "(254)954-1289",
+                                        "Clementine Bauch": "1-463-123-4447",
+                                        "Ervin Howell": "010-692-6593 x09125",
+                                        "Kurtis Weissnat": "210.067.6132",
+                                        "Leanne Graham": "1-770-736-8031 x56442",
+                                        "Mrs. Dennis Schulist": "1-477-935-8478 x6430",
+                                        "Patricia Lebsack": "493-170-9623 x156"
+                                    }
+                                },
+                                "ansible_loop_var": "item",
+                                "changed": false,
+                                "failed": false,
+                                "item": {
+                                    "address": {
+                                        "city": "Howemouth",
+                                        "geo": {
+                                            "lat": "24.8918",
+                                            "lng": "21.8984"
+                                        },
+                                        "street": "Rex Trail",
+                                        "suite": "Suite 280",
+                                        "zipcode": "58804-1099"
+                                    },
+                                    "company": {
+                                        "bs": "generate enterprise e-tailers",
+                                        "catchPhrase": "Configurable multimedia task-force",
+                                        "name": "Johns Group"
+                                    },
+                                    "email": "Telly.Hoeger@billy.biz",
+                                    "id": 7,
+                                    "name": "Kurtis Weissnat",
+                                    "phone": "210.067.6132",
+                                    "username": "Elwyn.Skiles",
+                                    "website": "elvis.io"
+                                }
+                            },
+                            {
+                                "_ansible_item_label": {
+                                    "address": {
+                                        "city": "Aliyaview",
+                                        "geo": {
+                                            "lat": "-14.3990",
+                                            "lng": "-120.7677"
+                                        },
+                                        "street": "Ellsworth Summit",
+                                        "suite": "Suite 729",
+                                        "zipcode": "45169"
+                                    },
+                                    "company": {
+                                        "bs": "e-enable extensible e-tailers",
+                                        "catchPhrase": "Implemented secondary concept",
+                                        "name": "Abernathy Group"
+                                    },
+                                    "email": "Sherwood@rosamond.me",
+                                    "id": 8,
+                                    "name": "Nicholas Runolfsdottir V",
+                                    "phone": "586.493.6943 x140",
+                                    "username": "Maxime_Nienow",
+                                    "website": "jacynthe.com"
+                                },
+                                "_ansible_no_log": null,
+                                "ansible_facts": {
+                                    "phonebook": {
+                                        "Chelsey Dietrich": "(254)954-1289",
+                                        "Clementine Bauch": "1-463-123-4447",
+                                        "Ervin Howell": "010-692-6593 x09125",
+                                        "Kurtis Weissnat": "210.067.6132",
+                                        "Leanne Graham": "1-770-736-8031 x56442",
+                                        "Mrs. Dennis Schulist": "1-477-935-8478 x6430",
+                                        "Nicholas Runolfsdottir V": "586.493.6943 x140",
+                                        "Patricia Lebsack": "493-170-9623 x156"
+                                    }
+                                },
+                                "ansible_loop_var": "item",
+                                "changed": false,
+                                "failed": false,
+                                "item": {
+                                    "address": {
+                                        "city": "Aliyaview",
+                                        "geo": {
+                                            "lat": "-14.3990",
+                                            "lng": "-120.7677"
+                                        },
+                                        "street": "Ellsworth Summit",
+                                        "suite": "Suite 729",
+                                        "zipcode": "45169"
+                                    },
+                                    "company": {
+                                        "bs": "e-enable extensible e-tailers",
+                                        "catchPhrase": "Implemented secondary concept",
+                                        "name": "Abernathy Group"
+                                    },
+                                    "email": "Sherwood@rosamond.me",
+                                    "id": 8,
+                                    "name": "Nicholas Runolfsdottir V",
+                                    "phone": "586.493.6943 x140",
+                                    "username": "Maxime_Nienow",
+                                    "website": "jacynthe.com"
+                                }
+                            },
+                            {
+                                "_ansible_item_label": {
+                                    "address": {
+                                        "city": "Bartholomebury",
+                                        "geo": {
+                                            "lat": "24.6463",
+                                            "lng": "-168.8889"
+                                        },
+                                        "street": "Dayna Park",
+                                        "suite": "Suite 449",
+                                        "zipcode": "76495-3109"
+                                    },
+                                    "company": {
+                                        "bs": "aggregate real-time technologies",
+                                        "catchPhrase": "Switchable contextually-based project",
+                                        "name": "Yost and Sons"
+                                    },
+                                    "email": "Chaim_McDermott@dana.io",
+                                    "id": 9,
+                                    "name": "Glenna Reichert",
+                                    "phone": "(775)976-6794 x41206",
+                                    "username": "Delphine",
+                                    "website": "conrad.com"
+                                },
+                                "_ansible_no_log": null,
+                                "ansible_facts": {
+                                    "phonebook": {
+                                        "Chelsey Dietrich": "(254)954-1289",
+                                        "Clementine Bauch": "1-463-123-4447",
+                                        "Ervin Howell": "010-692-6593 x09125",
+                                        "Glenna Reichert": "(775)976-6794 x41206",
+                                        "Kurtis Weissnat": "210.067.6132",
+                                        "Leanne Graham": "1-770-736-8031 x56442",
+                                        "Mrs. Dennis Schulist": "1-477-935-8478 x6430",
+                                        "Nicholas Runolfsdottir V": "586.493.6943 x140",
+                                        "Patricia Lebsack": "493-170-9623 x156"
+                                    }
+                                },
+                                "ansible_loop_var": "item",
+                                "changed": false,
+                                "failed": false,
+                                "item": {
+                                    "address": {
+                                        "city": "Bartholomebury",
+                                        "geo": {
+                                            "lat": "24.6463",
+                                            "lng": "-168.8889"
+                                        },
+                                        "street": "Dayna Park",
+                                        "suite": "Suite 449",
+                                        "zipcode": "76495-3109"
+                                    },
+                                    "company": {
+                                        "bs": "aggregate real-time technologies",
+                                        "catchPhrase": "Switchable contextually-based project",
+                                        "name": "Yost and Sons"
+                                    },
+                                    "email": "Chaim_McDermott@dana.io",
+                                    "id": 9,
+                                    "name": "Glenna Reichert",
+                                    "phone": "(775)976-6794 x41206",
+                                    "username": "Delphine",
+                                    "website": "conrad.com"
+                                }
+                            },
+                            {
+                                "_ansible_item_label": {
+                                    "address": {
+                                        "city": "Lebsackbury",
+                                        "geo": {
+                                            "lat": "-38.2386",
+                                            "lng": "57.2232"
+                                        },
+                                        "street": "Kattie Turnpike",
+                                        "suite": "Suite 198",
+                                        "zipcode": "31428-2261"
+                                    },
+                                    "company": {
+                                        "bs": "target end-to-end models",
+                                        "catchPhrase": "Centralized empowering task-force",
+                                        "name": "Hoeger LLC"
+                                    },
+                                    "email": "Rey.Padberg@karina.biz",
+                                    "id": 10,
+                                    "name": "Clementina DuBuque",
+                                    "phone": "024-648-3804",
+                                    "username": "Moriah.Stanton",
+                                    "website": "ambrose.net"
+                                },
+                                "_ansible_no_log": null,
+                                "ansible_facts": {
+                                    "phonebook": {
+                                        "Chelsey Dietrich": "(254)954-1289",
+                                        "Clementina DuBuque": "024-648-3804",
+                                        "Clementine Bauch": "1-463-123-4447",
+                                        "Ervin Howell": "010-692-6593 x09125",
+                                        "Glenna Reichert": "(775)976-6794 x41206",
+                                        "Kurtis Weissnat": "210.067.6132",
+                                        "Leanne Graham": "1-770-736-8031 x56442",
+                                        "Mrs. Dennis Schulist": "1-477-935-8478 x6430",
+                                        "Nicholas Runolfsdottir V": "586.493.6943 x140",
+                                        "Patricia Lebsack": "493-170-9623 x156"
+                                    }
+                                },
+                                "ansible_loop_var": "item",
+                                "changed": false,
+                                "failed": false,
+                                "item": {
+                                    "address": {
+                                        "city": "Lebsackbury",
+                                        "geo": {
+                                            "lat": "-38.2386",
+                                            "lng": "57.2232"
+                                        },
+                                        "street": "Kattie Turnpike",
+                                        "suite": "Suite 198",
+                                        "zipcode": "31428-2261"
+                                    },
+                                    "company": {
+                                        "bs": "target end-to-end models",
+                                        "catchPhrase": "Centralized empowering task-force",
+                                        "name": "Hoeger LLC"
+                                    },
+                                    "email": "Rey.Padberg@karina.biz",
+                                    "id": 10,
+                                    "name": "Clementina DuBuque",
+                                    "phone": "024-648-3804",
+                                    "username": "Moriah.Stanton",
+                                    "website": "ambrose.net"
+                                }
+                            }
+                        ]
+                    },
+                    "resolved_action": "ansible.builtin.set_fact",
+                    "start": "2023-01-10T14:42:14.091724",
+                    "task": "Collecting UserName and Mobile Number info",
+                    "task_action": "set_fact",
+                    "task_args": "",
+                    "task_path": "/root/lab_testes/teste.yml:11",
+                    "task_uuid": "a2a696d5-b83f-9404-07c0-00000000000c",
+                    "uuid": "23d24446-b1ff-46ab-a239-1cd552c75fee"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "localhost",
+                    "__number": 3,
+                    "__result": "Ok",
+                    "__task": "The Phonebook",
+                    "__task_action": "debug",
+                    "duration": 0.011713,
+                    "end": "2023-01-10T14:42:14.217065",
+                    "event_loop": null,
+                    "host": "localhost",
+                    "play": "JsonQuery Playbook",
+                    "play_pattern": "localhost",
+                    "play_uuid": "a2a696d5-b83f-9404-07c0-000000000009",
+                    "playbook": "/root/lab_testes/teste.yml",
+                    "playbook_uuid": "6ecdd78a-4d3a-4d91-99bc-fcacbe45c89f",
+                    "remote_addr": "127.0.0.1",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "_ansible_verbose_always": true,
+                        "changed": false,
+                        "phonebook": {
+                            "Chelsey Dietrich": "(254)954-1289",
+                            "Clementina DuBuque": "024-648-3804",
+                            "Clementine Bauch": "1-463-123-4447",
+                            "Ervin Howell": "010-692-6593 x09125",
+                            "Glenna Reichert": "(775)976-6794 x41206",
+                            "Kurtis Weissnat": "210.067.6132",
+                            "Leanne Graham": "1-770-736-8031 x56442",
+                            "Mrs. Dennis Schulist": "1-477-935-8478 x6430",
+                            "Nicholas Runolfsdottir V": "586.493.6943 x140",
+                            "Patricia Lebsack": "493-170-9623 x156"
+                        }
+                    },
+                    "resolved_action": "ansible.builtin.debug",
+                    "start": "2023-01-10T14:42:14.205352",
+                    "task": "The Phonebook",
+                    "task_action": "debug",
+                    "task_args": "",
+                    "task_path": "/root/lab_testes/teste.yml:17",
+                    "task_uuid": "a2a696d5-b83f-9404-07c0-00000000000d",
+                    "uuid": "8bc74bab-44c3-4979-b591-52d2d41d6393"
+                }
+            ],
+            "uuid": "a2a696d5-b83f-9404-07c0-000000000009"
+        }
+    ],
+    "settings_entries": {
+        "ansible-navigator": {
+            "ansible": {
+                "config": {
+                    "help": false
+                },
+                "doc": {
+                    "help": false,
+                    "plugin": {
+                        "type": "module"
+                    }
+                },
+                "inventory": {
+                    "entries": [
+                        "/root/lab_testes/inventory"
+                    ],
+                    "help": false
+                },
+                "playbook": {
+                    "help": false,
+                    "path": "/root/lab_testes/teste.yml"
+                }
+            },
+            "ansible-builder": {
+                "help": false,
+                "workdir": "/root/lab_testes"
+            },
+            "app": "run",
+            "collection-doc-cache-path": "/root/.cache/ansible-navigator/collection_doc_cache.db",
+            "color": {
+                "enable": true,
+                "osc4": true
+            },
+            "editor": {
+                "command": "vi +{line_number} {filename}",
+                "console": true
+            },
+            "exec": {
+                "command": "/bin/bash",
+                "shell": true
+            },
+            "execution-environment": {
+                "container-engine": "podman",
+                "enabled": true,
+                "image": "registry.redhat.io/ansible-automation-platform-22/ee-supported-rhel8:latest",
+                "pull": {
+                    "policy": "never"
+                }
+            },
+            "images": {
+                "details": [
+                    "everything"
+                ]
+            },
+            "logging": {
+                "append": true,
+                "file": "/root/lab_testes/ansible-navigator.log",
+                "level": "warning"
+            },
+            "mode": "stdout",
+            "playbook-artifact": {
+                "enable": true,
+                "save-as": "{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json"
+            },
+            "settings": {
+                "effective": false,
+                "sample": false,
+                "schema": "json",
+                "sources": false
+            },
+            "time-zone": "UTC"
+        }
+    },
+    "settings_sources": {
+        "ansible-navigator.ansible-builder.help": "Defaults",
+        "ansible-navigator.ansible-builder.workdir": "Defaults",
+        "ansible-navigator.ansible-lint.config": "Not set",
+        "ansible-navigator.ansible-lint.lintables": "Not set",
+        "ansible-navigator.ansible-runner.artifact-dir": "Not set",
+        "ansible-navigator.ansible-runner.rotate-artifacts-count": "Not set",
+        "ansible-navigator.ansible-runner.timeout": "Not set",
+        "ansible-navigator.ansible.cmdline": "Not set",
+        "ansible-navigator.ansible.config.help": "Defaults",
+        "ansible-navigator.ansible.config.path": "Not set",
+        "ansible-navigator.ansible.doc.help": "Defaults",
+        "ansible-navigator.ansible.doc.plugin.name": "Not set",
+        "ansible-navigator.ansible.doc.plugin.type": "Defaults",
+        "ansible-navigator.ansible.inventory.entries": "Command line",
+        "ansible-navigator.ansible.inventory.help": "Defaults",
+        "ansible-navigator.ansible.playbook.help": "Defaults",
+        "ansible-navigator.ansible.playbook.path": "Command line",
+        "ansible-navigator.app": "Command line",
+        "ansible-navigator.collection-doc-cache-path": "Defaults",
+        "ansible-navigator.color.enable": "Defaults",
+        "ansible-navigator.color.osc4": "Defaults",
+        "ansible-navigator.editor.command": "Defaults",
+        "ansible-navigator.editor.console": "Defaults",
+        "ansible-navigator.exec.command": "Defaults",
+        "ansible-navigator.exec.shell": "Defaults",
+        "ansible-navigator.execution-environment.container-engine": "Automatically determined",
+        "ansible-navigator.execution-environment.container-options": "Not set",
+        "ansible-navigator.execution-environment.enabled": "Defaults",
+        "ansible-navigator.execution-environment.environment-variables.pass": "Not set",
+        "ansible-navigator.execution-environment.environment-variables.set": "Not set",
+        "ansible-navigator.execution-environment.image": "Command line",
+        "ansible-navigator.execution-environment.pull.arguments": "Not set",
+        "ansible-navigator.execution-environment.pull.policy": "Command line",
+        "ansible-navigator.execution-environment.volume-mounts": "Not set",
+        "ansible-navigator.images.details": "Defaults",
+        "ansible-navigator.inventory-columns": "Not set",
+        "ansible-navigator.logging.append": "Defaults",
+        "ansible-navigator.logging.file": "Defaults",
+        "ansible-navigator.logging.level": "Defaults",
+        "ansible-navigator.mode": "Command line",
+        "ansible-navigator.playbook-artifact.enable": "Defaults",
+        "ansible-navigator.playbook-artifact.replay": "Not set",
+        "ansible-navigator.playbook-artifact.save-as": "Defaults",
+        "ansible-navigator.settings.effective": "Defaults",
+        "ansible-navigator.settings.sample": "Defaults",
+        "ansible-navigator.settings.schema": "Defaults",
+        "ansible-navigator.settings.sources": "Defaults",
+        "ansible-navigator.time-zone": "Defaults",
+        "settings_file_path": "None",
+        "settings_file_source": "None"
+    },
+    "status": "successful",
+    "status_color": 10,
+    "stdout": [
+        "",
+        "PLAY [JsonQuery Playbook] ******************************************************",
+        "",
+        "TASK [Gathering Facts] *********************************************************",
+        "\u001b[0;32mok: [localhost]\u001b[0m",
+        "",
+        "TASK [Download JSON content play] **********************************************",
+        "\u001b[0;32mok: [localhost]\u001b[0m",
+        "",
+        "TASK [Collecting UserName and Mobile Number info] ******************************",
+        "\u001b[0;32mok: [localhost] => (item={'id': 1, 'name': 'Leanne Graham', 'username': 'Bret', 'email': 'Sincere@april.biz', 'address': {'street': 'Kulas Light', 'suite': 'Apt. 556', 'city': 'Gwenborough', 'zipcode': '92998-3874', 'geo': {'lat': '-37.3159', 'lng': '81.1496'}}, 'phone': '1-770-736-8031 x56442', 'website': 'hildegard.org', 'company': {'name': 'Romaguera-Crona', 'catchPhrase': 'Multi-layered client-server neural-net', 'bs': 'harness real-time e-markets'}})\u001b[0m",
+        "\u001b[0;32mok: [localhost] => (item={'id': 2, 'name': 'Ervin Howell', 'username': 'Antonette', 'email': 'Shanna@melissa.tv', 'address': {'street': 'Victor Plains', 'suite': 'Suite 879', 'city': 'Wisokyburgh', 'zipcode': '90566-7771', 'geo': {'lat': '-43.9509', 'lng': '-34.4618'}}, 'phone': '010-692-6593 x09125', 'website': 'anastasia.net', 'company': {'name': 'Deckow-Crist', 'catchPhrase': 'Proactive didactic contingency', 'bs': 'synergize scalable supply-chains'}})\u001b[0m",
+        "\u001b[0;32mok: [localhost] => (item={'id': 3, 'name': 'Clementine Bauch', 'username': 'Samantha', 'email': 'Nathan@yesenia.net', 'address': {'street': 'Douglas Extension', 'suite': 'Suite 847', 'city': 'McKenziehaven', 'zipcode': '59590-4157', 'geo': {'lat': '-68.6102', 'lng': '-47.0653'}}, 'phone': '1-463-123-4447', 'website': 'ramiro.info', 'company': {'name': 'Romaguera-Jacobson', 'catchPhrase': 'Face to face bifurcated interface', 'bs': 'e-enable strategic applications'}})\u001b[0m",
+        "\u001b[0;32mok: [localhost] => (item={'id': 4, 'name': 'Patricia Lebsack', 'username': 'Karianne', 'email': 'Julianne.OConner@kory.org', 'address': {'street': 'Hoeger Mall', 'suite': 'Apt. 692', 'city': 'South Elvis', 'zipcode': '53919-4257', 'geo': {'lat': '29.4572', 'lng': '-164.2990'}}, 'phone': '493-170-9623 x156', 'website': 'kale.biz', 'company': {'name': 'Robel-Corkery', 'catchPhrase': 'Multi-tiered zero tolerance productivity', 'bs': 'transition cutting-edge web services'}})\u001b[0m",
+        "\u001b[0;32mok: [localhost] => (item={'id': 5, 'name': 'Chelsey Dietrich', 'username': 'Kamren', 'email': 'Lucio_Hettinger@annie.ca', 'address': {'street': 'Skiles Walks', 'suite': 'Suite 351', 'city': 'Roscoeview', 'zipcode': '33263', 'geo': {'lat': '-31.8129', 'lng': '62.5342'}}, 'phone': '(254)954-1289', 'website': 'demarco.info', 'company': {'name': 'Keebler LLC', 'catchPhrase': 'User-centric fault-tolerant solution', 'bs': 'revolutionize end-to-end systems'}})\u001b[0m",
+        "\u001b[0;32mok: [localhost] => (item={'id': 6, 'name': 'Mrs. Dennis Schulist', 'username': 'Leopoldo_Corkery', 'email': 'Karley_Dach@jasper.info', 'address': {'street': 'Norberto Crossing', 'suite': 'Apt. 950', 'city': 'South Christy', 'zipcode': '23505-1337', 'geo': {'lat': '-71.4197', 'lng': '71.7478'}}, 'phone': '1-477-935-8478 x6430', 'website': 'ola.org', 'company': {'name': 'Considine-Lockman', 'catchPhrase': 'Synchronised bottom-line interface', 'bs': 'e-enable innovative applications'}})\u001b[0m",
+        "\u001b[0;32mok: [localhost] => (item={'id': 7, 'name': 'Kurtis Weissnat', 'username': 'Elwyn.Skiles', 'email': 'Telly.Hoeger@billy.biz', 'address': {'street': 'Rex Trail', 'suite': 'Suite 280', 'city': 'Howemouth', 'zipcode': '58804-1099', 'geo': {'lat': '24.8918', 'lng': '21.8984'}}, 'phone': '210.067.6132', 'website': 'elvis.io', 'company': {'name': 'Johns Group', 'catchPhrase': 'Configurable multimedia task-force', 'bs': 'generate enterprise e-tailers'}})\u001b[0m",
+        "\u001b[0;32mok: [localhost] => (item={'id': 8, 'name': 'Nicholas Runolfsdottir V', 'username': 'Maxime_Nienow', 'email': 'Sherwood@rosamond.me', 'address': {'street': 'Ellsworth Summit', 'suite': 'Suite 729', 'city': 'Aliyaview', 'zipcode': '45169', 'geo': {'lat': '-14.3990', 'lng': '-120.7677'}}, 'phone': '586.493.6943 x140', 'website': 'jacynthe.com', 'company': {'name': 'Abernathy Group', 'catchPhrase': 'Implemented secondary concept', 'bs': 'e-enable extensible e-tailers'}})\u001b[0m",
+        "\u001b[0;32mok: [localhost] => (item={'id': 9, 'name': 'Glenna Reichert', 'username': 'Delphine', 'email': 'Chaim_McDermott@dana.io', 'address': {'street': 'Dayna Park', 'suite': 'Suite 449', 'city': 'Bartholomebury', 'zipcode': '76495-3109', 'geo': {'lat': '24.6463', 'lng': '-168.8889'}}, 'phone': '(775)976-6794 x41206', 'website': 'conrad.com', 'company': {'name': 'Yost and Sons', 'catchPhrase': 'Switchable contextually-based project', 'bs': 'aggregate real-time technologies'}})\u001b[0m",
+        "\u001b[0;32mok: [localhost] => (item={'id': 10, 'name': 'Clementina DuBuque', 'username': 'Moriah.Stanton', 'email': 'Rey.Padberg@karina.biz', 'address': {'street': 'Kattie Turnpike', 'suite': 'Suite 198', 'city': 'Lebsackbury', 'zipcode': '31428-2261', 'geo': {'lat': '-38.2386', 'lng': '57.2232'}}, 'phone': '024-648-3804', 'website': 'ambrose.net', 'company': {'name': 'Hoeger LLC', 'catchPhrase': 'Centralized empowering task-force', 'bs': 'target end-to-end models'}})\u001b[0m",
+        "",
+        "TASK [The Phonebook] ***********************************************************",
+        "\u001b[0;32mok: [localhost] => {\u001b[0m",
+        "\u001b[0;32m    \"phonebook\": {\u001b[0m",
+        "\u001b[0;32m        \"Chelsey Dietrich\": \"(254)954-1289\",\u001b[0m",
+        "\u001b[0;32m        \"Clementina DuBuque\": \"024-648-3804\",\u001b[0m",
+        "\u001b[0;32m        \"Clementine Bauch\": \"1-463-123-4447\",\u001b[0m",
+        "\u001b[0;32m        \"Ervin Howell\": \"010-692-6593 x09125\",\u001b[0m",
+        "\u001b[0;32m        \"Glenna Reichert\": \"(775)976-6794 x41206\",\u001b[0m",
+        "\u001b[0;32m        \"Kurtis Weissnat\": \"210.067.6132\",\u001b[0m",
+        "\u001b[0;32m        \"Leanne Graham\": \"1-770-736-8031 x56442\",\u001b[0m",
+        "\u001b[0;32m        \"Mrs. Dennis Schulist\": \"1-477-935-8478 x6430\",\u001b[0m",
+        "\u001b[0;32m        \"Nicholas Runolfsdottir V\": \"586.493.6943 x140\",\u001b[0m",
+        "\u001b[0;32m        \"Patricia Lebsack\": \"493-170-9623 x156\"\u001b[0m",
+        "\u001b[0;32m    }\u001b[0m",
+        "\u001b[0;32m}\u001b[0m",
+        "",
+        "PLAY RECAP *********************************************************************",
+        "\u001b[0;32mlocalhost\u001b[0m                  : \u001b[0;32mok=4   \u001b[0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   "
+    ],
+    "version": "2.0.0"
+}

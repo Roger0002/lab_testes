@@ -2,18 +2,32 @@
 - name: Playbook que brinca com API de mentirinha
   hosts: clienterhel8.transp.com
   become: True
+  vars:
+    teste_hhh: 100
   tasks:
+    - name: mestre
+      set_fact: lista_super=[]
+
     - name: cat no arquivo
-      ansible.builtin.shell: cat /root/saida_api.txt
-      register: saida_api
+      ansible.builtin.shell: cat /root/saida_api_vulnerabilidades.txt
+      register: saida_vuln
 
-    - name: Exibe saída
+    - name: Lista as vulnerabilidades
       debug:
-        msg: "{{ saida_api.stdout }}"
+        msg: "{{ saida_vuln.stdout | from_json | json_query('resources[*].id') }}"
+      register: lista_vuln
 
-    - name: Exibe apenas uma parte
+    - name: Lista as máquinas de cada vulnerabilidade
+      shell: "cat /root/servs_{{ item }}"
+      with_items: "{{ lista_vuln.msg }}"
+      register: aaa
+
+    - name: mostrando a saída acima. Esquece isso daqui, o foco está na tarefa anterior
       debug:
-        msg: "{{ item['id'] }}"
-      loop: "{{ (saida_api.stdout | from_json)['resources'] }}"
-        
-      
+        msg: "{{ aaa.results | json_query('[].stdout') | join(',') }}"
+      register: lista_pro_python
+
+    - name: lksjdlkfjslfd
+      debug:
+        msg: "{{ lista_pro_python.msg | flatten | unique }}"
+
