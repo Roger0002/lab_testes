@@ -8,7 +8,8 @@
     - name: mestre
       set_fact: lista_super=[]
 
-    - name: cat no arquivo
+    # Lista as vulnerabilidades
+    - name: Exibe o json com as vulnerabilidades
       ansible.builtin.shell: cat /root/saida_api_vulnerabilidades.txt
       register: saida_vuln
 
@@ -17,17 +18,18 @@
         msg: "{{ saida_vuln.stdout | from_json | json_query('resources[*].id') }}"
       register: lista_vuln
 
-    - name: Lista as máquinas de cada vulnerabilidade
+    # Lista as máquinas
+    - name: exibe os json com as máquinas de cada vulnerabilidade
       shell: "cat /root/servs_{{ item }}"
       with_items: "{{ lista_vuln.msg }}"
-      register: aaa
+      register: json_maqs_geral
 
-    - name: mostrando a saída acima. Esquece isso daqui, o foco está na tarefa anterior
+    - name: Estágio - tarefa que prapara os dados da tarefa anterior para serem manipulados corretamente pela próxima tarefa
       debug:
-        msg: "{{ aaa.results | json_query('[].stdout') | join(',') }}"
-      register: lista_pro_python
+        msg: "{{ json_maqs_geral.results | json_query('[].stdout') | join(',') }}"
+      register: json_aprov
 
-    - name: lksjdlkfjslfd
+    - name: Lista todas as máquinas afetadas por alguma vulnerabilidade, qualquer que seja ela
       debug:
-        msg: "{{ lista_pro_python.msg | flatten | unique }}"
+        msg: "{{ json_aprov.msg | flatten | unique }}"
 
