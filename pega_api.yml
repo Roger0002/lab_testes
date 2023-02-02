@@ -45,7 +45,7 @@
       register: json_assets_afetados
 
     - debug:
-        msg: "{{ json_assets_afetados | json_query('results[*].content.msg') }}"
+        msg: "{{ json_assets_afetados | json_query('results[*].content') }}"
       register: variavel_misteriosa
     - debug:
         var: variavel_misteriosa
