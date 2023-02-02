@@ -26,16 +26,18 @@
         status_code: 200
       register: json_assets
 
+    # Gera um LISTA contendo DICIONÁRIOS com os assets conhecidos pela API
+    # Por motivos ainda a serem esclarecidos, a variável está guardando mais coisas do que deveria
+    # Ela armazena, além da lista de nosso interesse, as chaves failed e changed. Então, quando
+    # essa variável tiver que ser acionada, precisaremos tratar isso direto na chamada (com filtros,
+    # por exemplo)
     - name: Gera um LISTA contendo DICIONÁRIOS com os assets conhecidos pela API
       debug:
         msg: "{{ json_assets.content | from_json | json_query('resources[*].{id: id, hostName: hostName}') }}"
       register: lista_assets
 
     # O bloco à seguir termina salvando a lista de IDs de assets na variável lista_assets_afetados.
-    # Por motivos ainda a serem esclarecidos, a variável está guardando mais coisas do que deveria
-    # Ela armazena, além da lista de nosso interesse, as chaves failed e changed. Então, quando
-    # essa variável tiver que ser acionada, precisaremos tratar isso direto na chamada (com filtros,
-    # por exemplo) 
+    # Outra variável rebelde, guardando as chaves failed e when. Deve-se lembrar disso
     - name: Gera uma lista de IDs de assets afetados pelas vulnerabilidades
       block:
         - uri:
@@ -76,7 +78,8 @@
       set_fact:
         lista_hostnames_afetados: "{{ lista_hostnames_afetados + [item.hostName] }}"
       when: item.id in lista_assets_afetados.msg 
-
+    
+    # DELETE ME
     - debug:
         var: lista_hostnames_afetados
 
