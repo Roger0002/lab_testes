@@ -79,11 +79,10 @@
         lista_hostnames_afetados: "{{ lista_hostnames_afetados + [item.hostName] }}"
       when: item.id in lista_assets_afetados.msg 
     
-    # DELETE ME
-    - debug:
-        var: lista_hostnames_afetados
+- name: Play de teste
+  hosts: "{{ lista_hostnames_afetados[0] }}"
+  tasks:
+    - name: Vamos ver se chegamos lá
+      win_ping:
 
-
-
-          
 ...
