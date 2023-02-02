@@ -32,7 +32,7 @@
 
     - name: Gera um DICIONÁRIO contendo os assets conhecidos pela API no formato id - hostname
       debug:
-        msg: "{{ json_assets.content | from_json | json_query('resources[*].hostname') }}"
+        msg: "{{ json_assets.content | from_json | json_query('resources[*].hostName') }}"
 
 
 
