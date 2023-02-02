@@ -30,17 +30,18 @@
         status_code: 200
       register: json_assets
 
-    - name: Gera um DICIONÁRIO contendo os assets conhecidos pela API no formato id - hostname
+    - name: Gera um LISTA contendo DICIONÁRIOS com os assets conhecidos pela API
       debug:
         msg: "{{ json_assets.content | from_json | json_query('resources[*].{id: id, hostName: hostName}') }}"
+      register: list_assets
 
-
-
-    # Lista as máquinas
-    #- name: exibe os json com as máquinas de cada vulnerabilidade
-    #  shell: "cat /root/servs_{{ item }}-2"
-    #  with_items: "{{ lista_vuln.msg }}"
-    #  register: json_maqs_geral
+    - name: Gera uma lista de IDs de assets afetados pelas vulnerabilidades
+      uri:
+        url: http://192.168.122.5/api/3/{{ item }}/assets
+        method: GET
+        return_content: True
+        status_code: 200
+      loop: "{{ lista_vuln }}"
 
     #- name: Estágio - tarefa que prapara os dados da tarefa anterior para serem manipulados corretamente pela próxima tarefa
     #  debug:
