@@ -17,11 +17,24 @@
         status_code: 200
       register: json_vulnerabilidades
 
-    - name: Gera uma LISTA com as vulnerabilidades
+    - name: Gera uma LISTA com as vulnerabilidades chamada lista_vuln
       debug:
         msg: "{{ json_vulnerabilidades.content | from_json | json_query('resources[*].id') }}"
-        #msg: "{{ saida_vuln.stdout | from_json | json_query('resources[*].id') }}"
       register: lista_vuln
+
+    - name: Exibe o json com os assets conhecidos pela API
+      uri:
+        url: http://192.168.122.5/api/3/assets
+        method: GET
+        return_content: True
+        status_code: 200
+      register: json_assets
+
+    - name: Gera uma lista dos assets conhecidos pela API
+      debug:
+        msg: "{{ json_assets.content | from_json }}"
+
+
 
     # Lista as máquinas
     #- name: exibe os json com as máquinas de cada vulnerabilidade
