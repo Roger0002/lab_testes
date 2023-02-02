@@ -19,7 +19,7 @@
 
     - name: Gera uma LISTA com as vulnerabilidades
       debug:
-        msg: "{{ json_vulnerabilidades.content | json_query('.resources') }}"
+        msg: "{{ json_vulnerabilidades.content }}"
         #msg: "{{ saida_vuln.stdout | from_json | json_query('resources[*].id') }}"
       register: lista_vuln
 
