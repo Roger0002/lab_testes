@@ -45,7 +45,7 @@
       register: json_assets_afetados
 
     - debug:
-        msg: "{{ json_assets_afetados | json_query('results[*].content') }}"
+        msg: "{{ json_assets_afetados | json_query('results[*].content') | join(',') }}"
 
     #- name: Estágio - tarefa que prapara os dados da tarefa anterior para serem manipulados corretamente pela próxima tarefa
     #  debug:
