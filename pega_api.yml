@@ -45,7 +45,8 @@
       register: json_assets_afetados
 
     - debug:
-        msg: "{{ json_assets_afetados.results[].content }}"
+        msg: "{{ item }}"
+      loop: "{{ json_assets_afetados.results }}"
 
     #- name: Estágio - tarefa que prapara os dados da tarefa anterior para serem manipulados corretamente pela próxima tarefa
     #  debug:
