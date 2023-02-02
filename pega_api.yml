@@ -30,9 +30,9 @@
         status_code: 200
       register: json_assets
 
-    - name: Gera uma lista dos assets conhecidos pela API
+    - name: Gera um DICIONÁRIO contendo os assets conhecidos pela API no formato id - hostname
       debug:
-        msg: "{{ json_assets.content | from_json }}"
+        msg: "{{ json_assets.content | from_json | json_query('resources[*].id') }}"
 
 
 
