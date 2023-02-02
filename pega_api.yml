@@ -7,29 +7,39 @@
     - name: Exibe o json com as vulnerabilidades
       ansible.builtin.shell: cat /root/saida_api_vulnerabilidades.txt
       register: saida_vuln
+      when: False
 
-    - name: Lista as vulnerabilidades
+    - name: Atinge a API e obtem o json com as vulnerabilidades
+      uri:
+        url: http://192.168.122.5/api/3/vulnerabilities
+        method: GET
+        return_content: True
+        status_code: 200
+      register: json_vulnerabilidades
+
+    - name: Gera uma LISTA com as vulnerabilidades
       debug:
-        msg: "{{ saida_vuln.stdout | from_json | json_query('resources[*].id') }}"
+        msg: "{{ json_vulnerabilidades | json_query('resources[*].id') }}"
+        #msg: "{{ saida_vuln.stdout | from_json | json_query('resources[*].id') }}"
       register: lista_vuln
 
     # Lista as máquinas
-    - name: exibe os json com as máquinas de cada vulnerabilidade
-      shell: "cat /root/servs_{{ item }}-2"
-      with_items: "{{ lista_vuln.msg }}"
-      register: json_maqs_geral
+    #- name: exibe os json com as máquinas de cada vulnerabilidade
+    #  shell: "cat /root/servs_{{ item }}-2"
+    #  with_items: "{{ lista_vuln.msg }}"
+    #  register: json_maqs_geral
 
-    - name: Estágio - tarefa que prapara os dados da tarefa anterior para serem manipulados corretamente pela próxima tarefa
-      debug:
-        msg: "{{ json_maqs_geral.results | json_query('[].stdout') | join(',') }}"
-      register: json_aprov
+    #- name: Estágio - tarefa que prapara os dados da tarefa anterior para serem manipulados corretamente pela próxima tarefa
+    #  debug:
+    #    msg: "{{ json_maqs_geral.results | json_query('[].stdout') | join(',') }}"
+    #  register: json_aprov
 
-    - name: Grava a lista em um fact
-      set_fact:
-        lista_servidores: "{{ json_aprov.msg | flatten | unique }}"
+    #- name: Grava a lista em um fact
+    #  set_fact:
+    #    lista_servidores: "{{ json_aprov.msg | flatten | unique }}"
 
-    - name: Lista todas as máquinas afetadas por alguma vulnerabilidade, qualquer que seja ela
-      debug:
-        var: lista_servidores
-      failed_when: lista_servidores | length == 0
+    #- name: Lista todas as máquinas afetadas por alguma vulnerabilidade, qualquer que seja ela
+    #  debug:
+    #    var: lista_servidores
+    #  failed_when: lista_servidores | length == 0
 ...
