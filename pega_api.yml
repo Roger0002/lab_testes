@@ -4,11 +4,6 @@
   become: True
   tasks:
     # Lista as vulnerabilidades
-    - name: Exibe o json com as vulnerabilidades
-      ansible.builtin.shell: cat /root/saida_api_vulnerabilidades.txt
-      register: saida_vuln
-      when: False
-
     - name: Atinge a API e obtem o json com as vulnerabilidades
       uri:
         url: http://192.168.122.5/api/3/vulnerabilities
@@ -22,6 +17,7 @@
         msg: "{{ json_vulnerabilidades.content | from_json | json_query('resources[*].id') }}"
       register: lista_vuln
 
+    # Começa a gerar a lista de IDs de assets afetados pelas vulnerabilidades
     - name: Exibe o json com os assets conhecidos pela API
       uri:
         url: http://192.168.122.5/api/3/assets
@@ -33,34 +29,58 @@
     - name: Gera um LISTA contendo DICIONÁRIOS com os assets conhecidos pela API
       debug:
         msg: "{{ json_assets.content | from_json | json_query('resources[*].{id: id, hostName: hostName}') }}"
-      register: list_assets
+      register: lista_assets
 
+    # O bloco à seguir termina salvando a lista de IDs de assets na variável lista_assets_afetados.
+    # Por motivos ainda a serem esclarecidos, a variável está guardando mais coisas do que deveria
+    # Ela armazena, além da lista de nosso interesse, as chaves failed e changed. Então, quando
+    # essa variável tiver que ser acionada, precisaremos tratar isso direto na chamada (com filtros,
+    # por exemplo) 
     - name: Gera uma lista de IDs de assets afetados pelas vulnerabilidades
-      uri:
-        url: http://192.168.122.5/api/3/{{ item }}/assets
-        method: GET
-        return_content: True
-        status_code: 200
-      loop: "{{ lista_vuln.msg }}"
-      register: json_assets_afetados
+      block:
+        - uri:
+            url: http://192.168.122.5/api/3/{{ item }}/assets
+            method: GET
+            return_content: True
+            status_code: 200
+          loop: "{{ lista_vuln.msg }}"
+          register: json_assets_afetados
+
+        - debug:
+            msg: "{{ json_assets_afetados | json_query('results[*].content') }}"
+          register: vari1
+
+        - debug:
+            msg: "{{ item | from_json | json_query('resources') }}"
+          loop: "{{ vari1.msg | json_query('[*]') }}"
+          register: vari2
+
+        - debug:
+            verbosity: 0
+            msg: "{{ vari2 | json_query('results[*].msg') | flatten | unique }}"
+          register: lista_assets_afetados
+
+    # Verifica se a lista de IDs de assets está vazia. Se estiver, encerra a execução do playbook
+    # com erro
+    - name: Verifica se a lista constante em lista_assets_afetados está vazia.
+      debug:
+        msg: "{{ lista_assets_afetados }}"
+      failed_when: lista_assets_afetados.msg | length == 0
+
+    - name: Cria a lista lista_hostnames_afetados, vazia
+      set_fact:
+        lista_hostnames_afetados: []
+
+    - name: Faz um laço na lista de IDs de assets afetados e gera a lista de hostnames afetados
+      loop: "{{ lista_assets.msg }}"
+      set_fact:
+        lista_hostnames_afetados: "{{ lista_hostnames_afetados + [item.hostName] }}"
+      when: item.id in lista_assets_afetados.msg 
 
     - debug:
-        msg: "{{ json_assets_afetados | json_query('results[*].content') }}"
-      register: variavel_misteriosa
-    - debug:
-        var: variavel_misteriosa
+        var: lista_hostnames_afetados
 
-    #- name: Estágio - tarefa que prapara os dados da tarefa anterior para serem manipulados corretamente pela próxima tarefa
-    #  debug:
-    #    msg: "{{ json_maqs_geral.results | json_query('[].stdout') | join(',') }}"
-    #  register: json_aprov
 
-    #- name: Grava a lista em um fact
-    #  set_fact:
-    #    lista_servidores: "{{ json_aprov.msg | flatten | unique }}"
 
-    #- name: Lista todas as máquinas afetadas por alguma vulnerabilidade, qualquer que seja ela
-    #  debug:
-    #    var: lista_servidores
-    #  failed_when: lista_servidores | length == 0
+          
 ...

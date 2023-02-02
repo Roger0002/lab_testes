@@ -1,0 +1,1532 @@
+{
+    "plays": [
+        {
+            "__play_name": "Playbook que brinca com API de mentirinha",
+            "name": "Playbook que brinca com API de mentirinha",
+            "pattern": "clienterhel8.transp.com",
+            "play": "Playbook que brinca com API de mentirinha",
+            "play_pattern": "clienterhel8.transp.com",
+            "play_uuid": "02818c75-f301-873c-1b20-000000000009",
+            "playbook": "/root/lab_testes/pega_api.yml",
+            "playbook_uuid": "f988fb47-7b9c-4ed3-89f6-39dee462e587",
+            "tasks": [
+                {
+                    "__changed": false,
+                    "__duration": "1s",
+                    "__host": "clienterhel8.transp.com",
+                    "__number": 0,
+                    "__result": "Ok",
+                    "__task": "Gathering Facts",
+                    "__task_action": "gather_facts",
+                    "duration": 0.980038,
+                    "end": "2023-02-02T17:35:38.360373",
+                    "event_loop": null,
+                    "host": "clienterhel8.transp.com",
+                    "play": "Playbook que brinca com API de mentirinha",
+                    "play_pattern": "clienterhel8.transp.com",
+                    "play_uuid": "02818c75-f301-873c-1b20-000000000009",
+                    "playbook": "/root/lab_testes/pega_api.yml",
+                    "playbook_uuid": "f988fb47-7b9c-4ed3-89f6-39dee462e587",
+                    "remote_addr": "clienterhel8.transp.com",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "_ansible_verbose_override": true,
+                        "ansible_facts": {
+                            "ansible_all_ipv4_addresses": [
+                                "192.168.122.4"
+                            ],
+                            "ansible_all_ipv6_addresses": [
+                                "fe80::5054:ff:fe47:418b"
+                            ],
+                            "ansible_apparmor": {
+                                "status": "disabled"
+                            },
+                            "ansible_architecture": "x86_64",
+                            "ansible_bios_date": "04/01/2014",
+                            "ansible_bios_vendor": "SeaBIOS",
+                            "ansible_bios_version": "1.15.0-2.module+el8.6.0+14757+c25ee005",
+                            "ansible_board_asset_tag": "NA",
+                            "ansible_board_name": "RHEL-AV",
+                            "ansible_board_serial": "NA",
+                            "ansible_board_vendor": "Red Hat",
+                            "ansible_board_version": "RHEL-8.6.0 PC (Q35 + ICH9, 2009)",
+                            "ansible_chassis_asset_tag": "NA",
+                            "ansible_chassis_serial": "NA",
+                            "ansible_chassis_vendor": "Red Hat",
+                            "ansible_chassis_version": "RHEL-8.6.0 PC (Q35 + ICH9, 2009)",
+                            "ansible_cmdline": {
+                                "BOOT_IMAGE": "(hd0,msdos1)/vmlinuz-4.18.0-425.3.1.el8.x86_64",
+                                "crashkernel": "auto",
+                                "nofb": true,
+                                "quiet": true,
+                                "rd.lvm.lv": "rhel_clienterhel8/swap",
+                                "resume": "/dev/mapper/rhel_clienterhel8-swap",
+                                "rhgb": true,
+                                "ro": true,
+                                "root": "/dev/mapper/rhel_clienterhel8-root",
+                                "splash": "quiet"
+                            },
+                            "ansible_date_time": {
+                                "date": "2023-02-02",
+                                "day": "02",
+                                "epoch": "1675359338",
+                                "epoch_int": "1675359338",
+                                "hour": "17",
+                                "iso8601": "2023-02-02T17:35:38Z",
+                                "iso8601_basic": "20230202T173538307839",
+                                "iso8601_basic_short": "20230202T173538",
+                                "iso8601_micro": "2023-02-02T17:35:38.307839Z",
+                                "minute": "35",
+                                "month": "02",
+                                "second": "38",
+                                "time": "17:35:38",
+                                "tz": "UTC",
+                                "tz_dst": "UTC",
+                                "tz_offset": "+0000",
+                                "weekday": "Thursday",
+                                "weekday_number": "4",
+                                "weeknumber": "05",
+                                "year": "2023"
+                            },
+                            "ansible_default_ipv4": {
+                                "address": "192.168.122.4",
+                                "alias": "enp1s0",
+                                "broadcast": "192.168.122.255",
+                                "gateway": "192.168.122.1",
+                                "interface": "enp1s0",
+                                "macaddress": "52:54:00:47:41:8b",
+                                "mtu": 1500,
+                                "netmask": "255.255.255.0",
+                                "network": "192.168.122.0",
+                                "prefix": "24",
+                                "type": "ether"
+                            },
+                            "ansible_default_ipv6": {},
+                            "ansible_device_links": {
+                                "ids": {
+                                    "dm-0": [
+                                        "dm-name-rhel_clienterhel8-root",
+                                        "dm-uuid-LVM-dDH3FRSliNUYoBblcLeoVbDutfd1uaSPPdX0FQPkNxes25wkBTFbBUGwmu350Acr"
+                                    ],
+                                    "dm-1": [
+                                        "dm-name-rhel_clienterhel8-swap",
+                                        "dm-uuid-LVM-dDH3FRSliNUYoBblcLeoVbDutfd1uaSPzze6u50vWuvPcml1NHU7m0FelpkHZ6gM"
+                                    ],
+                                    "dm-2": [
+                                        "dm-name-rhel_clienterhel8-home",
+                                        "dm-uuid-LVM-dDH3FRSliNUYoBblcLeoVbDutfd1uaSPEyKc3MlkWo2oKM20vuyCSFU8ojJoeaQR"
+                                    ],
+                                    "vda2": [
+                                        "lvm-pv-uuid-5PMSO5-dvo4-z4w0-wwiR-Uk1u-uDm1-hTn2dK"
+                                    ]
+                                },
+                                "labels": {},
+                                "masters": {
+                                    "vda2": [
+                                        "dm-0",
+                                        "dm-1",
+                                        "dm-2"
+                                    ]
+                                },
+                                "uuids": {
+                                    "dm-0": [
+                                        "778391c7-a2cb-40c0-bbd6-cfa387ce6ad7"
+                                    ],
+                                    "dm-1": [
+                                        "fd955865-f4bc-43fa-bfcc-201d41361c65"
+                                    ],
+                                    "dm-2": [
+                                        "b58b34f2-5683-4b44-98d8-95a952e181c2"
+                                    ],
+                                    "vda1": [
+                                        "60a3c21d-63bb-4714-997f-e9b8faaf6304"
+                                    ]
+                                }
+                            },
+                            "ansible_devices": {
+                                "dm-0": {
+                                    "holders": [],
+                                    "host": "",
+                                    "links": {
+                                        "ids": [
+                                            "dm-name-rhel_clienterhel8-root",
+                                            "dm-uuid-LVM-dDH3FRSliNUYoBblcLeoVbDutfd1uaSPPdX0FQPkNxes25wkBTFbBUGwmu350Acr"
+                                        ],
+                                        "labels": [],
+                                        "masters": [],
+                                        "uuids": [
+                                            "778391c7-a2cb-40c0-bbd6-cfa387ce6ad7"
+                                        ]
+                                    },
+                                    "model": null,
+                                    "partitions": {},
+                                    "removable": "0",
+                                    "rotational": "1",
+                                    "sas_address": null,
+                                    "sas_device_handle": null,
+                                    "scheduler_mode": "",
+                                    "sectors": "146800640",
+                                    "sectorsize": "512",
+                                    "size": "70.00 GB",
+                                    "support_discard": "512",
+                                    "vendor": null,
+                                    "virtual": 1
+                                },
+                                "dm-1": {
+                                    "holders": [],
+                                    "host": "",
+                                    "links": {
+                                        "ids": [
+                                            "dm-name-rhel_clienterhel8-swap",
+                                            "dm-uuid-LVM-dDH3FRSliNUYoBblcLeoVbDutfd1uaSPzze6u50vWuvPcml1NHU7m0FelpkHZ6gM"
+                                        ],
+                                        "labels": [],
+                                        "masters": [],
+                                        "uuids": [
+                                            "fd955865-f4bc-43fa-bfcc-201d41361c65"
+                                        ]
+                                    },
+                                    "model": null,
+                                    "partitions": {},
+                                    "removable": "0",
+                                    "rotational": "1",
+                                    "sas_address": null,
+                                    "sas_device_handle": null,
+                                    "scheduler_mode": "",
+                                    "sectors": "8298496",
+                                    "sectorsize": "512",
+                                    "size": "3.96 GB",
+                                    "support_discard": "512",
+                                    "vendor": null,
+                                    "virtual": 1
+                                },
+                                "dm-2": {
+                                    "holders": [],
+                                    "host": "",
+                                    "links": {
+                                        "ids": [
+                                            "dm-name-rhel_clienterhel8-home",
+                                            "dm-uuid-LVM-dDH3FRSliNUYoBblcLeoVbDutfd1uaSPEyKc3MlkWo2oKM20vuyCSFU8ojJoeaQR"
+                                        ],
+                                        "labels": [],
+                                        "masters": [],
+                                        "uuids": [
+                                            "b58b34f2-5683-4b44-98d8-95a952e181c2"
+                                        ]
+                                    },
+                                    "model": null,
+                                    "partitions": {},
+                                    "removable": "0",
+                                    "rotational": "1",
+                                    "sas_address": null,
+                                    "sas_device_handle": null,
+                                    "scheduler_mode": "",
+                                    "sectors": "262225920",
+                                    "sectorsize": "512",
+                                    "size": "125.04 GB",
+                                    "support_discard": "512",
+                                    "vendor": null,
+                                    "virtual": 1
+                                },
+                                "vda": {
+                                    "holders": [],
+                                    "host": "SCSI storage controller: Red Hat, Inc. Virtio block device (rev 01)",
+                                    "links": {
+                                        "ids": [],
+                                        "labels": [],
+                                        "masters": [],
+                                        "uuids": []
+                                    },
+                                    "model": null,
+                                    "partitions": {
+                                        "vda1": {
+                                            "holders": [],
+                                            "links": {
+                                                "ids": [],
+                                                "labels": [],
+                                                "masters": [],
+                                                "uuids": [
+                                                    "60a3c21d-63bb-4714-997f-e9b8faaf6304"
+                                                ]
+                                            },
+                                            "sectors": "2097152",
+                                            "sectorsize": 512,
+                                            "size": "1.00 GB",
+                                            "start": "2048",
+                                            "uuid": "60a3c21d-63bb-4714-997f-e9b8faaf6304"
+                                        },
+                                        "vda2": {
+                                            "holders": [
+                                                "rhel_clienterhel8-swap",
+                                                "rhel_clienterhel8-home",
+                                                "rhel_clienterhel8-root"
+                                            ],
+                                            "links": {
+                                                "ids": [
+                                                    "lvm-pv-uuid-5PMSO5-dvo4-z4w0-wwiR-Uk1u-uDm1-hTn2dK"
+                                                ],
+                                                "labels": [],
+                                                "masters": [
+                                                    "dm-0",
+                                                    "dm-1",
+                                                    "dm-2"
+                                                ],
+                                                "uuids": []
+                                            },
+                                            "sectors": "417331200",
+                                            "sectorsize": 512,
+                                            "size": "199.00 GB",
+                                            "start": "2099200",
+                                            "uuid": null
+                                        }
+                                    },
+                                    "removable": "0",
+                                    "rotational": "1",
+                                    "sas_address": null,
+                                    "sas_device_handle": null,
+                                    "scheduler_mode": "mq-deadline",
+                                    "sectors": "419430400",
+                                    "sectorsize": "512",
+                                    "size": "200.00 GB",
+                                    "support_discard": "512",
+                                    "vendor": "0x1af4",
+                                    "virtual": 1
+                                }
+                            },
+                            "ansible_distribution": "RedHat",
+                            "ansible_distribution_file_parsed": true,
+                            "ansible_distribution_file_path": "/etc/redhat-release",
+                            "ansible_distribution_file_search_string": "Red Hat",
+                            "ansible_distribution_file_variety": "RedHat",
+                            "ansible_distribution_major_version": "8",
+                            "ansible_distribution_release": "Ootpa",
+                            "ansible_distribution_version": "8.7",
+                            "ansible_dns": {
+                                "nameservers": [
+                                    "192.168.122.7"
+                                ],
+                                "search": [
+                                    "transp.com"
+                                ]
+                            },
+                            "ansible_domain": "transp.com",
+                            "ansible_effective_group_id": 0,
+                            "ansible_effective_user_id": 0,
+                            "ansible_enp1s0": {
+                                "active": true,
+                                "device": "enp1s0",
+                                "features": {
+                                    "esp_hw_offload": "off [fixed]",
+                                    "esp_tx_csum_hw_offload": "off [fixed]",
+                                    "fcoe_mtu": "off [fixed]",
+                                    "generic_receive_offload": "on",
+                                    "generic_segmentation_offload": "on",
+                                    "highdma": "on [fixed]",
+                                    "hw_tc_offload": "off [fixed]",
+                                    "l2_fwd_offload": "off [fixed]",
+                                    "large_receive_offload": "off [fixed]",
+                                    "loopback": "off [fixed]",
+                                    "netns_local": "off [fixed]",
+                                    "ntuple_filters": "off [fixed]",
+                                    "receive_hashing": "off [fixed]",
+                                    "rx_all": "off [fixed]",
+                                    "rx_checksumming": "on [fixed]",
+                                    "rx_fcs": "off [fixed]",
+                                    "rx_gro_hw": "off [fixed]",
+                                    "rx_gro_list": "off",
+                                    "rx_udp_gro_forwarding": "off",
+                                    "rx_udp_tunnel_port_offload": "off [fixed]",
+                                    "rx_vlan_filter": "on [fixed]",
+                                    "rx_vlan_offload": "off [fixed]",
+                                    "rx_vlan_stag_filter": "off [fixed]",
+                                    "rx_vlan_stag_hw_parse": "off [fixed]",
+                                    "scatter_gather": "on",
+                                    "tcp_segmentation_offload": "on",
+                                    "tls_hw_record": "off [fixed]",
+                                    "tls_hw_rx_offload": "off [fixed]",
+                                    "tls_hw_tx_offload": "off [fixed]",
+                                    "tx_checksum_fcoe_crc": "off [fixed]",
+                                    "tx_checksum_ip_generic": "on",
+                                    "tx_checksum_ipv4": "off [fixed]",
+                                    "tx_checksum_ipv6": "off [fixed]",
+                                    "tx_checksum_sctp": "off [fixed]",
+                                    "tx_checksumming": "on",
+                                    "tx_esp_segmentation": "off [fixed]",
+                                    "tx_fcoe_segmentation": "off [fixed]",
+                                    "tx_gre_csum_segmentation": "off [fixed]",
+                                    "tx_gre_segmentation": "off [fixed]",
+                                    "tx_gso_list": "off [fixed]",
+                                    "tx_gso_partial": "off [fixed]",
+                                    "tx_gso_robust": "on [fixed]",
+                                    "tx_ipxip4_segmentation": "off [fixed]",
+                                    "tx_ipxip6_segmentation": "off [fixed]",
+                                    "tx_lockless": "off [fixed]",
+                                    "tx_nocache_copy": "off",
+                                    "tx_scatter_gather": "on",
+                                    "tx_scatter_gather_fraglist": "off [fixed]",
+                                    "tx_sctp_segmentation": "off [fixed]",
+                                    "tx_tcp6_segmentation": "on",
+                                    "tx_tcp_ecn_segmentation": "on",
+                                    "tx_tcp_mangleid_segmentation": "off",
+                                    "tx_tcp_segmentation": "on",
+                                    "tx_tunnel_remcsum_segmentation": "off [fixed]",
+                                    "tx_udp_segmentation": "off [fixed]",
+                                    "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                                    "tx_udp_tnl_segmentation": "off [fixed]",
+                                    "tx_vlan_offload": "off [fixed]",
+                                    "tx_vlan_stag_hw_insert": "off [fixed]",
+                                    "vlan_challenged": "off [fixed]"
+                                },
+                                "hw_timestamp_filters": [],
+                                "ipv4": {
+                                    "address": "192.168.122.4",
+                                    "broadcast": "192.168.122.255",
+                                    "netmask": "255.255.255.0",
+                                    "network": "192.168.122.0",
+                                    "prefix": "24"
+                                },
+                                "ipv6": [
+                                    {
+                                        "address": "fe80::5054:ff:fe47:418b",
+                                        "prefix": "64",
+                                        "scope": "link"
+                                    }
+                                ],
+                                "macaddress": "52:54:00:47:41:8b",
+                                "module": "virtio_net",
+                                "mtu": 1500,
+                                "pciid": "virtio0",
+                                "promisc": false,
+                                "speed": -1,
+                                "timestamping": [],
+                                "type": "ether"
+                            },
+                            "ansible_fibre_channel_wwn": [],
+                            "ansible_fips": false,
+                            "ansible_form_factor": "Other",
+                            "ansible_fqdn": "clienterhel8.transp.com",
+                            "ansible_hostname": "clienterhel8",
+                            "ansible_hostnqn": "",
+                            "ansible_interfaces": [
+                                "enp1s0",
+                                "lo"
+                            ],
+                            "ansible_is_chroot": false,
+                            "ansible_iscsi_iqn": "",
+                            "ansible_kernel": "4.18.0-425.3.1.el8.x86_64",
+                            "ansible_kernel_version": "#1 SMP Fri Sep 30 11:45:06 EDT 2022",
+                            "ansible_lo": {
+                                "active": true,
+                                "device": "lo",
+                                "features": {
+                                    "esp_hw_offload": "off [fixed]",
+                                    "esp_tx_csum_hw_offload": "off [fixed]",
+                                    "fcoe_mtu": "off [fixed]",
+                                    "generic_receive_offload": "on",
+                                    "generic_segmentation_offload": "on",
+                                    "highdma": "on [fixed]",
+                                    "hw_tc_offload": "off [fixed]",
+                                    "l2_fwd_offload": "off [fixed]",
+                                    "large_receive_offload": "off [fixed]",
+                                    "loopback": "on [fixed]",
+                                    "netns_local": "on [fixed]",
+                                    "ntuple_filters": "off [fixed]",
+                                    "receive_hashing": "off [fixed]",
+                                    "rx_all": "off [fixed]",
+                                    "rx_checksumming": "on [fixed]",
+                                    "rx_fcs": "off [fixed]",
+                                    "rx_gro_hw": "off [fixed]",
+                                    "rx_gro_list": "off",
+                                    "rx_udp_gro_forwarding": "off",
+                                    "rx_udp_tunnel_port_offload": "off [fixed]",
+                                    "rx_vlan_filter": "off [fixed]",
+                                    "rx_vlan_offload": "off [fixed]",
+                                    "rx_vlan_stag_filter": "off [fixed]",
+                                    "rx_vlan_stag_hw_parse": "off [fixed]",
+                                    "scatter_gather": "on",
+                                    "tcp_segmentation_offload": "on",
+                                    "tls_hw_record": "off [fixed]",
+                                    "tls_hw_rx_offload": "off [fixed]",
+                                    "tls_hw_tx_offload": "off [fixed]",
+                                    "tx_checksum_fcoe_crc": "off [fixed]",
+                                    "tx_checksum_ip_generic": "on [fixed]",
+                                    "tx_checksum_ipv4": "off [fixed]",
+                                    "tx_checksum_ipv6": "off [fixed]",
+                                    "tx_checksum_sctp": "on [fixed]",
+                                    "tx_checksumming": "on",
+                                    "tx_esp_segmentation": "off [fixed]",
+                                    "tx_fcoe_segmentation": "off [fixed]",
+                                    "tx_gre_csum_segmentation": "off [fixed]",
+                                    "tx_gre_segmentation": "off [fixed]",
+                                    "tx_gso_list": "on",
+                                    "tx_gso_partial": "off [fixed]",
+                                    "tx_gso_robust": "off [fixed]",
+                                    "tx_ipxip4_segmentation": "off [fixed]",
+                                    "tx_ipxip6_segmentation": "off [fixed]",
+                                    "tx_lockless": "on [fixed]",
+                                    "tx_nocache_copy": "off [fixed]",
+                                    "tx_scatter_gather": "on [fixed]",
+                                    "tx_scatter_gather_fraglist": "on [fixed]",
+                                    "tx_sctp_segmentation": "on",
+                                    "tx_tcp6_segmentation": "on",
+                                    "tx_tcp_ecn_segmentation": "on",
+                                    "tx_tcp_mangleid_segmentation": "on",
+                                    "tx_tcp_segmentation": "on",
+                                    "tx_tunnel_remcsum_segmentation": "off [fixed]",
+                                    "tx_udp_segmentation": "on",
+                                    "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                                    "tx_udp_tnl_segmentation": "off [fixed]",
+                                    "tx_vlan_offload": "off [fixed]",
+                                    "tx_vlan_stag_hw_insert": "off [fixed]",
+                                    "vlan_challenged": "on [fixed]"
+                                },
+                                "hw_timestamp_filters": [],
+                                "ipv4": {
+                                    "address": "127.0.0.1",
+                                    "broadcast": "",
+                                    "netmask": "255.0.0.0",
+                                    "network": "127.0.0.0",
+                                    "prefix": "8"
+                                },
+                                "ipv6": [
+                                    {
+                                        "address": "::1",
+                                        "prefix": "128",
+                                        "scope": "host"
+                                    }
+                                ],
+                                "mtu": 65536,
+                                "promisc": false,
+                                "timestamping": [],
+                                "type": "loopback"
+                            },
+                            "ansible_local": {},
+                            "ansible_lsb": {},
+                            "ansible_lvm": {
+                                "lvs": {
+                                    "home": {
+                                        "size_g": "125.04",
+                                        "vg": "rhel_clienterhel8"
+                                    },
+                                    "root": {
+                                        "size_g": "70.00",
+                                        "vg": "rhel_clienterhel8"
+                                    },
+                                    "swap": {
+                                        "size_g": "3.96",
+                                        "vg": "rhel_clienterhel8"
+                                    }
+                                },
+                                "pvs": {
+                                    "/dev/vda2": {
+                                        "free_g": "0",
+                                        "size_g": "199.00",
+                                        "vg": "rhel_clienterhel8"
+                                    }
+                                },
+                                "vgs": {
+                                    "rhel_clienterhel8": {
+                                        "free_g": "0",
+                                        "num_lvs": "3",
+                                        "num_pvs": "1",
+                                        "size_g": "199.00"
+                                    }
+                                }
+                            },
+                            "ansible_machine": "x86_64",
+                            "ansible_machine_id": "b4d3910bbe824ae087a86f129b0006a7",
+                            "ansible_memfree_mb": 183,
+                            "ansible_memory_mb": {
+                                "nocache": {
+                                    "free": 1546,
+                                    "used": 266
+                                },
+                                "real": {
+                                    "free": 183,
+                                    "total": 1812,
+                                    "used": 1629
+                                },
+                                "swap": {
+                                    "cached": 0,
+                                    "free": 4051,
+                                    "total": 4051,
+                                    "used": 0
+                                }
+                            },
+                            "ansible_memtotal_mb": 1812,
+                            "ansible_mounts": [
+                                {
+                                    "block_available": 17360895,
+                                    "block_size": 4096,
+                                    "block_total": 18341120,
+                                    "block_used": 980225,
+                                    "device": "/dev/mapper/rhel_clienterhel8-root",
+                                    "fstype": "xfs",
+                                    "inode_available": 36625143,
+                                    "inode_total": 36700160,
+                                    "inode_used": 75017,
+                                    "mount": "/",
+                                    "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+                                    "size_available": 71110225920,
+                                    "size_total": 75125227520,
+                                    "uuid": "778391c7-a2cb-40c0-bbd6-cfa387ce6ad7"
+                                },
+                                {
+                                    "block_available": 175412,
+                                    "block_size": 4096,
+                                    "block_total": 259584,
+                                    "block_used": 84172,
+                                    "device": "/dev/vda1",
+                                    "fstype": "xfs",
+                                    "inode_available": 523963,
+                                    "inode_total": 524288,
+                                    "inode_used": 325,
+                                    "mount": "/boot",
+                                    "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+                                    "size_available": 718487552,
+                                    "size_total": 1063256064,
+                                    "uuid": "60a3c21d-63bb-4714-997f-e9b8faaf6304"
+                                },
+                                {
+                                    "block_available": 29016601,
+                                    "block_size": 4096,
+                                    "block_total": 32762235,
+                                    "block_used": 3745634,
+                                    "device": "/dev/mapper/rhel_clienterhel8-home",
+                                    "fstype": "xfs",
+                                    "inode_available": 65556395,
+                                    "inode_total": 65556480,
+                                    "inode_used": 85,
+                                    "mount": "/home",
+                                    "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+                                    "size_available": 118851997696,
+                                    "size_total": 134194114560,
+                                    "uuid": "b58b34f2-5683-4b44-98d8-95a952e181c2"
+                                }
+                            ],
+                            "ansible_nodename": "clienterhel8.transp.com",
+                            "ansible_os_family": "RedHat",
+                            "ansible_pkg_mgr": "dnf",
+                            "ansible_proc_cmdline": {
+                                "BOOT_IMAGE": "(hd0,msdos1)/vmlinuz-4.18.0-425.3.1.el8.x86_64",
+                                "crashkernel": "auto",
+                                "nofb": true,
+                                "quiet": true,
+                                "rd.lvm.lv": [
+                                    "rhel_clienterhel8/root",
+                                    "rhel_clienterhel8/swap"
+                                ],
+                                "resume": "/dev/mapper/rhel_clienterhel8-swap",
+                                "rhgb": true,
+                                "ro": true,
+                                "root": "/dev/mapper/rhel_clienterhel8-root",
+                                "splash": "quiet"
+                            },
+                            "ansible_processor": [
+                                "0",
+                                "GenuineIntel",
+                                "Intel Xeon Processor (Cooperlake)"
+                            ],
+                            "ansible_processor_cores": 1,
+                            "ansible_processor_count": 1,
+                            "ansible_processor_nproc": 1,
+                            "ansible_processor_threads_per_core": 1,
+                            "ansible_processor_vcpus": 1,
+                            "ansible_product_name": "KVM",
+                            "ansible_product_serial": "NA",
+                            "ansible_product_uuid": "b4d3910b-be82-4ae0-87a8-6f129b0006a7",
+                            "ansible_product_version": "RHEL-8.6.0 PC (Q35 + ICH9, 2009)",
+                            "ansible_python": {
+                                "executable": "/usr/libexec/platform-python",
+                                "has_sslcontext": true,
+                                "type": "cpython",
+                                "version": {
+                                    "major": 3,
+                                    "micro": 8,
+                                    "minor": 6,
+                                    "releaselevel": "final",
+                                    "serial": 0
+                                },
+                                "version_info": [
+                                    3,
+                                    6,
+                                    8,
+                                    "final",
+                                    0
+                                ]
+                            },
+                            "ansible_python_version": "3.6.8",
+                            "ansible_real_group_id": 0,
+                            "ansible_real_user_id": 0,
+                            "ansible_selinux": {
+                                "config_mode": "enforcing",
+                                "mode": "enforcing",
+                                "policyvers": 33,
+                                "status": "enabled",
+                                "type": "targeted"
+                            },
+                            "ansible_selinux_python_present": true,
+                            "ansible_service_mgr": "systemd",
+                            "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIyeIySAA9Zq4LJTAb6frDc404iADlWkNFqbno7XlrNm1VYc5p85EIbnhE/rw7umVGsiO8IYkZIzXBE8Q4jbGrE=",
+                            "ansible_ssh_host_key_ecdsa_public_keytype": "ecdsa-sha2-nistp256",
+                            "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIMZVqG9UYqzLVsDvBvu6UcfNmjzjeiGhufi0KKw9i4LC",
+                            "ansible_ssh_host_key_ed25519_public_keytype": "ssh-ed25519",
+                            "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABgQCtEm4eWUwlAnyEzD3Aeyk4zGNc5wee34l9uZmMzgfjZJVH48tBUeqIa/75fN6UxyXmNp8msdbV8J6Jo7sm+kJy8v/+XFNOUvd/MxYZ9IhVyqK3u4efoMkfQNBfqo7+i7QKvOypi1Os/parUwvRTPWU3pA36MNC4nIi8fzOIm1mmQNgZo+no2H2hxPsD6PM0C0YMeXX30UZzZk3rFqQiqjxDwYWkb4VXvPd2r66JAZLN6lI7CVJvV7BDRpeAl0rlSTarsYFG2cZyxYtEl33z5i3mu4bjPk3b51kUI2CtMT+2/4A5se310oOOSk2tMreeutXeOL47fSebHF6DhE+FPS0UMYUBnYpKBcI/v5V1ZTFDlEiLSYMNdOWPdCvOIAzEOHDz7W4vBQUZgnG7cZ3MOmpMcWADIaAmMX15iFg56FdqaZ4iw7LDNDEZvKJ8ff8jsfCt9wR4Qy/s8zVLLFJgdVwrMyhPic21EOiwKI3qqOVgCLIe7Yg3U7ripNeqV/t1GM=",
+                            "ansible_ssh_host_key_rsa_public_keytype": "ssh-rsa",
+                            "ansible_swapfree_mb": 4051,
+                            "ansible_swaptotal_mb": 4051,
+                            "ansible_system": "Linux",
+                            "ansible_system_capabilities": [],
+                            "ansible_system_capabilities_enforced": "False",
+                            "ansible_system_vendor": "Red Hat",
+                            "ansible_uptime_seconds": 15461,
+                            "ansible_user_dir": "/root",
+                            "ansible_user_gecos": "root",
+                            "ansible_user_gid": 0,
+                            "ansible_user_id": "root",
+                            "ansible_user_shell": "/bin/bash",
+                            "ansible_user_uid": 0,
+                            "ansible_userspace_architecture": "x86_64",
+                            "ansible_userspace_bits": "64",
+                            "ansible_virtualization_role": "guest",
+                            "ansible_virtualization_tech_guest": [
+                                "kvm"
+                            ],
+                            "ansible_virtualization_tech_host": [
+                                "kvm"
+                            ],
+                            "ansible_virtualization_type": "kvm",
+                            "discovered_interpreter_python": "/usr/libexec/platform-python",
+                            "gather_subset": [
+                                "all"
+                            ],
+                            "module_setup": true
+                        },
+                        "changed": false,
+                        "deprecations": [],
+                        "warnings": []
+                    },
+                    "resolved_action": "ansible.builtin.gather_facts",
+                    "start": "2023-02-02T17:35:37.380335",
+                    "task": "Gathering Facts",
+                    "task_action": "gather_facts",
+                    "task_args": "",
+                    "task_path": "/root/lab_testes/pega_api.yml:2",
+                    "task_uuid": "02818c75-f301-873c-1b20-000000000016",
+                    "uuid": "43b23a60-1fc0-40ef-afcb-267206b07ff2"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "clienterhel8.transp.com",
+                    "__number": 1,
+                    "__result": "Skipped",
+                    "__task": "Exibe o json com as vulnerabilidades",
+                    "__task_action": "ansible.builtin.shell",
+                    "duration": 0.005328,
+                    "end": "2023-02-02T17:35:38.378623",
+                    "event_loop": null,
+                    "host": "clienterhel8.transp.com",
+                    "play": "Playbook que brinca com API de mentirinha",
+                    "play_pattern": "clienterhel8.transp.com",
+                    "play_uuid": "02818c75-f301-873c-1b20-000000000009",
+                    "playbook": "/root/lab_testes/pega_api.yml",
+                    "playbook_uuid": "f988fb47-7b9c-4ed3-89f6-39dee462e587",
+                    "remote_addr": "clienterhel8.transp.com",
+                    "resolved_action": "ansible.builtin.shell",
+                    "start": "2023-02-02T17:35:38.373295",
+                    "task": "Exibe o json com as vulnerabilidades",
+                    "task_action": "ansible.builtin.shell",
+                    "task_args": "",
+                    "task_path": "/root/lab_testes/pega_api.yml:7",
+                    "task_uuid": "02818c75-f301-873c-1b20-00000000000b",
+                    "uuid": "defda870-5b05-483e-b73b-180c20b45023"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "clienterhel8.transp.com",
+                    "__number": 2,
+                    "__result": "Ok",
+                    "__task": "Atinge a API e obtem o json com as vulnerabilidades",
+                    "__task_action": "uri",
+                    "duration": 0.427726,
+                    "end": "2023-02-02T17:35:38.813553",
+                    "event_loop": null,
+                    "host": "clienterhel8.transp.com",
+                    "play": "Playbook que brinca com API de mentirinha",
+                    "play_pattern": "clienterhel8.transp.com",
+                    "play_uuid": "02818c75-f301-873c-1b20-000000000009",
+                    "playbook": "/root/lab_testes/pega_api.yml",
+                    "playbook_uuid": "f988fb47-7b9c-4ed3-89f6-39dee462e587",
+                    "remote_addr": "clienterhel8.transp.com",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "accept_ranges": "bytes",
+                        "changed": false,
+                        "connection": "close",
+                        "content": "{\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"page\": {\n\"number\": 6,\n\"size\": 10,\n\"totalPages\": 13,\n\"totalResources\": 123\n},\n\"resources\": [\n{\n\"added\": \"2017-10-10\",\n\"categories\": [\n\"string\"\n],\n\"cves\": [\n\"string\"\n],\n\"cvss\": {\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"v2\": {\n\"accessComplexity\": \"M\",\n\"accessVector\": \"L\",\n\"authentication\": \"N\",\n\"availabilityImpact\": \"P\",\n\"confidentialityImpact\": \"P\",\n\"exploitScore\": 3.3926,\n\"impactScore\": 6.443,\n\"integrityImpact\": \"P\",\n\"score\": 4.4,\n\"vector\": \"AV:L/AC:M/Au:N/C:P/I:P/A:P\"\n},\n\"v3\": {\n\"attackComplexity\": \"H\",\n\"attackVector\": \"N\",\n\"availabilityImpact\": \"H\",\n\"confidentialityImpact\": \"H\",\n\"exploitScore\": 1.6201,\n\"impactScore\": 5.8731,\n\"integrityImpact\": \"H\",\n\"privilegeRequired\": \"N\",\n\"scope\": \"U\",\n\"score\": 7.5,\n\"userInteraction\": \"R\",\n\"vector\": \"CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H\"\n}\n},\n\"denialOfService\": false,\n\"description\": {\n\"html\": \"A remote code execution vulnerability exists in the way that the scripting engine handles objects in memory in Microsoft Edge. ...\",\n\"text\": \"<p>A remote code execution vulnerability exists in the way that the scripting engine handles objects in memory in Microsoft Edge. ...</p>\"\n},\n\"exploits\": \"\",\n\"id\": \"msft-cve-2017-11804\",\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"malwareKits\": \"\",\n\"modified\": \"2017-10-10\",\n\"pci\": {\n\"adjustedCVSSScore\": 4,\n\"adjustedSeverityScore\": 3,\n\"fail\": true,\n\"specialNotes\": \"\",\n\"status\": \"Fail\"\n},\n\"published\": \"2017-10-10\",\n\"riskScore\": 123.69,\n\"severity\": \"Severe\",\n\"severityScore\": 4,\n\"title\": \"Microsoft CVE-2017-11804: Scripting Engine Memory Corruption Vulnerability\"\n},\n\n{\n\"added\": \"2023-10-10\",\n\"categories\": [\n\"string\"\n],\n\"cves\": [\n\"string\"\n],\n\"cvss\": {\n\"links\": [\n{\n\"href\": \"https://hostname:370/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"v2\": {\n\"accessComplexity\": \"M\",\n\"accessVector\": \"L\",\n\"authentication\": \"N\",\n\"availabilityImpact\": \"P\",\n\"confidentialityImpact\": \"P\",\n\"exploitScore\": 3.3926,\n\"impactScore\": 6.443,\n\"integrityImpact\": \"P\",\n\"score\": 4.4,\n\"vector\": \"AV:L/AC:M/Au:N/C:P/I:P/A:P\"\n},\n\"v3\": {\n\"attackComplexity\": \"H\",\n\"attackVector\": \"N\",\n\"availabilityImpact\": \"H\",\n\"confidentialityImpact\": \"H\",\n\"exploitScore\": 1.6201,\n\"impactScore\": 5.8731,\n\"integrityImpact\": \"H\",\n\"privilegeRequired\": \"N\",\n\"scope\": \"U\",\n\"score\": 7.5,\n\"userInteraction\": \"R\",\n\"vector\": \"CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H\"\n}\n},\n\"denialOfService\": false,\n\"description\": {\n\"html\": \"Eu estou inventando tudo isso. ...\",\n\"text\": \"<p>A remote  llllllllllllllllllllllllllllllllll Microsoft Edge. ...</p>\"\n},\n\"exploits\": \"\",\n\"id\": \"msft-cve-2023-69240\",\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"malwareKits\": \"\",\n\"modified\": \"2023-10-10\",\n\"pci\": {\n\"adjustedCVSSScore\": 4,\n\"adjustedSeverityScore\": 3,\n\"fail\": true,\n\"specialNotes\": \"\",\n\"status\": \"Fail\"\n},\n\"published\": \"2023-10-10\",\n\"riskScore\": 123.69,\n\"severity\": \"Severe\",\n\"severityScore\": 4,\n\"title\": \"Microsoft CVE-legal: Uma falha de mentirinha\"\n},\n\n{\n\"added\": \"2021-10-10\",\n\"categories\": [\n\"string\"\n],\n\"cves\": [\n\"string\"\n],\n\"cvss\": {\n\"links\": [\n{\n\"href\": \"https://hostname:370/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"v2\": {\n\"accessComplexity\": \"M\",\n\"accessVector\": \"L\",\n\"authentication\": \"N\",\n\"availabilityImpact\": \"P\",\n\"confidentialityImpact\": \"P\",\n\"exploitScore\": 3.3926,\n\"impactScore\": 6.443,\n\"integrityImpact\": \"P\",\n\"score\": 4.4,\n\"vector\": \"AV:L/AC:M/Au:N/C:P/I:P/A:P\"\n},\n\"v3\": {\n\"attackComplexity\": \"H\",\n\"attackVector\": \"N\",\n\"availabilityImpact\": \"H\",\n\"confidentialityImpact\": \"H\",\n\"exploitScore\": 1.6201,\n\"impactScore\": 5.8731,\n\"integrityImpact\": \"H\",\n\"privilegeRequired\": \"N\",\n\"scope\": \"U\",\n\"score\": 7.5,\n\"userInteraction\": \"R\",\n\"vector\": \"CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H\"\n}\n},\n\"denialOfService\": false,\n\"description\": {\n\"html\": \"Falha de teste - Arteris\",\n\"text\": \"<p>Servidor windows pifando memória. Alguém aí falou em Windows ME?. ...</p>\"\n},\n\"exploits\": \"\",\n\"id\": \"mssec-cve-2013-99240\",\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"malwareKits\": \"Alguns\",\n\"modified\": \"2023-10-10\",\n\"pci\": {\n\"adjustedCVSSScore\": 4,\n\"adjustedSeverityScore\": 3,\n\"fail\": true,\n\"specialNotes\": \"\",\n\"status\": \"Fail\"\n},\n\"published\": \"2022-10-10\",\n\"riskScore\": 125.69,\n\"severity\": \"Severe\",\n\"severityScore\": 4,\n\"title\": \"Microsoft CVE-legal: Falha estrambólica\"\n}\n]\n}\n",
+                        "content_length": "4401",
+                        "content_type": "text/plain; charset=UTF-8",
+                        "cookies": {},
+                        "cookies_string": "",
+                        "date": "Thu, 02 Feb 2023 17:35:38 GMT",
+                        "elapsed": 0,
+                        "etag": "\"1131-5f3b78427fa7a\"",
+                        "invocation": {
+                            "module_args": {
+                                "attributes": null,
+                                "body": null,
+                                "body_format": "raw",
+                                "ca_path": null,
+                                "client_cert": null,
+                                "client_key": null,
+                                "creates": null,
+                                "dest": null,
+                                "follow_redirects": "safe",
+                                "force": false,
+                                "force_basic_auth": false,
+                                "group": null,
+                                "headers": {},
+                                "http_agent": "ansible-httpget",
+                                "method": "GET",
+                                "mode": null,
+                                "owner": null,
+                                "remote_src": false,
+                                "removes": null,
+                                "return_content": true,
+                                "selevel": null,
+                                "serole": null,
+                                "setype": null,
+                                "seuser": null,
+                                "src": null,
+                                "status_code": [
+                                    200
+                                ],
+                                "timeout": 30,
+                                "unix_socket": null,
+                                "unredirected_headers": [],
+                                "unsafe_writes": false,
+                                "url": "http://192.168.122.5/api/3/vulnerabilities",
+                                "url_password": null,
+                                "url_username": null,
+                                "use_gssapi": false,
+                                "use_proxy": true,
+                                "validate_certs": true
+                            }
+                        },
+                        "last_modified": "Thu, 02 Feb 2023 13:26:45 GMT",
+                        "msg": "OK (4401 bytes)",
+                        "redirected": false,
+                        "server": "Apache/2.4.53 (Red Hat Enterprise Linux)",
+                        "status": 200,
+                        "url": "http://192.168.122.5/api/3/vulnerabilities"
+                    },
+                    "resolved_action": "ansible.builtin.uri",
+                    "start": "2023-02-02T17:35:38.385827",
+                    "task": "Atinge a API e obtem o json com as vulnerabilidades",
+                    "task_action": "uri",
+                    "task_args": "",
+                    "task_path": "/root/lab_testes/pega_api.yml:12",
+                    "task_uuid": "02818c75-f301-873c-1b20-00000000000c",
+                    "uuid": "8d3f4eab-1367-4359-b4ce-ca53ab7a0c67"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "clienterhel8.transp.com",
+                    "__number": 3,
+                    "__result": "Ok",
+                    "__task": "Gera uma LISTA com as vulnerabilidades chamada lista_vuln",
+                    "__task_action": "debug",
+                    "duration": 0.08088,
+                    "end": "2023-02-02T17:35:38.902420",
+                    "event_loop": null,
+                    "host": "clienterhel8.transp.com",
+                    "play": "Playbook que brinca com API de mentirinha",
+                    "play_pattern": "clienterhel8.transp.com",
+                    "play_uuid": "02818c75-f301-873c-1b20-000000000009",
+                    "playbook": "/root/lab_testes/pega_api.yml",
+                    "playbook_uuid": "f988fb47-7b9c-4ed3-89f6-39dee462e587",
+                    "remote_addr": "clienterhel8.transp.com",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "_ansible_verbose_always": true,
+                        "changed": false,
+                        "msg": [
+                            "msft-cve-2017-11804",
+                            "msft-cve-2023-69240",
+                            "mssec-cve-2013-99240"
+                        ]
+                    },
+                    "resolved_action": "ansible.builtin.debug",
+                    "start": "2023-02-02T17:35:38.821540",
+                    "task": "Gera uma LISTA com as vulnerabilidades chamada lista_vuln",
+                    "task_action": "debug",
+                    "task_args": "",
+                    "task_path": "/root/lab_testes/pega_api.yml:20",
+                    "task_uuid": "02818c75-f301-873c-1b20-00000000000d",
+                    "uuid": "b5613a15-14aa-48e3-bdc8-299ca27a8901"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "clienterhel8.transp.com",
+                    "__number": 4,
+                    "__result": "Ok",
+                    "__task": "Exibe o json com os assets conhecidos pela API",
+                    "__task_action": "uri",
+                    "duration": 0.348176,
+                    "end": "2023-02-02T17:35:39.261958",
+                    "event_loop": null,
+                    "host": "clienterhel8.transp.com",
+                    "play": "Playbook que brinca com API de mentirinha",
+                    "play_pattern": "clienterhel8.transp.com",
+                    "play_uuid": "02818c75-f301-873c-1b20-000000000009",
+                    "playbook": "/root/lab_testes/pega_api.yml",
+                    "playbook_uuid": "f988fb47-7b9c-4ed3-89f6-39dee462e587",
+                    "remote_addr": "clienterhel8.transp.com",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "accept_ranges": "bytes",
+                        "changed": false,
+                        "connection": "close",
+                        "content": "{\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"page\": {\n\"number\": 6,\n\"size\": 10,\n\"totalPages\": 13,\n\"totalResources\": 123\n},\n\"resources\": [\n{\n\"addresses\": [\n{\n\"ip\": \"123.245.34.235\",\n\"mac\": \"12:34:56:78:90:AB\"\n}\n],\n\"assessedForPolicies\": false,\n\"assessedForVulnerabilities\": true,\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"databases\": [\n{\n\"description\": \"Microsoft SQL Server\",\n\"id\": 13,\n\"name\": \"MSSQL\"\n}\n],\n\"files\": [\n{\n\"attributes\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"name\": \"ADMIN$\",\n\"size\": -1,\n\"type\": \"directory\"\n}\n],\n\"history\": [\n{\n\"date\": \"2018-04-09T06:23:49Z\",\n\"description\": \"\",\n\"scanId\": 12,\n\"type\": \"SCAN\",\n\"user\": \"\",\n\"version\": 8,\n\"vulnerabilityExceptionId\": \"\"\n}\n],\n\"hostName\": \"teste.domain.net\",\n\"hostNames\": [\n{\n\"name\": \"corporate-workstation-1102DC.acme.com\",\n\"source\": \"DNS\"\n}\n],\n\"id\": 282,\n\"ids\": [\n{\n\"id\": \"c56b2c59-4e9b-4b89-85e2-13f8146eb071\",\n\"source\": \"WQL\"\n}\n],\n\"ip\": \"182.34.74.202\",\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"mac\": \"AB:12:CD:34:EF:56\",\n\"os\": \"Microsoft Windows Server 2008 Enterprise Edition SP1\",\n\"osFingerprint\": {\n\"architecture\": \"x86\",\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"cpe\": {\n\"edition\": \"enterprise\",\n\"language\": \"\",\n\"other\": \"\",\n\"part\": \"o\",\n\"product\": \"windows_server_2008\",\n\"swEdition\": \"\",\n\"targetHW\": \"\",\n\"targetSW\": \"\",\n\"update\": \"sp1\",\n\"v2.2\": \"cpe:/o:microsoft:windows_server_2008:-:sp1:enterprise\",\n\"v2.3\": \"cpe:2.3:o:microsoft:windows_server_2008:-:sp1:enterprise:*:*:*:*:*\",\n\"vendor\": \"microsoft\",\n\"version\": \"-\"\n},\n\"description\": \"Microsoft Windows Server 2008 Enterprise Edition SP1\",\n\"family\": \"Windows\",\n\"id\": 35,\n\"product\": \"Windows Server 2008 Enterprise Edition\",\n\"systemName\": \"Microsoft Windows\",\n\"type\": \"Workstation\",\n\"vendor\": \"Microsoft\",\n\"version\": \"SP1\"\n},\n\"rawRiskScore\": 31214.3,\n\"riskScore\": 37457.16,\n\"services\": [\n{\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"databases\": [\n{\n\"description\": \"Microsoft SQL Server\",\n\"id\": 13,\n\"name\": \"MSSQL\"\n}\n],\n\"family\": \"\",\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"name\": \"CIFS Name Service\",\n\"port\": 139,\n\"product\": \"Samba\",\n\"protocol\": \"tcp\",\n\"userGroups\": [\n{\n\"id\": 972,\n\"name\": \"Administrators\"\n}\n],\n\"users\": [\n{\n\"fullName\": \"Smith, John\",\n\"id\": 8952,\n\"name\": \"john_smith\"\n}\n],\n\"vendor\": \"\",\n\"version\": \"3.5.11\",\n\"webApplications\": [\n{\n\"id\": 30712,\n\"pages\": [\n{\n\"linkType\": \"html-ref\",\n\"path\": \"/docs/config/index.html\",\n\"response\": 200\n}\n],\n\"root\": \"/\",\n\"virtualHost\": \"102.89.22.253\"\n}\n]\n}\n],\n\"software\": [\n{\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"cpe\": {\n\"edition\": \"enterprise\",\n\"language\": \"\",\n\"other\": \"\",\n\"part\": \"o\",\n\"product\": \"windows_server_2008\",\n\"swEdition\": \"\",\n\"targetHW\": \"\",\n\"targetSW\": \"\",\n\"update\": \"sp1\",\n\"v2.2\": \"cpe:/o:microsoft:windows_server_2008:-:sp1:enterprise\",\n\"v2.3\": \"cpe:2.3:o:microsoft:windows_server_2008:-:sp1:enterprise:*:*:*:*:*\",\n\"vendor\": \"microsoft\",\n\"version\": \"-\"\n},\n\"description\": \"Microsoft Outlook 2013 15.0.4867.1000\",\n\"family\": \"Office 2013\",\n\"id\": 0,\n\"product\": \"Outlook 2013\",\n\"type\": \"Productivity\",\n\"vendor\": \"Microsoft\",\n\"version\": \"15.0.4867.1000\"\n}\n],\n\"type\": \"\",\n\"userGroups\": [\n{\n\"id\": 972,\n\"name\": \"Administrators\"\n}\n],\n\"users\": [\n{\n\"fullName\": \"Smith, John\",\n\"id\": 8952,\n\"name\": \"john_smith\"\n}\n],\n\"vulnerabilities\": {\n\"critical\": 16,\n\"exploits\": 4,\n\"malwareKits\": 0,\n\"moderate\": 3,\n\"severe\": 76,\n\"total\": 95\n}\n},\n\n\n\n\n\n\n\n\n\n\n\n\n{\n\"addresses\": [\n{\n\"ip\": \"123.245.34.235\",\n\"mac\": \"12:34:56:78:90:AB\"\n}\n],\n\"assessedForPolicies\": false,\n\"assessedForVulnerabilities\": true,\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"databases\": [\n{\n\"description\": \"Microsoft SQL Server\",\n\"id\": 13,\n\"name\": \"MSSQL\"\n}\n],\n\"files\": [\n{\n\"attributes\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"name\": \"ADMIN$\",\n\"size\": -1,\n\"type\": \"directory\"\n}\n],\n\"history\": [\n{\n\"date\": \"2018-04-09T06:23:49Z\",\n\"description\": \"\",\n\"scanId\": 12,\n\"type\": \"SCAN\",\n\"user\": \"\",\n\"version\": 8,\n\"vulnerabilityExceptionId\": \"\"\n}\n],\n\"hostName\": \"li817\",\n\"hostNames\": [\n{\n\"name\": \"corporate-workstation-1102DC.acme.com\",\n\"source\": \"DNS\"\n}\n],\n\"id\": 281,\n\"ids\": [\n{\n\"id\": \"c56b2c59-4e9b-4b89-85e2-13f8146eb071\",\n\"source\": \"WQL\"\n}\n],\n\"ip\": \"182.34.74.202\",\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"mac\": \"AB:12:CD:34:EF:56\",\n\"os\": \"Microsoft Windows Server 2008 Enterprise Edition SP1\",\n\"osFingerprint\": {\n\"architecture\": \"x86\",\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"cpe\": {\n\"edition\": \"enterprise\",\n\"language\": \"\",\n\"other\": \"\",\n\"part\": \"o\",\n\"product\": \"windows_server_2008\",\n\"swEdition\": \"\",\n\"targetHW\": \"\",\n\"targetSW\": \"\",\n\"update\": \"sp1\",\n\"v2.2\": \"cpe:/o:microsoft:windows_server_2008:-:sp1:enterprise\",\n\"v2.3\": \"cpe:2.3:o:microsoft:windows_server_2008:-:sp1:enterprise:*:*:*:*:*\",\n\"vendor\": \"microsoft\",\n\"version\": \"-\"\n},\n\"description\": \"Microsoft Windows Server 2008 Enterprise Edition SP1\",\n\"family\": \"Windows\",\n\"id\": 35,\n\"product\": \"Windows Server 2008 Enterprise Edition\",\n\"systemName\": \"Microsoft Windows\",\n\"type\": \"Workstation\",\n\"vendor\": \"Microsoft\",\n\"version\": \"SP1\"\n},\n\"rawRiskScore\": 31214.3,\n\"riskScore\": 37457.16,\n\"services\": [\n{\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"databases\": [\n{\n\"description\": \"Microsoft SQL Server\",\n\"id\": 13,\n\"name\": \"MSSQL\"\n}\n],\n\"family\": \"\",\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"name\": \"CIFS Name Service\",\n\"port\": 139,\n\"product\": \"Samba\",\n\"protocol\": \"tcp\",\n\"userGroups\": [\n{\n\"id\": 972,\n\"name\": \"Administrators\"\n}\n],\n\"users\": [\n{\n\"fullName\": \"Smith, John\",\n\"id\": 8952,\n\"name\": \"john_smith\"\n}\n],\n\"vendor\": \"\",\n\"version\": \"3.5.11\",\n\"webApplications\": [\n{\n\"id\": 30712,\n\"pages\": [\n{\n\"linkType\": \"html-ref\",\n\"path\": \"/docs/config/index.html\",\n\"response\": 200\n}\n],\n\"root\": \"/\",\n\"virtualHost\": \"102.89.22.253\"\n}\n]\n}\n],\n\"software\": [\n{\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"cpe\": {\n\"edition\": \"enterprise\",\n\"language\": \"\",\n\"other\": \"\",\n\"part\": \"o\",\n\"product\": \"windows_server_2008\",\n\"swEdition\": \"\",\n\"targetHW\": \"\",\n\"targetSW\": \"\",\n\"update\": \"sp1\",\n\"v2.2\": \"cpe:/o:microsoft:windows_server_2008:-:sp1:enterprise\",\n\"v2.3\": \"cpe:2.3:o:microsoft:windows_server_2008:-:sp1:enterprise:*:*:*:*:*\",\n\"vendor\": \"microsoft\",\n\"version\": \"-\"\n},\n\"description\": \"Microsoft Outlook 2013 15.0.4867.1000\",\n\"family\": \"Office 2013\",\n\"id\": 0,\n\"product\": \"Outlook 2013\",\n\"type\": \"Productivity\",\n\"vendor\": \"Microsoft\",\n\"version\": \"15.0.4867.1000\"\n}\n],\n\"type\": \"\",\n\"userGroups\": [\n{\n\"id\": 972,\n\"name\": \"Administrators\"\n}\n],\n\"users\": [\n{\n\"fullName\": \"Smith, John\",\n\"id\": 8952,\n\"name\": \"john_smith\"\n}\n],\n\"vulnerabilities\": {\n\"critical\": 16,\n\"exploits\": 4,\n\"malwareKits\": 0,\n\"moderate\": 3,\n\"severe\": 76,\n\"total\": 95\n}\n},\n\n\n\n\n\n\n\n\n\n\n{\n\"addresses\": [\n{\n\"ip\": \"123.245.34.235\",\n\"mac\": \"12:34:56:78:90:AB\"\n}\n],\n\"assessedForPolicies\": false,\n\"assessedForVulnerabilities\": true,\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"databases\": [\n{\n\"description\": \"Microsoft SQL Server\",\n\"id\": 13,\n\"name\": \"MSSQL\"\n}\n],\n\"files\": [\n{\n\"attributes\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"name\": \"ADMIN$\",\n\"size\": -1,\n\"type\": \"directory\"\n}\n],\n\"history\": [\n{\n\"date\": \"2018-04-09T06:23:49Z\",\n\"description\": \"\",\n\"scanId\": 12,\n\"type\": \"SCAN\",\n\"user\": \"\",\n\"version\": 8,\n\"vulnerabilityExceptionId\": \"\"\n}\n],\n\"hostName\": \"robar.domain.net\",\n\"hostNames\": [\n{\n\"name\": \"corporate-workstation-1102DC.acme.com\",\n\"source\": \"DNS\"\n}\n],\n\"id\": 283,\n\"ids\": [\n{\n\"id\": \"c56b2c59-4e9b-4b89-85e2-13f8146eb071\",\n\"source\": \"WQL\"\n}\n],\n\"ip\": \"182.34.74.202\",\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"mac\": \"AB:12:CD:34:EF:56\",\n\"os\": \"Microsoft Windows Server 2008 Enterprise Edition SP1\",\n\"osFingerprint\": {\n\"architecture\": \"x86\",\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"cpe\": {\n\"edition\": \"enterprise\",\n\"language\": \"\",\n\"other\": \"\",\n\"part\": \"o\",\n\"product\": \"windows_server_2008\",\n\"swEdition\": \"\",\n\"targetHW\": \"\",\n\"targetSW\": \"\",\n\"update\": \"sp1\",\n\"v2.2\": \"cpe:/o:microsoft:windows_server_2008:-:sp1:enterprise\",\n\"v2.3\": \"cpe:2.3:o:microsoft:windows_server_2008:-:sp1:enterprise:*:*:*:*:*\",\n\"vendor\": \"microsoft\",\n\"version\": \"-\"\n},\n\"description\": \"Microsoft Windows Server 2008 Enterprise Edition SP1\",\n\"family\": \"Windows\",\n\"id\": 35,\n\"product\": \"Windows Server 2008 Enterprise Edition\",\n\"systemName\": \"Microsoft Windows\",\n\"type\": \"Workstation\",\n\"vendor\": \"Microsoft\",\n\"version\": \"SP1\"\n},\n\"rawRiskScore\": 31214.3,\n\"riskScore\": 37457.16,\n\"services\": [\n{\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"databases\": [\n{\n\"description\": \"Microsoft SQL Server\",\n\"id\": 13,\n\"name\": \"MSSQL\"\n}\n],\n\"family\": \"\",\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"name\": \"CIFS Name Service\",\n\"port\": 139,\n\"product\": \"Samba\",\n\"protocol\": \"tcp\",\n\"userGroups\": [\n{\n\"id\": 972,\n\"name\": \"Administrators\"\n}\n],\n\"users\": [\n{\n\"fullName\": \"Smith, John\",\n\"id\": 8952,\n\"name\": \"john_smith\"\n}\n],\n\"vendor\": \"\",\n\"version\": \"3.5.11\",\n\"webApplications\": [\n{\n\"id\": 30712,\n\"pages\": [\n{\n\"linkType\": \"html-ref\",\n\"path\": \"/docs/config/index.html\",\n\"response\": 200\n}\n],\n\"root\": \"/\",\n\"virtualHost\": \"102.89.22.253\"\n}\n]\n}\n],\n\"software\": [\n{\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"cpe\": {\n\"edition\": \"enterprise\",\n\"language\": \"\",\n\"other\": \"\",\n\"part\": \"o\",\n\"product\": \"windows_server_2008\",\n\"swEdition\": \"\",\n\"targetHW\": \"\",\n\"targetSW\": \"\",\n\"update\": \"sp1\",\n\"v2.2\": \"cpe:/o:microsoft:windows_server_2008:-:sp1:enterprise\",\n\"v2.3\": \"cpe:2.3:o:microsoft:windows_server_2008:-:sp1:enterprise:*:*:*:*:*\",\n\"vendor\": \"microsoft\",\n\"version\": \"-\"\n},\n\"description\": \"Microsoft Outlook 2013 15.0.4867.1000\",\n\"family\": \"Office 2013\",\n\"id\": 0,\n\"product\": \"Outlook 2013\",\n\"type\": \"Productivity\",\n\"vendor\": \"Microsoft\",\n\"version\": \"15.0.4867.1000\"\n}\n],\n\"type\": \"\",\n\"userGroups\": [\n{\n\"id\": 972,\n\"name\": \"Administrators\"\n}\n],\n\"users\": [\n{\n\"fullName\": \"Smith, John\",\n\"id\": 8952,\n\"name\": \"john_smith\"\n}\n],\n\"vulnerabilities\": {\n\"critical\": 16,\n\"exploits\": 4,\n\"malwareKits\": 0,\n\"moderate\": 3,\n\"severe\": 76,\n\"total\": 95\n}\n},\n\n\n\n\n\n\n\n\n\n\n\n\n\n{\n\"addresses\": [\n{\n\"ip\": \"123.245.34.235\",\n\"mac\": \"12:34:56:78:90:AB\"\n}\n],\n\"assessedForPolicies\": false,\n\"assessedForVulnerabilities\": true,\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"databases\": [\n{\n\"description\": \"Microsoft SQL Server\",\n\"id\": 13,\n\"name\": \"MSSQL\"\n}\n],\n\"files\": [\n{\n\"attributes\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"name\": \"ADMIN$\",\n\"size\": -1,\n\"type\": \"directory\"\n}\n],\n\"history\": [\n{\n\"date\": \"2018-04-09T06:23:49Z\",\n\"description\": \"\",\n\"scanId\": 12,\n\"type\": \"SCAN\",\n\"user\": \"\",\n\"version\": 8,\n\"vulnerabilityExceptionId\": \"\"\n}\n],\n\"hostName\": \"bd.domain.net\",\n\"hostNames\": [\n{\n\"name\": \"corporate-workstation-1102DC.acme.com\",\n\"source\": \"DNS\"\n}\n],\n\"id\": 284,\n\"ids\": [\n{\n\"id\": \"c56b2c59-4e9b-4b89-85e2-13f8146eb071\",\n\"source\": \"WQL\"\n}\n],\n\"ip\": \"182.34.74.202\",\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"mac\": \"AB:12:CD:34:EF:56\",\n\"os\": \"Microsoft Windows Server 2008 Enterprise Edition SP1\",\n\"osFingerprint\": {\n\"architecture\": \"x86\",\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"cpe\": {\n\"edition\": \"enterprise\",\n\"language\": \"\",\n\"other\": \"\",\n\"part\": \"o\",\n\"product\": \"windows_server_2008\",\n\"swEdition\": \"\",\n\"targetHW\": \"\",\n\"targetSW\": \"\",\n\"update\": \"sp1\",\n\"v2.2\": \"cpe:/o:microsoft:windows_server_2008:-:sp1:enterprise\",\n\"v2.3\": \"cpe:2.3:o:microsoft:windows_server_2008:-:sp1:enterprise:*:*:*:*:*\",\n\"vendor\": \"microsoft\",\n\"version\": \"-\"\n},\n\"description\": \"Microsoft Windows Server 2008 Enterprise Edition SP1\",\n\"family\": \"Windows\",\n\"id\": 35,\n\"product\": \"Windows Server 2008 Enterprise Edition\",\n\"systemName\": \"Microsoft Windows\",\n\"type\": \"Workstation\",\n\"vendor\": \"Microsoft\",\n\"version\": \"SP1\"\n},\n\"rawRiskScore\": 31214.3,\n\"riskScore\": 37457.16,\n\"services\": [\n{\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"databases\": [\n{\n\"description\": \"Microsoft SQL Server\",\n\"id\": 13,\n\"name\": \"MSSQL\"\n}\n],\n\"family\": \"\",\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"name\": \"CIFS Name Service\",\n\"port\": 139,\n\"product\": \"Samba\",\n\"protocol\": \"tcp\",\n\"userGroups\": [\n{\n\"id\": 972,\n\"name\": \"Administrators\"\n}\n],\n\"users\": [\n{\n\"fullName\": \"Smith, John\",\n\"id\": 8952,\n\"name\": \"john_smith\"\n}\n],\n\"vendor\": \"\",\n\"version\": \"3.5.11\",\n\"webApplications\": [\n{\n\"id\": 30712,\n\"pages\": [\n{\n\"linkType\": \"html-ref\",\n\"path\": \"/docs/config/index.html\",\n\"response\": 200\n}\n],\n\"root\": \"/\",\n\"virtualHost\": \"102.89.22.253\"\n}\n]\n}\n],\n\"software\": [\n{\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"cpe\": {\n\"edition\": \"enterprise\",\n\"language\": \"\",\n\"other\": \"\",\n\"part\": \"o\",\n\"product\": \"windows_server_2008\",\n\"swEdition\": \"\",\n\"targetHW\": \"\",\n\"targetSW\": \"\",\n\"update\": \"sp1\",\n\"v2.2\": \"cpe:/o:microsoft:windows_server_2008:-:sp1:enterprise\",\n\"v2.3\": \"cpe:2.3:o:microsoft:windows_server_2008:-:sp1:enterprise:*:*:*:*:*\",\n\"vendor\": \"microsoft\",\n\"version\": \"-\"\n},\n\"description\": \"Microsoft Outlook 2013 15.0.4867.1000\",\n\"family\": \"Office 2013\",\n\"id\": 0,\n\"product\": \"Outlook 2013\",\n\"type\": \"Productivity\",\n\"vendor\": \"Microsoft\",\n\"version\": \"15.0.4867.1000\"\n}\n],\n\"type\": \"\",\n\"userGroups\": [\n{\n\"id\": 972,\n\"name\": \"Administrators\"\n}\n],\n\"users\": [\n{\n\"fullName\": \"Smith, John\",\n\"id\": 8952,\n\"name\": \"john_smith\"\n}\n],\n\"vulnerabilities\": {\n\"critical\": 16,\n\"exploits\": 4,\n\"malwareKits\": 0,\n\"moderate\": 3,\n\"severe\": 76,\n\"total\": 95\n}\n},\n\n\n\n\n\n\n\n\n\n{\n\"addresses\": [\n{\n\"ip\": \"123.245.34.235\",\n\"mac\": \"12:34:56:78:90:AB\"\n}\n],\n\"assessedForPolicies\": false,\n\"assessedForVulnerabilities\": true,\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"databases\": [\n{\n\"description\": \"Microsoft SQL Server\",\n\"id\": 13,\n\"name\": \"MSSQL\"\n}\n],\n\"files\": [\n{\n\"attributes\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"name\": \"ADMIN$\",\n\"size\": -1,\n\"type\": \"directory\"\n}\n],\n\"history\": [\n{\n\"date\": \"2018-04-09T06:23:49Z\",\n\"description\": \"\",\n\"scanId\": 12,\n\"type\": \"SCAN\",\n\"user\": \"\",\n\"version\": 8,\n\"vulnerabilityExceptionId\": \"\"\n}\n],\n\"hostName\": \"clientewin2022-1.transp.com\",\n\"hostNames\": [\n{\n\"name\": \"corporate-workstation-1102DC.acme.com\",\n\"source\": \"DNS\"\n}\n],\n\"id\": 300,\n\"ids\": [\n{\n\"id\": \"c56b2c59-4e9b-4b89-85e2-13f8146eb071\",\n\"source\": \"WQL\"\n}\n],\n\"ip\": \"182.34.74.202\",\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"mac\": \"AB:12:CD:34:EF:56\",\n\"os\": \"Microsoft Windows Server 2008 Enterprise Edition SP1\",\n\"osFingerprint\": {\n\"architecture\": \"x86\",\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"cpe\": {\n\"edition\": \"enterprise\",\n\"language\": \"\",\n\"other\": \"\",\n\"part\": \"o\",\n\"product\": \"windows_server_2008\",\n\"swEdition\": \"\",\n\"targetHW\": \"\",\n\"targetSW\": \"\",\n\"update\": \"sp1\",\n\"v2.2\": \"cpe:/o:microsoft:windows_server_2008:-:sp1:enterprise\",\n\"v2.3\": \"cpe:2.3:o:microsoft:windows_server_2008:-:sp1:enterprise:*:*:*:*:*\",\n\"vendor\": \"microsoft\",\n\"version\": \"-\"\n},\n\"description\": \"Microsoft Windows Server 2008 Enterprise Edition SP1\",\n\"family\": \"Windows\",\n\"id\": 35,\n\"product\": \"Windows Server 2008 Enterprise Edition\",\n\"systemName\": \"Microsoft Windows\",\n\"type\": \"Workstation\",\n\"vendor\": \"Microsoft\",\n\"version\": \"SP1\"\n},\n\"rawRiskScore\": 31214.3,\n\"riskScore\": 37457.16,\n\"services\": [\n{\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"databases\": [\n{\n\"description\": \"Microsoft SQL Server\",\n\"id\": 13,\n\"name\": \"MSSQL\"\n}\n],\n\"family\": \"\",\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"name\": \"CIFS Name Service\",\n\"port\": 139,\n\"product\": \"Samba\",\n\"protocol\": \"tcp\",\n\"userGroups\": [\n{\n\"id\": 972,\n\"name\": \"Administrators\"\n}\n],\n\"users\": [\n{\n\"fullName\": \"Smith, John\",\n\"id\": 8952,\n\"name\": \"john_smith\"\n}\n],\n\"vendor\": \"\",\n\"version\": \"3.5.11\",\n\"webApplications\": [\n{\n\"id\": 30712,\n\"pages\": [\n{\n\"linkType\": \"html-ref\",\n\"path\": \"/docs/config/index.html\",\n\"response\": 200\n}\n],\n\"root\": \"/\",\n\"virtualHost\": \"102.89.22.253\"\n}\n]\n}\n],\n\"software\": [\n{\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"cpe\": {\n\"edition\": \"enterprise\",\n\"language\": \"\",\n\"other\": \"\",\n\"part\": \"o\",\n\"product\": \"windows_server_2008\",\n\"swEdition\": \"\",\n\"targetHW\": \"\",\n\"targetSW\": \"\",\n\"update\": \"sp1\",\n\"v2.2\": \"cpe:/o:microsoft:windows_server_2008:-:sp1:enterprise\",\n\"v2.3\": \"cpe:2.3:o:microsoft:windows_server_2008:-:sp1:enterprise:*:*:*:*:*\",\n\"vendor\": \"microsoft\",\n\"version\": \"-\"\n},\n\"description\": \"Microsoft Outlook 2013 15.0.4867.1000\",\n\"family\": \"Office 2013\",\n\"id\": 0,\n\"product\": \"Outlook 2013\",\n\"type\": \"Productivity\",\n\"vendor\": \"Microsoft\",\n\"version\": \"15.0.4867.1000\"\n}\n],\n\"type\": \"\",\n\"userGroups\": [\n{\n\"id\": 972,\n\"name\": \"Administrators\"\n}\n],\n\"users\": [\n{\n\"fullName\": \"Smith, John\",\n\"id\": 8952,\n\"name\": \"john_smith\"\n}\n],\n\"vulnerabilities\": {\n\"critical\": 16,\n\"exploits\": 4,\n\"malwareKits\": 0,\n\"moderate\": 3,\n\"severe\": 76,\n\"total\": 95\n}\n},\n\n\n\n\n\n\n\n{\n\"addresses\": [\n{\n\"ip\": \"123.245.34.235\",\n\"mac\": \"12:34:56:78:90:AB\"\n}\n],\n\"assessedForPolicies\": false,\n\"assessedForVulnerabilities\": true,\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"databases\": [\n{\n\"description\": \"Microsoft SQL Server\",\n\"id\": 13,\n\"name\": \"MSSQL\"\n}\n],\n\"files\": [\n{\n\"attributes\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"name\": \"ADMIN$\",\n\"size\": -1,\n\"type\": \"directory\"\n}\n],\n\"history\": [\n{\n\"date\": \"2018-04-09T06:23:49Z\",\n\"description\": \"\",\n\"scanId\": 12,\n\"type\": \"SCAN\",\n\"user\": \"\",\n\"version\": 8,\n\"vulnerabilityExceptionId\": \"\"\n}\n],\n\"hostName\": \"clientewin2022-2.transp.com\",\n\"hostNames\": [\n{\n\"name\": \"corporate-workstation-1102DC.acme.com\",\n\"source\": \"DNS\"\n}\n],\n\"id\": 301,\n\"ids\": [\n{\n\"id\": \"c56b2c59-4e9b-4b89-85e2-13f8146eb071\",\n\"source\": \"WQL\"\n}\n],\n\"ip\": \"182.34.74.202\",\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"mac\": \"AB:12:CD:34:EF:56\",\n\"os\": \"Microsoft Windows Server 2008 Enterprise Edition SP1\",\n\"osFingerprint\": {\n\"architecture\": \"x86\",\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"cpe\": {\n\"edition\": \"enterprise\",\n\"language\": \"\",\n\"other\": \"\",\n\"part\": \"o\",\n\"product\": \"windows_server_2008\",\n\"swEdition\": \"\",\n\"targetHW\": \"\",\n\"targetSW\": \"\",\n\"update\": \"sp1\",\n\"v2.2\": \"cpe:/o:microsoft:windows_server_2008:-:sp1:enterprise\",\n\"v2.3\": \"cpe:2.3:o:microsoft:windows_server_2008:-:sp1:enterprise:*:*:*:*:*\",\n\"vendor\": \"microsoft\",\n\"version\": \"-\"\n},\n\"description\": \"Microsoft Windows Server 2008 Enterprise Edition SP1\",\n\"family\": \"Windows\",\n\"id\": 35,\n\"product\": \"Windows Server 2008 Enterprise Edition\",\n\"systemName\": \"Microsoft Windows\",\n\"type\": \"Workstation\",\n\"vendor\": \"Microsoft\",\n\"version\": \"SP1\"\n},\n\"rawRiskScore\": 31214.3,\n\"riskScore\": 37457.16,\n\"services\": [\n{\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"databases\": [\n{\n\"description\": \"Microsoft SQL Server\",\n\"id\": 13,\n\"name\": \"MSSQL\"\n}\n],\n\"family\": \"\",\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"name\": \"CIFS Name Service\",\n\"port\": 139,\n\"product\": \"Samba\",\n\"protocol\": \"tcp\",\n\"userGroups\": [\n{\n\"id\": 972,\n\"name\": \"Administrators\"\n}\n],\n\"users\": [\n{\n\"fullName\": \"Smith, John\",\n\"id\": 8952,\n\"name\": \"john_smith\"\n}\n],\n\"vendor\": \"\",\n\"version\": \"3.5.11\",\n\"webApplications\": [\n{\n\"id\": 30712,\n\"pages\": [\n{\n\"linkType\": \"html-ref\",\n\"path\": \"/docs/config/index.html\",\n\"response\": 200\n}\n],\n\"root\": \"/\",\n\"virtualHost\": \"102.89.22.253\"\n}\n]\n}\n],\n\"software\": [\n{\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"cpe\": {\n\"edition\": \"enterprise\",\n\"language\": \"\",\n\"other\": \"\",\n\"part\": \"o\",\n\"product\": \"windows_server_2008\",\n\"swEdition\": \"\",\n\"targetHW\": \"\",\n\"targetSW\": \"\",\n\"update\": \"sp1\",\n\"v2.2\": \"cpe:/o:microsoft:windows_server_2008:-:sp1:enterprise\",\n\"v2.3\": \"cpe:2.3:o:microsoft:windows_server_2008:-:sp1:enterprise:*:*:*:*:*\",\n\"vendor\": \"microsoft\",\n\"version\": \"-\"\n},\n\"description\": \"Microsoft Outlook 2013 15.0.4867.1000\",\n\"family\": \"Office 2013\",\n\"id\": 0,\n\"product\": \"Outlook 2013\",\n\"type\": \"Productivity\",\n\"vendor\": \"Microsoft\",\n\"version\": \"15.0.4867.1000\"\n}\n],\n\"type\": \"\",\n\"userGroups\": [\n{\n\"id\": 972,\n\"name\": \"Administrators\"\n}\n],\n\"users\": [\n{\n\"fullName\": \"Smith, John\",\n\"id\": 8952,\n\"name\": \"john_smith\"\n}\n],\n\"vulnerabilities\": {\n\"critical\": 16,\n\"exploits\": 4,\n\"malwareKits\": 0,\n\"moderate\": 3,\n\"severe\": 76,\n\"total\": 95\n}\n},\n\n\n\n\n{\n\"addresses\": [\n{\n\"ip\": \"123.245.34.235\",\n\"mac\": \"12:34:56:78:90:AB\"\n}\n],\n\"assessedForPolicies\": false,\n\"assessedForVulnerabilities\": true,\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"databases\": [\n{\n\"description\": \"Microsoft SQL Server\",\n\"id\": 13,\n\"name\": \"MSSQL\"\n}\n],\n\"files\": [\n{\n\"attributes\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"name\": \"ADMIN$\",\n\"size\": -1,\n\"type\": \"directory\"\n}\n],\n\"history\": [\n{\n\"date\": \"2018-04-09T06:23:49Z\",\n\"description\": \"\",\n\"scanId\": 12,\n\"type\": \"SCAN\",\n\"user\": \"\",\n\"version\": 8,\n\"vulnerabilityExceptionId\": \"\"\n}\n],\n\"hostName\": \"clientewin2019.transp.com\",\n\"hostNames\": [\n{\n\"name\": \"corporate-workstation-1102DC.acme.com\",\n\"source\": \"DNS\"\n}\n],\n\"id\": 302,\n\"ids\": [\n{\n\"id\": \"c56b2c59-4e9b-4b89-85e2-13f8146eb071\",\n\"source\": \"WQL\"\n}\n],\n\"ip\": \"182.34.74.202\",\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"mac\": \"AB:12:CD:34:EF:56\",\n\"os\": \"Microsoft Windows Server 2008 Enterprise Edition SP1\",\n\"osFingerprint\": {\n\"architecture\": \"x86\",\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"cpe\": {\n\"edition\": \"enterprise\",\n\"language\": \"\",\n\"other\": \"\",\n\"part\": \"o\",\n\"product\": \"windows_server_2008\",\n\"swEdition\": \"\",\n\"targetHW\": \"\",\n\"targetSW\": \"\",\n\"update\": \"sp1\",\n\"v2.2\": \"cpe:/o:microsoft:windows_server_2008:-:sp1:enterprise\",\n\"v2.3\": \"cpe:2.3:o:microsoft:windows_server_2008:-:sp1:enterprise:*:*:*:*:*\",\n\"vendor\": \"microsoft\",\n\"version\": \"-\"\n},\n\"description\": \"Microsoft Windows Server 2008 Enterprise Edition SP1\",\n\"family\": \"Windows\",\n\"id\": 35,\n\"product\": \"Windows Server 2008 Enterprise Edition\",\n\"systemName\": \"Microsoft Windows\",\n\"type\": \"Workstation\",\n\"vendor\": \"Microsoft\",\n\"version\": \"SP1\"\n},\n\"rawRiskScore\": 31214.3,\n\"riskScore\": 37457.16,\n\"services\": [\n{\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"databases\": [\n{\n\"description\": \"Microsoft SQL Server\",\n\"id\": 13,\n\"name\": \"MSSQL\"\n}\n],\n\"family\": \"\",\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"name\": \"CIFS Name Service\",\n\"port\": 139,\n\"product\": \"Samba\",\n\"protocol\": \"tcp\",\n\"userGroups\": [\n{\n\"id\": 972,\n\"name\": \"Administrators\"\n}\n],\n\"users\": [\n{\n\"fullName\": \"Smith, John\",\n\"id\": 8952,\n\"name\": \"john_smith\"\n}\n],\n\"vendor\": \"\",\n\"version\": \"3.5.11\",\n\"webApplications\": [\n{\n\"id\": 30712,\n\"pages\": [\n{\n\"linkType\": \"html-ref\",\n\"path\": \"/docs/config/index.html\",\n\"response\": 200\n}\n],\n\"root\": \"/\",\n\"virtualHost\": \"102.89.22.253\"\n}\n]\n}\n],\n\"software\": [\n{\n\"configurations\": [\n{\n\"name\": \"<name>\",\n\"value\": \"<value>\"\n}\n],\n\"cpe\": {\n\"edition\": \"enterprise\",\n\"language\": \"\",\n\"other\": \"\",\n\"part\": \"o\",\n\"product\": \"windows_server_2008\",\n\"swEdition\": \"\",\n\"targetHW\": \"\",\n\"targetSW\": \"\",\n\"update\": \"sp1\",\n\"v2.2\": \"cpe:/o:microsoft:windows_server_2008:-:sp1:enterprise\",\n\"v2.3\": \"cpe:2.3:o:microsoft:windows_server_2008:-:sp1:enterprise:*:*:*:*:*\",\n\"vendor\": \"microsoft\",\n\"version\": \"-\"\n},\n\"description\": \"Microsoft Outlook 2013 15.0.4867.1000\",\n\"family\": \"Office 2013\",\n\"id\": 0,\n\"product\": \"Outlook 2013\",\n\"type\": \"Productivity\",\n\"vendor\": \"Microsoft\",\n\"version\": \"15.0.4867.1000\"\n}\n],\n\"type\": \"\",\n\"userGroups\": [\n{\n\"id\": 972,\n\"name\": \"Administrators\"\n}\n],\n\"users\": [\n{\n\"fullName\": \"Smith, John\",\n\"id\": 8952,\n\"name\": \"john_smith\"\n}\n],\n\"vulnerabilities\": {\n\"critical\": 16,\n\"exploits\": 4,\n\"malwareKits\": 0,\n\"moderate\": 3,\n\"severe\": 76,\n\"total\": 95\n}\n}\n]\n}\n",
+                        "content_length": "23604",
+                        "cookies": {},
+                        "cookies_string": "",
+                        "date": "Thu, 02 Feb 2023 17:35:39 GMT",
+                        "elapsed": 0,
+                        "etag": "\"5c34-5f3b813bb2f1f\"",
+                        "invocation": {
+                            "module_args": {
+                                "attributes": null,
+                                "body": null,
+                                "body_format": "raw",
+                                "ca_path": null,
+                                "client_cert": null,
+                                "client_key": null,
+                                "creates": null,
+                                "dest": null,
+                                "follow_redirects": "safe",
+                                "force": false,
+                                "force_basic_auth": false,
+                                "group": null,
+                                "headers": {},
+                                "http_agent": "ansible-httpget",
+                                "method": "GET",
+                                "mode": null,
+                                "owner": null,
+                                "remote_src": false,
+                                "removes": null,
+                                "return_content": true,
+                                "selevel": null,
+                                "serole": null,
+                                "setype": null,
+                                "seuser": null,
+                                "src": null,
+                                "status_code": [
+                                    200
+                                ],
+                                "timeout": 30,
+                                "unix_socket": null,
+                                "unredirected_headers": [],
+                                "unsafe_writes": false,
+                                "url": "http://192.168.122.5/api/3/assets",
+                                "url_password": null,
+                                "url_username": null,
+                                "use_gssapi": false,
+                                "use_proxy": true,
+                                "validate_certs": true
+                            }
+                        },
+                        "last_modified": "Thu, 02 Feb 2023 14:06:54 GMT",
+                        "msg": "OK (23604 bytes)",
+                        "redirected": false,
+                        "server": "Apache/2.4.53 (Red Hat Enterprise Linux)",
+                        "status": 200,
+                        "url": "http://192.168.122.5/api/3/assets"
+                    },
+                    "resolved_action": "ansible.builtin.uri",
+                    "start": "2023-02-02T17:35:38.913782",
+                    "task": "Exibe o json com os assets conhecidos pela API",
+                    "task_action": "uri",
+                    "task_args": "",
+                    "task_path": "/root/lab_testes/pega_api.yml:25",
+                    "task_uuid": "02818c75-f301-873c-1b20-00000000000e",
+                    "uuid": "64d0212e-f2c7-4d81-aad2-78061fe9dc5d"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "clienterhel8.transp.com",
+                    "__number": 5,
+                    "__result": "Ok",
+                    "__task": "Gera um LISTA contendo DICIONÁRIOS com os assets conhecidos pela API",
+                    "__task_action": "debug",
+                    "duration": 0.080444,
+                    "end": "2023-02-02T17:35:39.350573",
+                    "event_loop": null,
+                    "host": "clienterhel8.transp.com",
+                    "play": "Playbook que brinca com API de mentirinha",
+                    "play_pattern": "clienterhel8.transp.com",
+                    "play_uuid": "02818c75-f301-873c-1b20-000000000009",
+                    "playbook": "/root/lab_testes/pega_api.yml",
+                    "playbook_uuid": "f988fb47-7b9c-4ed3-89f6-39dee462e587",
+                    "remote_addr": "clienterhel8.transp.com",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "_ansible_verbose_always": true,
+                        "changed": false,
+                        "msg": [
+                            {
+                                "hostName": "teste.domain.net",
+                                "id": 282
+                            },
+                            {
+                                "hostName": "li817",
+                                "id": 281
+                            },
+                            {
+                                "hostName": "robar.domain.net",
+                                "id": 283
+                            },
+                            {
+                                "hostName": "bd.domain.net",
+                                "id": 284
+                            },
+                            {
+                                "hostName": "clientewin2022-1.transp.com",
+                                "id": 300
+                            },
+                            {
+                                "hostName": "clientewin2022-2.transp.com",
+                                "id": 301
+                            },
+                            {
+                                "hostName": "clientewin2019.transp.com",
+                                "id": 302
+                            }
+                        ]
+                    },
+                    "resolved_action": "ansible.builtin.debug",
+                    "start": "2023-02-02T17:35:39.270129",
+                    "task": "Gera um LISTA contendo DICIONÁRIOS com os assets conhecidos pela API",
+                    "task_action": "debug",
+                    "task_args": "",
+                    "task_path": "/root/lab_testes/pega_api.yml:33",
+                    "task_uuid": "02818c75-f301-873c-1b20-00000000000f",
+                    "uuid": "e5fc6706-b4c1-41d7-892e-72f2c2c8abe1"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "1s",
+                    "__host": "clienterhel8.transp.com",
+                    "__number": 6,
+                    "__result": "Ok",
+                    "__task": "Gera uma lista de IDs de assets afetados pelas vulnerabilidades",
+                    "__task_action": "uri",
+                    "duration": 1.0685,
+                    "end": "2023-02-02T17:35:40.429857",
+                    "event_loop": null,
+                    "host": "clienterhel8.transp.com",
+                    "play": "Playbook que brinca com API de mentirinha",
+                    "play_pattern": "clienterhel8.transp.com",
+                    "play_uuid": "02818c75-f301-873c-1b20-000000000009",
+                    "playbook": "/root/lab_testes/pega_api.yml",
+                    "playbook_uuid": "f988fb47-7b9c-4ed3-89f6-39dee462e587",
+                    "remote_addr": "clienterhel8.transp.com",
+                    "res": {
+                        "changed": false,
+                        "msg": "All items completed",
+                        "results": [
+                            {
+                                "_ansible_item_label": "msft-cve-2017-11804",
+                                "_ansible_no_log": null,
+                                "accept_ranges": "bytes",
+                                "ansible_loop_var": "item",
+                                "changed": false,
+                                "connection": "close",
+                                "content": "{\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"resources\": [\n300,\n301\n]\n}\n",
+                                "content_length": "105",
+                                "cookies": {},
+                                "cookies_string": "",
+                                "date": "Thu, 02 Feb 2023 17:35:39 GMT",
+                                "elapsed": 0,
+                                "etag": "\"69-5f3b82620bc4c\"",
+                                "failed": false,
+                                "invocation": {
+                                    "module_args": {
+                                        "attributes": null,
+                                        "body": null,
+                                        "body_format": "raw",
+                                        "ca_path": null,
+                                        "client_cert": null,
+                                        "client_key": null,
+                                        "creates": null,
+                                        "dest": null,
+                                        "follow_redirects": "safe",
+                                        "force": false,
+                                        "force_basic_auth": false,
+                                        "group": null,
+                                        "headers": {},
+                                        "http_agent": "ansible-httpget",
+                                        "method": "GET",
+                                        "mode": null,
+                                        "owner": null,
+                                        "remote_src": false,
+                                        "removes": null,
+                                        "return_content": true,
+                                        "selevel": null,
+                                        "serole": null,
+                                        "setype": null,
+                                        "seuser": null,
+                                        "src": null,
+                                        "status_code": [
+                                            200
+                                        ],
+                                        "timeout": 30,
+                                        "unix_socket": null,
+                                        "unredirected_headers": [],
+                                        "unsafe_writes": false,
+                                        "url": "http://192.168.122.5/api/3/msft-cve-2017-11804/assets",
+                                        "url_password": null,
+                                        "url_username": null,
+                                        "use_gssapi": false,
+                                        "use_proxy": true,
+                                        "validate_certs": true
+                                    }
+                                },
+                                "item": "msft-cve-2017-11804",
+                                "last_modified": "Thu, 02 Feb 2023 14:12:02 GMT",
+                                "msg": "OK (105 bytes)",
+                                "redirected": false,
+                                "server": "Apache/2.4.53 (Red Hat Enterprise Linux)",
+                                "status": 200,
+                                "url": "http://192.168.122.5/api/3/msft-cve-2017-11804/assets"
+                            },
+                            {
+                                "_ansible_item_label": "msft-cve-2023-69240",
+                                "_ansible_no_log": null,
+                                "accept_ranges": "bytes",
+                                "ansible_loop_var": "item",
+                                "changed": false,
+                                "connection": "close",
+                                "content": "{\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"resources\": [\n302\n]\n}\n",
+                                "content_length": "100",
+                                "cookies": {},
+                                "cookies_string": "",
+                                "date": "Thu, 02 Feb 2023 17:35:40 GMT",
+                                "elapsed": 0,
+                                "etag": "\"64-5f3b827e2c090\"",
+                                "failed": false,
+                                "invocation": {
+                                    "module_args": {
+                                        "attributes": null,
+                                        "body": null,
+                                        "body_format": "raw",
+                                        "ca_path": null,
+                                        "client_cert": null,
+                                        "client_key": null,
+                                        "creates": null,
+                                        "dest": null,
+                                        "follow_redirects": "safe",
+                                        "force": false,
+                                        "force_basic_auth": false,
+                                        "group": null,
+                                        "headers": {},
+                                        "http_agent": "ansible-httpget",
+                                        "method": "GET",
+                                        "mode": null,
+                                        "owner": null,
+                                        "remote_src": false,
+                                        "removes": null,
+                                        "return_content": true,
+                                        "selevel": null,
+                                        "serole": null,
+                                        "setype": null,
+                                        "seuser": null,
+                                        "src": null,
+                                        "status_code": [
+                                            200
+                                        ],
+                                        "timeout": 30,
+                                        "unix_socket": null,
+                                        "unredirected_headers": [],
+                                        "unsafe_writes": false,
+                                        "url": "http://192.168.122.5/api/3/msft-cve-2023-69240/assets",
+                                        "url_password": null,
+                                        "url_username": null,
+                                        "use_gssapi": false,
+                                        "use_proxy": true,
+                                        "validate_certs": true
+                                    }
+                                },
+                                "item": "msft-cve-2023-69240",
+                                "last_modified": "Thu, 02 Feb 2023 14:12:32 GMT",
+                                "msg": "OK (100 bytes)",
+                                "redirected": false,
+                                "server": "Apache/2.4.53 (Red Hat Enterprise Linux)",
+                                "status": 200,
+                                "url": "http://192.168.122.5/api/3/msft-cve-2023-69240/assets"
+                            },
+                            {
+                                "_ansible_item_label": "mssec-cve-2013-99240",
+                                "_ansible_no_log": null,
+                                "accept_ranges": "bytes",
+                                "ansible_loop_var": "item",
+                                "changed": false,
+                                "connection": "close",
+                                "content": "{\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"resources\": [\n301\n]\n}\n",
+                                "content_length": "100",
+                                "cookies": {},
+                                "cookies_string": "",
+                                "date": "Thu, 02 Feb 2023 17:35:40 GMT",
+                                "elapsed": 0,
+                                "etag": "\"64-5f3b8293eee43\"",
+                                "failed": false,
+                                "invocation": {
+                                    "module_args": {
+                                        "attributes": null,
+                                        "body": null,
+                                        "body_format": "raw",
+                                        "ca_path": null,
+                                        "client_cert": null,
+                                        "client_key": null,
+                                        "creates": null,
+                                        "dest": null,
+                                        "follow_redirects": "safe",
+                                        "force": false,
+                                        "force_basic_auth": false,
+                                        "group": null,
+                                        "headers": {},
+                                        "http_agent": "ansible-httpget",
+                                        "method": "GET",
+                                        "mode": null,
+                                        "owner": null,
+                                        "remote_src": false,
+                                        "removes": null,
+                                        "return_content": true,
+                                        "selevel": null,
+                                        "serole": null,
+                                        "setype": null,
+                                        "seuser": null,
+                                        "src": null,
+                                        "status_code": [
+                                            200
+                                        ],
+                                        "timeout": 30,
+                                        "unix_socket": null,
+                                        "unredirected_headers": [],
+                                        "unsafe_writes": false,
+                                        "url": "http://192.168.122.5/api/3/mssec-cve-2013-99240/assets",
+                                        "url_password": null,
+                                        "url_username": null,
+                                        "use_gssapi": false,
+                                        "use_proxy": true,
+                                        "validate_certs": true
+                                    }
+                                },
+                                "item": "mssec-cve-2013-99240",
+                                "last_modified": "Thu, 02 Feb 2023 14:12:55 GMT",
+                                "msg": "OK (100 bytes)",
+                                "redirected": false,
+                                "server": "Apache/2.4.53 (Red Hat Enterprise Linux)",
+                                "status": 200,
+                                "url": "http://192.168.122.5/api/3/mssec-cve-2013-99240/assets"
+                            }
+                        ]
+                    },
+                    "resolved_action": "ansible.builtin.uri",
+                    "start": "2023-02-02T17:35:39.361357",
+                    "task": "Gera uma lista de IDs de assets afetados pelas vulnerabilidades",
+                    "task_action": "uri",
+                    "task_args": "",
+                    "task_path": "/root/lab_testes/pega_api.yml:38",
+                    "task_uuid": "02818c75-f301-873c-1b20-000000000010",
+                    "uuid": "90347618-6522-4813-8462-e47e86dc6126"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "clienterhel8.transp.com",
+                    "__number": 7,
+                    "__result": "Ok",
+                    "__task": "debug",
+                    "__task_action": "debug",
+                    "duration": 0.076171,
+                    "end": "2023-02-02T17:35:40.513239",
+                    "event_loop": null,
+                    "host": "clienterhel8.transp.com",
+                    "play": "Playbook que brinca com API de mentirinha",
+                    "play_pattern": "clienterhel8.transp.com",
+                    "play_uuid": "02818c75-f301-873c-1b20-000000000009",
+                    "playbook": "/root/lab_testes/pega_api.yml",
+                    "playbook_uuid": "f988fb47-7b9c-4ed3-89f6-39dee462e587",
+                    "remote_addr": "clienterhel8.transp.com",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "_ansible_verbose_always": true,
+                        "changed": false,
+                        "msg": [
+                            "{\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"resources\": [\n300,\n301\n]\n}\n",
+                            "{\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"resources\": [\n302\n]\n}\n",
+                            "{\n\"links\": [\n{\n\"href\": \"https://hostname:3780/api/3/...\",\n\"rel\": \"self\"\n}\n],\n\"resources\": [\n301\n]\n}\n"
+                        ]
+                    },
+                    "resolved_action": "ansible.builtin.debug",
+                    "start": "2023-02-02T17:35:40.437068",
+                    "task": "debug",
+                    "task_action": "debug",
+                    "task_args": "",
+                    "task_path": "/root/lab_testes/pega_api.yml:47",
+                    "task_uuid": "02818c75-f301-873c-1b20-000000000011",
+                    "uuid": "603bf6ed-8d87-4c71-874c-fa6b8bffdd24"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "clienterhel8.transp.com",
+                    "__number": 8,
+                    "__result": "Ok",
+                    "__task": "debug",
+                    "__task_action": "debug",
+                    "duration": 0.101129,
+                    "end": "2023-02-02T17:35:40.622889",
+                    "event_loop": null,
+                    "host": "clienterhel8.transp.com",
+                    "play": "Playbook que brinca com API de mentirinha",
+                    "play_pattern": "clienterhel8.transp.com",
+                    "play_uuid": "02818c75-f301-873c-1b20-000000000009",
+                    "playbook": "/root/lab_testes/pega_api.yml",
+                    "playbook_uuid": "f988fb47-7b9c-4ed3-89f6-39dee462e587",
+                    "remote_addr": "clienterhel8.transp.com",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "_ansible_verbose_always": true,
+                        "changed": false,
+                        "msg": ""
+                    },
+                    "resolved_action": "ansible.builtin.debug",
+                    "start": "2023-02-02T17:35:40.521760",
+                    "task": "debug",
+                    "task_action": "debug",
+                    "task_args": "",
+                    "task_path": "/root/lab_testes/pega_api.yml:51",
+                    "task_uuid": "02818c75-f301-873c-1b20-000000000012",
+                    "uuid": "4ece9143-5adc-439f-a118-eef1e535871c"
+                }
+            ],
+            "uuid": "02818c75-f301-873c-1b20-000000000009"
+        }
+    ],
+    "settings_entries": {
+        "ansible-navigator": {
+            "ansible": {
+                "config": {
+                    "help": false
+                },
+                "doc": {
+                    "help": false,
+                    "plugin": {
+                        "type": "module"
+                    }
+                },
+                "inventory": {
+                    "entries": [
+                        "/root/lab_testes/inventory"
+                    ],
+                    "help": false
+                },
+                "playbook": {
+                    "help": false,
+                    "path": "/root/lab_testes/pega_api.yml"
+                }
+            },
+            "ansible-builder": {
+                "help": false,
+                "workdir": "/root/lab_testes"
+            },
+            "app": "run",
+            "collection-doc-cache-path": "/root/.cache/ansible-navigator/collection_doc_cache.db",
+            "color": {
+                "enable": true,
+                "osc4": true
+            },
+            "editor": {
+                "command": "vi +{line_number} {filename}",
+                "console": true
+            },
+            "exec": {
+                "command": "/bin/bash",
+                "shell": true
+            },
+            "execution-environment": {
+                "container-engine": "podman",
+                "enabled": true,
+                "image": "automation-hub.transp.com/ee-supported-rhel8:latest",
+                "pull": {
+                    "policy": "never"
+                }
+            },
+            "images": {
+                "details": [
+                    "everything"
+                ]
+            },
+            "logging": {
+                "append": true,
+                "file": "/root/lab_testes/ansible-navigator.log",
+                "level": "warning"
+            },
+            "mode": "stdout",
+            "playbook-artifact": {
+                "enable": true,
+                "save-as": "{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json"
+            },
+            "settings": {
+                "effective": false,
+                "sample": false,
+                "schema": "json",
+                "sources": false
+            },
+            "time-zone": "UTC"
+        }
+    },
+    "settings_sources": {
+        "ansible-navigator.ansible-builder.help": "Defaults",
+        "ansible-navigator.ansible-builder.workdir": "Defaults",
+        "ansible-navigator.ansible-lint.config": "Not set",
+        "ansible-navigator.ansible-lint.lintables": "Not set",
+        "ansible-navigator.ansible-runner.artifact-dir": "Not set",
+        "ansible-navigator.ansible-runner.rotate-artifacts-count": "Not set",
+        "ansible-navigator.ansible-runner.timeout": "Not set",
+        "ansible-navigator.ansible.cmdline": "Not set",
+        "ansible-navigator.ansible.config.help": "Defaults",
+        "ansible-navigator.ansible.config.path": "Not set",
+        "ansible-navigator.ansible.doc.help": "Defaults",
+        "ansible-navigator.ansible.doc.plugin.name": "Not set",
+        "ansible-navigator.ansible.doc.plugin.type": "Defaults",
+        "ansible-navigator.ansible.inventory.entries": "Command line",
+        "ansible-navigator.ansible.inventory.help": "Defaults",
+        "ansible-navigator.ansible.playbook.help": "Defaults",
+        "ansible-navigator.ansible.playbook.path": "Command line",
+        "ansible-navigator.app": "Command line",
+        "ansible-navigator.collection-doc-cache-path": "Defaults",
+        "ansible-navigator.color.enable": "Defaults",
+        "ansible-navigator.color.osc4": "Defaults",
+        "ansible-navigator.editor.command": "Defaults",
+        "ansible-navigator.editor.console": "Defaults",
+        "ansible-navigator.exec.command": "Defaults",
+        "ansible-navigator.exec.shell": "Defaults",
+        "ansible-navigator.execution-environment.container-engine": "Automatically determined",
+        "ansible-navigator.execution-environment.container-options": "Not set",
+        "ansible-navigator.execution-environment.enabled": "Defaults",
+        "ansible-navigator.execution-environment.environment-variables.pass": "Not set",
+        "ansible-navigator.execution-environment.environment-variables.set": "Not set",
+        "ansible-navigator.execution-environment.image": "Command line",
+        "ansible-navigator.execution-environment.pull.arguments": "Not set",
+        "ansible-navigator.execution-environment.pull.policy": "Command line",
+        "ansible-navigator.execution-environment.volume-mounts": "Not set",
+        "ansible-navigator.images.details": "Defaults",
+        "ansible-navigator.inventory-columns": "Not set",
+        "ansible-navigator.logging.append": "Defaults",
+        "ansible-navigator.logging.file": "Defaults",
+        "ansible-navigator.logging.level": "Defaults",
+        "ansible-navigator.mode": "Command line",
+        "ansible-navigator.playbook-artifact.enable": "Defaults",
+        "ansible-navigator.playbook-artifact.replay": "Not set",
+        "ansible-navigator.playbook-artifact.save-as": "Defaults",
+        "ansible-navigator.settings.effective": "Defaults",
+        "ansible-navigator.settings.sample": "Defaults",
+        "ansible-navigator.settings.schema": "Defaults",
+        "ansible-navigator.settings.sources": "Defaults",
+        "ansible-navigator.time-zone": "Defaults",
+        "settings_file_path": "None",
+        "settings_file_source": "None"
+    },
+    "status": "successful",
+    "status_color": 10,
+    "stdout": [
+        "",
+        "PLAY [Playbook que brinca com API de mentirinha] *******************************",
+        "",
+        "TASK [Gathering Facts] *********************************************************",
+        "\u001b[0;32mok: [clienterhel8.transp.com]\u001b[0m",
+        "",
+        "TASK [Exibe o json com as vulnerabilidades] ************************************",
+        "\u001b[0;36mskipping: [clienterhel8.transp.com]\u001b[0m",
+        "",
+        "TASK [Atinge a API e obtem o json com as vulnerabilidades] *********************",
+        "\u001b[0;32mok: [clienterhel8.transp.com]\u001b[0m",
+        "",
+        "TASK [Gera uma LISTA com as vulnerabilidades chamada lista_vuln] ***************",
+        "\u001b[0;32mok: [clienterhel8.transp.com] => {\u001b[0m",
+        "\u001b[0;32m    \"msg\": [\u001b[0m",
+        "\u001b[0;32m        \"msft-cve-2017-11804\",\u001b[0m",
+        "\u001b[0;32m        \"msft-cve-2023-69240\",\u001b[0m",
+        "\u001b[0;32m        \"mssec-cve-2013-99240\"\u001b[0m",
+        "\u001b[0;32m    ]\u001b[0m",
+        "\u001b[0;32m}\u001b[0m",
+        "",
+        "TASK [Exibe o json com os assets conhecidos pela API] **************************",
+        "\u001b[0;32mok: [clienterhel8.transp.com]\u001b[0m",
+        "",
+        "TASK [Gera um LISTA contendo DICIONÁRIOS com os assets conhecidos pela API] ****",
+        "\u001b[0;32mok: [clienterhel8.transp.com] => {\u001b[0m",
+        "\u001b[0;32m    \"msg\": [\u001b[0m",
+        "\u001b[0;32m        {\u001b[0m",
+        "\u001b[0;32m            \"hostName\": \"teste.domain.net\",\u001b[0m",
+        "\u001b[0;32m            \"id\": 282\u001b[0m",
+        "\u001b[0;32m        },\u001b[0m",
+        "\u001b[0;32m        {\u001b[0m",
+        "\u001b[0;32m            \"hostName\": \"li817\",\u001b[0m",
+        "\u001b[0;32m            \"id\": 281\u001b[0m",
+        "\u001b[0;32m        },\u001b[0m",
+        "\u001b[0;32m        {\u001b[0m",
+        "\u001b[0;32m            \"hostName\": \"robar.domain.net\",\u001b[0m",
+        "\u001b[0;32m            \"id\": 283\u001b[0m",
+        "\u001b[0;32m        },\u001b[0m",
+        "\u001b[0;32m        {\u001b[0m",
+        "\u001b[0;32m            \"hostName\": \"bd.domain.net\",\u001b[0m",
+        "\u001b[0;32m            \"id\": 284\u001b[0m",
+        "\u001b[0;32m        },\u001b[0m",
+        "\u001b[0;32m        {\u001b[0m",
+        "\u001b[0;32m            \"hostName\": \"clientewin2022-1.transp.com\",\u001b[0m",
+        "\u001b[0;32m            \"id\": 300\u001b[0m",
+        "\u001b[0;32m        },\u001b[0m",
+        "\u001b[0;32m        {\u001b[0m",
+        "\u001b[0;32m            \"hostName\": \"clientewin2022-2.transp.com\",\u001b[0m",
+        "\u001b[0;32m            \"id\": 301\u001b[0m",
+        "\u001b[0;32m        },\u001b[0m",
+        "\u001b[0;32m        {\u001b[0m",
+        "\u001b[0;32m            \"hostName\": \"clientewin2019.transp.com\",\u001b[0m",
+        "\u001b[0;32m            \"id\": 302\u001b[0m",
+        "\u001b[0;32m        }\u001b[0m",
+        "\u001b[0;32m    ]\u001b[0m",
+        "\u001b[0;32m}\u001b[0m",
+        "",
+        "TASK [Gera uma lista de IDs de assets afetados pelas vulnerabilidades] *********",
+        "\u001b[0;32mok: [clienterhel8.transp.com] => (item=msft-cve-2017-11804)\u001b[0m",
+        "\u001b[0;32mok: [clienterhel8.transp.com] => (item=msft-cve-2023-69240)\u001b[0m",
+        "\u001b[0;32mok: [clienterhel8.transp.com] => (item=mssec-cve-2013-99240)\u001b[0m",
+        "",
+        "TASK [debug] *******************************************************************",
+        "\u001b[0;32mok: [clienterhel8.transp.com] => {\u001b[0m",
+        "\u001b[0;32m    \"msg\": [\u001b[0m",
+        "\u001b[0;32m        \"{\\n\\\"links\\\": [\\n{\\n\\\"href\\\": \\\"https://hostname:3780/api/3/...\\\",\\n\\\"rel\\\": \\\"self\\\"\\n}\\n],\\n\\\"resources\\\": [\\n300,\\n301\\n]\\n}\\n\",\u001b[0m",
+        "\u001b[0;32m        \"{\\n\\\"links\\\": [\\n{\\n\\\"href\\\": \\\"https://hostname:3780/api/3/...\\\",\\n\\\"rel\\\": \\\"self\\\"\\n}\\n],\\n\\\"resources\\\": [\\n302\\n]\\n}\\n\",\u001b[0m",
+        "\u001b[0;32m        \"{\\n\\\"links\\\": [\\n{\\n\\\"href\\\": \\\"https://hostname:3780/api/3/...\\\",\\n\\\"rel\\\": \\\"self\\\"\\n}\\n],\\n\\\"resources\\\": [\\n301\\n]\\n}\\n\"\u001b[0m",
+        "\u001b[0;32m    ]\u001b[0m",
+        "\u001b[0;32m}\u001b[0m",
+        "",
+        "TASK [debug] *******************************************************************",
+        "\u001b[0;32mok: [clienterhel8.transp.com] => {\u001b[0m",
+        "\u001b[0;32m    \"msg\": \"\"\u001b[0m",
+        "\u001b[0;32m}\u001b[0m",
+        "",
+        "PLAY RECAP *********************************************************************",
+        "\u001b[0;32mclienterhel8.transp.com\u001b[0m    : \u001b[0;32mok=8   \u001b[0m changed=0    unreachable=0    failed=0    \u001b[0;36mskipped=1   \u001b[0m rescued=0    ignored=0   "
+    ],
+    "version": "2.0.0"
+}
