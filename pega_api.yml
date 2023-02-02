@@ -41,7 +41,7 @@
         method: GET
         return_content: True
         status_code: 200
-      loop: "{{ lista_vuln.msg }}"
+      loop: "{{ lista_vuln }}"
       register: json_assets_afetados
 
     - debug:
