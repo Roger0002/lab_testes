@@ -2,12 +2,7 @@
 - name: Playbook que brinca com API de mentirinha
   hosts: clienterhel8.transp.com
   become: True
-  vars:
-    teste_hhh: 100
   tasks:
-    - name: mestre
-      set_fact: lista_super=[]
-
     # Lista as vulnerabilidades
     - name: Exibe o json com as vulnerabilidades
       ansible.builtin.shell: cat /root/saida_api_vulnerabilidades.txt
@@ -20,7 +15,7 @@
 
     # Lista as máquinas
     - name: exibe os json com as máquinas de cada vulnerabilidade
-      shell: "cat /root/servs_{{ item }}"
+      shell: "cat /root/servs_{{ item }}-2"
       with_items: "{{ lista_vuln.msg }}"
       register: json_maqs_geral
 
@@ -29,7 +24,12 @@
         msg: "{{ json_maqs_geral.results | json_query('[].stdout') | join(',') }}"
       register: json_aprov
 
+    - name: Grava a lista em um fact
+      set_fact:
+        lista_servidores: "{{ json_aprov.msg | flatten | unique }}"
+
     - name: Lista todas as máquinas afetadas por alguma vulnerabilidade, qualquer que seja ela
       debug:
-        msg: "{{ json_aprov.msg | flatten | unique }}"
-
+        var: lista_servidores
+      failed_when: lista_servidores | length == 0
+...
