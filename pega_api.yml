@@ -42,6 +42,10 @@
         return_content: True
         status_code: 200
       loop: "{{ lista_vuln.msg }}"
+      register: teste
+
+    - debug:
+        var: teste
 
     #- name: Estágio - tarefa que prapara os dados da tarefa anterior para serem manipulados corretamente pela próxima tarefa
     #  debug:
