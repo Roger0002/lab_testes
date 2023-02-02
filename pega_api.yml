@@ -1,6 +1,6 @@
 ---
 - name: Playbook que brinca com API de mentirinha
-  hosts: clienterhel8.transp.com
+  hosts: localhost
   become: True
   tasks:
     # Lista as vulnerabilidades
@@ -80,9 +80,10 @@
       when: item.id in lista_assets_afetados.msg 
     
 - name: Play de teste
-  hosts: "{{ lista_hostnames_afetados[0] }}"
+  hosts: localhost
   tasks:
     - name: Vamos ver se chegamos lá
+      delegate_to: "{{ lista_hostnames_afetados[0] }}"
       win_ping:
 
 ...
