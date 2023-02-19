@@ -82,8 +82,24 @@
 - name: Play de teste
   hosts: localhost
   tasks:
-    - name: Vamos ver se chegamos lá
-      delegate_to: "{{ lista_hostnames_afetados[0] }}"
-      win_ping:
+    - name: Tarefa que atualiza uma das máquinas
+      vars:
+        ansible_user: ansible
+        ansible_password: Manchester3333
+        ansible_connection: winrm
+        ansible_winrm_transport: credssp
+        ansible_port: 5985
+      delegate_to: "{{ item }}"
+      win_updates:
+        category_names: SecurityUpdates
+        state: installed
+        reboot: True
+      register: atualizacoes
+      loop: "{{ lista_hostnames_afetados }}"
+      #until: atualizacoes.reboot_required == false
+      #retries: 20
+      #delay: 180
+
+
 
 ...

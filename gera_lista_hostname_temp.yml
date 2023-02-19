@@ -1,0 +1,5 @@
+- name: Gera a lista com os hostnames afetados
+  set_fact:
+    lista_hostnames_afetados: "{{ lista_hostnames_afetados + [item.hostName] }}"
+  when: item.id in lista_id_assets_temp
+

@@ -1,0 +1,27 @@
+- name: Gera um json temporário com todos os assets afetados pela vulnerabilidade {{ item }}
+  uri:                
+    url: http://192.168.122.5/api/3/{{ item }}/assets
+    method: GET       
+    return_content: True
+    status_code: 200  
+  register: json_assets_temp
+           
+- name: Gera uma lista temporária com todos os IDs de assets afetados pela vulnerabilidade {{ item }}
+  set_fact:           
+    lista_id_assets_temp: "{{ json_assets_temp | json_query('content') | from_json | json_query('resources') }}"
+
+- name: Zera a lista de hostnames afetados
+  set_fact:
+    lista_hostnames_afetados: []
+
+- name: Gera a lista de hostnames afetados pela vulnerabilidade em questão
+  include_tasks: gera_lista_hostname_temp.yml
+  loop: "{{ estrutura_assets }}"
+
+- name: asdf
+  set_fact:
+    objeto: "{ {{ item }}: {{ lista_hostnames_afetados }} }"
+
+- set_fact:
+    lista_tudo: "{{ lista_tudo + [objeto] }}"
+

@@ -1,0 +1,43 @@
+---
+- name: Playbook que brinca com API de mentirinha
+  hosts: localhost
+  become: True
+  tasks:
+    # Lista as vulnerabilidades
+    - name: Geraindo a variável json_vulnerabilidades, que guarda o json com TODAS as vulnerabilidades
+      uri:
+        url: http://192.168.122.5/api/3/vulnerabilities
+        method: GET
+        return_content: True
+        status_code: 200
+      register: json_vulnerabilidades
+
+    - name: Gerando a variável lista_vuln, que guarda uma lista com as vulnerabilidades da microsoft
+      set_fact:
+        lista_vuln: "{{ json_vulnerabilidades.content | from_json | json_query('resources[*].id') | select('match', '^msft-') | list }}"
+
+    - name: Gerando a variável lista_tudo, que guardará a lista contendo as vulnerabilidades e as máquinas afetadas
+      set_fact:
+        lista_tudo: []
+
+    - name: Gerando a variável json_assets, que guarda um json com os assets conhecidos pela API
+      uri:
+        url: http://192.168.122.5/api/3/assets
+        method: GET
+        return_content: True
+        status_code: 200
+      register: json_assets
+
+    - name: Gerando um LISTA contendo DICIONÁRIOS com os assets conhecidos pela API
+      set_fact:
+        estrutura_assets: "{{ json_assets.content | from_json | json_query('resources[*].{id: id, hostName: hostName}') }}"
+
+    - name: Gerando lista com todas as vulnerabilidades e seus respectivos assets em formato de dicionário 
+      include_tasks: tasks_criacao_lista_geral.yml
+      loop: "{{ lista_vuln }}"
+
+    - name: Exibe a lista lista_tudo
+      debug:
+        var: lista_tudo
+
+...
